@@ -24,54 +24,73 @@ type ApiResponse struct {
 
 func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([]FileInfo, error) {
 	apiURL := "https://buckets.grayhatwarfare.com/api/v2/files"
+	var allFiles []FileInfo
 
-	// Build query parameters
-	params := url.Values{}
-	params.Set("keywords", joinKeywords(keywords))
-	params.Set("extensions", joinKeywords(extensions))
-	params.Set("limit", "1000")
+	// Pagination variables (local to the function)
+	start := 0
+	limit := 1000
 
-	// Build the full URL
-	fullURL := fmt.Sprintf("%s?%s", apiURL, params.Encode())
+	for {
+		// Build query parameters
+		params := url.Values{}
+		params.Set("keywords", joinKeywords(keywords))
+		params.Set("extensions", joinKeywords(extensions))
+		params.Set("limit", fmt.Sprintf("%d", limit))
+		params.Set("start", fmt.Sprintf("%d", start))
 
-	// Create HTTP client with timeout
-	client := &http.Client{Timeout: 30 * time.Second}
+		// Build the full URL
+		fullURL := fmt.Sprintf("%s?%s", apiURL, params.Encode())
 
-	// Create the request
-	req, err := http.NewRequest("GET", fullURL, nil)
-	if err != nil {
-		return nil, fmt.Errorf("failed to create request: %w", err)
+		// Create HTTP client with timeout
+		client := &http.Client{Timeout: 30 * time.Second}
+
+		// Create the request
+		req, err := http.NewRequest("GET", fullURL, nil)
+		if err != nil {
+			return nil, fmt.Errorf("failed to create request: %w", err)
+		}
+
+		// Add headers (including the authorization token)
+		req.Header.Set("Cookie", "Cookie: "+sessionCookie)
+
+		// Send the request
+		resp, err := client.Do(req)
+		if err != nil {
+			return nil, fmt.Errorf("failed to send request: %w", err)
+		}
+		defer resp.Body.Close()
+
+		// Read the response body
+		body, err := ioutil.ReadAll(resp.Body)
+		if err != nil {
+			return nil, fmt.Errorf("failed to read response body: %w", err)
+		}
+
+		// Check for successful status code
+		if resp.StatusCode != http.StatusOK {
+			return nil, fmt.Errorf("API error: %s", resp.Status)
+		}
+
+		// Parse the JSON response
+		var apiResponse ApiResponse
+		err = json.Unmarshal(body, &apiResponse)
+		if err != nil {
+			return nil, fmt.Errorf("failed to parse JSON: %w", err)
+		}
+
+		// Append results to the aggregate list
+		allFiles = append(allFiles, apiResponse.Files...)
+
+		// Stop if fewer than the requested limit of files is returned
+		if len(apiResponse.Files) < limit {
+			break
+		}
+
+		// Move to the next page
+		start += limit
 	}
 
-	// Add headers (including the authorization token)
-	req.Header.Set("Cookie", "Cookie: "+sessionCookie)
-
-	// Send the request
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, fmt.Errorf("failed to send request: %w", err)
-	}
-	defer resp.Body.Close()
-
-	// Read the response body
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return nil, fmt.Errorf("failed to read response body: %w", err)
-	}
-
-	// Check for successful status code
-	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("API error: %s", resp.Status)
-	}
-
-	// Parse the JSON response
-	var apiResponse ApiResponse
-	err = json.Unmarshal(body, &apiResponse)
-	if err != nil {
-		return nil, fmt.Errorf("failed to parse JSON: %w", err)
-	}
-
-	return apiResponse.Files, nil
+	return allFiles, nil
 }
 
 // Helper function to join keywords into a single string
