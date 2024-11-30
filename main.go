@@ -9,15 +9,15 @@ import (
 	"sync"
 	"time"
 
-	"pdf_processing_go/api"
-	"pdf_processing_go/download"
+	"pdf_greyhat_go/api"
+	"pdf_greyhat_go/download"
 )
 
 const outputFile = "results.json"
 
 func main() {
 	// Initialize session and keywords
-	sessionCookie := "__stripe_mid=aeca6f23-8579-452d-b82d-9b4e869f88b63bd474; _gid=GA1.2.2002534355.1732908954; REMEMBERME=QXBwXEVudGl0eVxVc2VyOk1HUmhlV055WlhjPToxNzMzNTQ1MDg1OjA4NjZkYmVhMzAyYTY0ZGJiMWQ0NGNlOWQxNWMxNmIzNThlOTViNzJiOTlhNGU5MWJhZGY2MzhiNTNmNTJlMjM%3D; SFSESSID=d1cla1c5edn65jkvrppgpr8sk6; _gat_gtag_UA_121795267_1=1; _ga=GA1.1.1806740457.1731713654; _ga_QGK3VF4QHK=GS1.1.1732972192.15.1.1732972222.0.0.0"
+	sessionCookie := "__stripe_mid=af2965ba-4f1d-4bf0-a073-1aa7b3987d61ccd651; _gid=GA1.2.1907481890.1732978699; _gat_gtag_UA_121795267_1=1; SFSESSID=eu2ptgedduojcnvtch4jekfsb1; __stripe_sid=db426450-2cff-440b-9532-e088d3707d69933751; _ga=GA1.2.1930062620.1731774259; _ga_QGK3VF4QHK=GS1.1.1732995391.49.1.1732995413.0.0.0"
 	keywords := []string{"mercado libre"}
 	extensions := []string{"pdf"}
 	pdfKeywords := []string{"mercado libre"}
