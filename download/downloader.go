@@ -133,7 +133,7 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 		// save them in the accumulator
 		if count > 0 { // Only include keywords with matches
 			keywordCounts[keyword] = count
-		}
+		}	
 	}
 
 	// ---------------------------------------------------------------------------------------------
