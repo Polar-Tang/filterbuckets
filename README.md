@@ -14,9 +14,7 @@
 #### **3. Install Dependencies:**
    We may need external libraries for HTTP, PDF handling, and OCR. Use the following:
    ```bash
-   go get github.com/pdfcpu/pdfcpu
-   go get github.com/pdfcpu/pdfcpu/pkg/api@v0.9.1
-   go get github.com/otiai10/gosseract/v2   # Go bindings for Tesseract
+   go mod tidy
    ```
 
 ---

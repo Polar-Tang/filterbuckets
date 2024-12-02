@@ -131,7 +131,9 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 		// search for the keyword, in a insasitive case way, on the textContent, which is the text extracted from the output
 		count := strings.Count(strings.ToLower(contentpdf), strings.ToLower(keyword)) // strings.Count is a built-in function from string package, used to count the words
 		// save them in the accumulator
-		keywordCounts[keyword] = count
+		if count > 0 { // Only include keywords with matches
+			keywordCounts[keyword] = count
+		}
 	}
 
 	// ---------------------------------------------------------------------------------------------
