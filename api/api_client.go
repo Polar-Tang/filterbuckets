@@ -4,7 +4,7 @@ import (
 	"crypto/tls"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"net/url"
 	"strings"
@@ -32,16 +32,22 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 	limit := 1000
 
 	transport := &http.Transport{
-		MaxIdleConns:      10,
-		IdleConnTimeout:   90 * time.Second,
-		DisableKeepAlives: false,
-		TLSClientConfig:   &tls.Config{InsecureSkipVerify: false},
+		MaxIdleConns:        100,
+		MaxIdleConnsPerHost: 10,
+		IdleConnTimeout:     90 * time.Second,
+		DisableKeepAlives:   false,
+		TLSClientConfig:     &tls.Config{InsecureSkipVerify: false},
 	}
 
-	client := &http.Client{
-		Timeout:   2 * time.Minute,
-		Transport: transport,
-	}
+	client := &http.Client{Transport: transport}
+
+	go func() {
+		for {
+			time.Sleep(60 * time.Second) // Run every 60 seconds
+			transport.CloseIdleConnections()
+			fmt.Println("Idle connections closed")
+		}
+	}()
 
 	for {
 		// Build query parameters
@@ -74,7 +80,7 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 		defer resp.Body.Close()
 
 		// Read the response body
-		body, err := ioutil.ReadAll(resp.Body)
+		body, err := io.ReadAll(resp.Body)
 		if err != nil {
 			return nil, fmt.Errorf("failed to read response body: %w", err)
 		}
