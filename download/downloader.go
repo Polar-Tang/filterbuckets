@@ -32,7 +32,7 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 	// ---------------------------------------------------------------------------------------------
 
 	// 2) Create a temporary file, referenced by name
-	tmpFile, err := os.CreateTemp("", "*.pdf")	
+	tmpFile, err := os.CreateTemp("", "*.pdf")
 	// A simple error handling
 	if err != nil {
 		// fmt.Printf("Failed to create temp file for %s: %v\n", file.URL, err)
@@ -70,7 +70,7 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 		fmt.Printf("Failed to create output directory: %v\n", err)
 		return nil
 	}
-	defer os.Remove(outputDir) // Clean up the extracted text file
+	defer os.RemoveAll(outputDir) // Clean up the extracted text file
 
 	// extract the content from the directory
 
@@ -133,7 +133,7 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 		// save them in the accumulator
 		if count > 0 { // Only include keywords with matches
 			keywordCounts[keyword] = count
-		}	
+		}
 	}
 
 	// ---------------------------------------------------------------------------------------------
