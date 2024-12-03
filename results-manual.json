@@ -1,0 +1,5032 @@
+[
+  {
+    "filename": "VSI_OpenVMS_Installation_Manual.pdf",
+    "keywords": {
+      "temu": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/VSI_OpenVMS_Installation_Manual.pdf"
+  },
+  {
+    "filename": "EQ_Owners-Manual_16K_2304-6x9_SPA.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://progress.nyc3.digitaloceanspaces.com/shared/pdfs/EQ_Owners-Manual_16K_2304-6x9_SPA.pdf"
+  },
+  {
+    "filename": "EQ_Owners-Manual_4K_2021-6x9-web_SPA.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://progress.nyc3.digitaloceanspaces.com/shared/pdfs/EQ_Owners-Manual_4K_2021-6x9-web_SPA.pdf"
+  },
+  {
+    "filename": "EQ_Owners-Manual_4K_2304-6x9_SPA.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://progress.nyc3.digitaloceanspaces.com/shared/pdfs/EQ_Owners-Manual_4K_2304-6x9_SPA.pdf"
+  },
+  {
+    "filename": "EQ_Owners-Manual_6K-14K_2020-6x9-web_SPA.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://progress.nyc3.digitaloceanspaces.com/shared/pdfs/EQ_Owners-Manual_6K-14K_2020-6x9-web_SPA.pdf"
+  },
+  {
+    "filename": "EQ_Owners-Manual_6K-14K_2304-6x9_SPA.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://progress.nyc3.digitaloceanspaces.com/shared/pdfs/EQ_Owners-Manual_6K-14K_2304-6x9_SPA.pdf"
+  },
+  {
+    "filename": "FW-e2-4.5k-Manual-6x9.pdf",
+    "keywords": {
+      "youtube": 1
+    },
+    "url": "https://progress.nyc3.digitaloceanspaces.com/shared/pdfs/FW-e2-4.5k-Manual-6x9.pdf"
+  },
+  {
+    "filename": "FW-e2-Round_Bar-Manual-6x9-2022.pdf",
+    "keywords": {
+      "youtube": 1
+    },
+    "url": "https://progress.nyc3.digitaloceanspaces.com/shared/pdfs/FW-e2-Round_Bar-Manual-6x9-2022.pdf"
+  },
+  {
+    "filename": "FW-e2-trunnion-Manual-6x9-2022.pdf",
+    "keywords": {
+      "youtube": 1
+    },
+    "url": "https://progress.nyc3.digitaloceanspaces.com/shared/pdfs/FW-e2-trunnion-Manual-6x9-2022.pdf"
+  },
+  {
+    "filename": "FW_e2_4.5K-Trunnion-Owners-Manual_French-Translation.pdf",
+    "keywords": {
+      "omise": 1
+    },
+    "url": "https://progress.nyc3.digitaloceanspaces.com/shared/pdfs/FW_e2_4.5K-Trunnion-Owners-Manual_French-Translation.pdf"
+  },
+  {
+    "filename": "BLISS_USER_MANUAL.PDF",
+    "keywords": {
+      "deriv": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/BLISS_USER_MANUAL.PDF"
+  },
+  {
+    "filename": "Compaq_C_RTL_Utilities_Reference_Manual.pdf",
+    "keywords": {
+      "ATG": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/Compaq_C_RTL_Utilities_Reference_Manual.pdf"
+  },
+  {
+    "filename": "BLISS_REF_MANUAL.PDF",
+    "keywords": {
+      "deriv": 2,
+      "valve": 4,
+      "visa": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/BLISS_REF_MANUAL.PDF"
+  },
+  {
+    "filename": "EVE_Ref_Manual.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/EVE_Ref_Manual.pdf"
+  },
+  {
+    "filename": "HP_C_Language_Reference_Manual.pdf",
+    "keywords": {
+      "deriv": 21
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/HP_C_Language_Reference_Manual.pdf"
+  },
+  {
+    "filename": "HP_Linker_Utility_Manual.pdf",
+    "keywords": {
+      "deriv": 6
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/HP_Linker_Utility_Manual.pdf"
+  },
+  {
+    "filename": "manual-cnab-240---2019.pdf",
+    "keywords": {
+      "Tencent": 1
+    },
+    "url": "https://sinflex.s3.amazonaws.com/documentos/37/manual-cnab-240---2019.pdf"
+  },
+  {
+    "filename": "HP_OpenVMS_SysMgmt_Utilities_Ref_Manual_Vol1.pdf",
+    "keywords": {
+      "Ercom": 1,
+      "deriv": 1,
+      "elastic": 2,
+      "omise": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/HP_OpenVMS_SysMgmt_Utilities_Ref_Manual_Vol1.pdf"
+  },
+  {
+    "filename": "HP_C_RTL_reference_manual.pdf",
+    "keywords": {
+      "ATG": 28,
+      "Salt": 5,
+      "Toom": 1,
+      "VFS": 48,
+      "deriv": 11,
+      "etsy": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/HP_C_RTL_reference_manual.pdf"
+  },
+  {
+    "filename": "HP_OpenVMS_SysMgmt_Utilities_Ref_Manual_Vol2.pdf",
+    "keywords": {
+      "deriv": 11,
+      "magic": 6,
+      "mux": 9,
+      "stripe": 23
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/HP_OpenVMS_SysMgmt_Utilities_Ref_Manual_Vol2.pdf"
+  },
+  {
+    "filename": "HP_OpenVMS_SysServices_Reference_Manual_Vol2.pdf",
+    "keywords": {
+      "Salt": 14,
+      "Toom": 7,
+      "deriv": 1,
+      "etsy": 11,
+      "omise": 1,
+      "tide": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/HP_OpenVMS_SysServices_Reference_Manual_Vol2.pdf"
+  },
+  {
+    "filename": "HP_OpenVMS_SysServices_Reference_Manual_Vol1.pdf",
+    "keywords": {
+      "MCN": 1,
+      "Salt": 4,
+      "Toom": 17,
+      "deriv": 2,
+      "etsy": 108,
+      "tide": 4
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/HP_OpenVMS_SysServices_Reference_Manual_Vol1.pdf"
+  },
+  {
+    "filename": "VSI_Linker_Manual.pdf",
+    "keywords": {
+      "deriv": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/VSI_Linker_Manual.pdf"
+  },
+  {
+    "filename": "BR_2021-07_Booklet_12x12_GUN_Manual_WEB.pdf",
+    "keywords": {
+      "hiro": 1
+    },
+    "url": "https://storage.googleapis.com/oneworld-dev/assets/BR_2021-07_Booklet_12x12_GUN_Manual_WEB.pdf"
+  },
+  {
+    "filename": "BR_2022-04_12x12_GYMBALL_Manual.pdf",
+    "keywords": {
+      "elastic": 1
+    },
+    "url": "https://storage.googleapis.com/oneworld-dev/assets/BR_2022-04_12x12_GYMBALL_Manual.pdf"
+  },
+  {
+    "filename": "EQ_Owners-Manual_16K_2021-6x9-web_SPA.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://progress.nyc3.digitaloceanspaces.com/shared/pdfs/EQ_Owners-Manual_16K_2021-6x9-web_SPA.pdf"
+  },
+  {
+    "filename": "VSI_RTL_STR$_MANUAL.pdf",
+    "keywords": {
+      "magic": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/VSI_RTL_STR$_MANUAL.pdf"
+  },
+  {
+    "filename": "VSI_OpenVMS_Installation_Manual_842.pdf",
+    "keywords": {
+      "temu": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/VSI_OpenVMS_Installation_Manual_842.pdf"
+  },
+  {
+    "filename": "VSI_System_Security_Manual.pdf",
+    "keywords": {
+      "crypto": 2,
+      "etsy": 6,
+      "uber": 23
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/VSI_System_Security_Manual.pdf"
+  },
+  {
+    "filename": "VSI_SYS_MGMT_MANUAL_VOL_II.PDF",
+    "keywords": {
+      "etsy": 8,
+      "stripe": 2,
+      "uber": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/VSI_SYS_MGMT_MANUAL_VOL_II.PDF"
+  },
+  {
+    "filename": "bliss-32-user-manual.pdf",
+    "keywords": {
+      "deriv": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/bliss-32-user-manual.pdf"
+  },
+  {
+    "filename": "bliss-language-reference-manual.pdf",
+    "keywords": {
+      "deriv": 2,
+      "valve": 4,
+      "visa": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/bliss-language-reference-manual.pdf"
+  },
+  {
+    "filename": "VSI_USERS_MANUAL.pdf",
+    "keywords": {
+      "bumble": 3,
+      "etsy": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/VSI_USERS_MANUAL.pdf"
+  },
+  {
+    "filename": "VSI_UTIL_ROUTINES_MANUAL.pdf",
+    "keywords": {
+      "Ercom": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/VSI_UTIL_ROUTINES_MANUAL.pdf"
+  },
+  {
+    "filename": "vsi-c-run-time-library-reference-manual-for-openvms-systems.pdf",
+    "keywords": {
+      "ATG": 7,
+      "VFS": 22
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/vsi-c-run-time-library-reference-manual-for-openvms-systems.pdf"
+  },
+  {
+    "filename": "Planmeca+ProMax+3D+USER+Manual.pdf",
+    "keywords": {
+      "lyst": 1
+    },
+    "url": "https://webshop.s3.amazonaws.com/_backups/single/files/dmi/images/Planmeca+ProMax+3D+USER+Manual.pdf"
+  },
+  {
+    "filename": "vsi-openvms-linker-utility-manual.pdf",
+    "keywords": {
+      "deriv": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/vsi-openvms-linker-utility-manual.pdf"
+  },
+  {
+    "filename": "vsi-openvms-rtl-library-lib-manual.pdf",
+    "keywords": {
+      "etsy": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/vsi-openvms-rtl-library-lib-manual.pdf"
+  },
+  {
+    "filename": "solution_manual_mankiw_macroeconomics_pd.pdf",
+    "keywords": {
+      "Ercom": 5,
+      "deriv": 22,
+      "elastic": 5,
+      "omise": 4,
+      "slack": 1,
+      "visa": 1
+    },
+    "url": "https://imsspace2.ams3.digitaloceanspaces.com/imsspace2/imsspace2/media/test_series/answer_sheet/solution_manual_mankiw_macroeconomics_pd.pdf"
+  },
+  {
+    "filename": "5-682928233859813-Dometic 9500e 12V User Manual 3316982.000.pdf",
+    "keywords": {
+      "omise": 1
+    },
+    "url": "https://horseman.blob.core.windows.net/uploads/5-682928233859813-Dometic 9500e 12V User Manual 3316982.000.pdf"
+  },
+  {
+    "filename": "vsi-openvms-vsi-reliable-transaction-router-system-manager-s-manual.pdf",
+    "keywords": {
+      "quora": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/docs/vsi-openvms-vsi-reliable-transaction-router-system-manager-s-manual.pdf"
+  },
+  {
+    "filename": "MAG-5-Bvl-Home-Owners-Manual-07-11-2018.pdf",
+    "keywords": {
+      "clubhouse": 3
+    },
+    "url": "https://magit.blob.core.windows.net/assets/Docs/Home Owner Manuals/MAG-5-Bvl-Home-Owners-Manual-07-11-2018.pdf"
+  },
+  {
+    "filename": "Pentair_Intellfio_Manual.pdf",
+    "keywords": {
+      "Salt": 2,
+      "valve": 16
+    },
+    "url": "https://mta.nyc3.digitaloceanspaces.com/webapp/media/122/projects/84/submittals/337/454/Pentair_Intellfio_Manual.pdf"
+  },
+  {
+    "filename": "VSI_OpenVMS_Installation_Manual_842.pdf",
+    "keywords": {
+      "mozilla": 1,
+      "temu": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/test-docs/VSI_OpenVMS_Installation_Manual_842.pdf"
+  },
+  {
+    "filename": "VSI_Linker_Manual.pdf",
+    "keywords": {
+      "deriv": 6
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/test-docs/VSI_Linker_Manual.pdf"
+  },
+  {
+    "filename": "FDV-Manual.PDF",
+    "keywords": {
+      "valve": 31
+    },
+    "url": "https://ellcdn.nyc3.digitaloceanspaces.com/ell-boilerplate/media/productDocuments/FDV-Manual.PDF"
+  },
+  {
+    "filename": "VDG+Installation+Manual.pdf",
+    "keywords": {
+      "uber": 1
+    },
+    "url": "https://webshop.s3.amazonaws.com/_backups/single/files/avalon/catalogue/Van+der+Graaf+Drum+Motors/VDG+Installation+Manual.pdf"
+  },
+  {
+    "filename": "VSI_RMS_Ref_Manual_23Jul19.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/test-docs/VSI_RMS_Ref_Manual_23Jul19.pdf"
+  },
+  {
+    "filename": "VSI_System_Security_Manual.pdf",
+    "keywords": {
+      "Salt": 2,
+      "crypto": 4,
+      "deriv": 3,
+      "etsy": 6,
+      "omise": 13,
+      "uber": 23,
+      "visa": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/test-docs/VSI_System_Security_Manual.pdf"
+  },
+  {
+    "filename": "VSI_USERS_MANUAL.pdf",
+    "keywords": {
+      "bumble": 9,
+      "deriv": 2,
+      "etsy": 4,
+      "visa": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/test-docs/VSI_USERS_MANUAL.pdf"
+  },
+  {
+    "filename": "VSI_UTIL_ROUTINES_MANUAL.pdf",
+    "keywords": {
+      "Ercom": 1,
+      "Toom": 3,
+      "crypto": 1,
+      "deriv": 5,
+      "etsy": 2
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/test-docs/VSI_UTIL_ROUTINES_MANUAL.pdf"
+  },
+  {
+    "filename": "en_connectionpieces-hws_manual.pdf",
+    "keywords": {
+      "valve": 12
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_connectionpieces-hws_manual.pdf"
+  },
+  {
+    "filename": "Yellow Jacket LTE Manual.pdf",
+    "keywords": {
+      "valve": 15
+    },
+    "url": "https://thermofrost.blob.core.windows.net/images/Section 6 - Tools/6.1 refrigeration tools/6.24 Refrigerant recovery equipment/Yellow Jacket LTE/Yellow Jacket LTE Manual.pdf"
+  },
+  {
+    "filename": "Planmeca+ProMax+3D+USER+Manual.pdf",
+    "keywords": {
+      "lyst": 1
+    },
+    "url": "https://webshop.s3.amazonaws.com/_backups/single/files/dmiwebshop/ProductGuide2017/Planmeca+ProMax+3D+USER+Manual.pdf"
+  },
+  {
+    "filename": "Odyssey7-User-Manual-2015.11.pdf",
+    "keywords": {
+      "magic": 2,
+      "stripe": 4
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/2015.11/Odyssey7-User-Manual-2015.11.pdf"
+  },
+  {
+    "filename": "Odyssey7-User-Manual-2015.5.pdf",
+    "keywords": {
+      "magic": 5,
+      "stripe": 4
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/2015.5/Odyssey7-User-Manual-2015.5.pdf"
+  },
+  {
+    "filename": "Odyssey7Q-User-Manual-2015.11.pdf",
+    "keywords": {
+      "deriv": 2,
+      "magic": 4,
+      "stripe": 4
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/2015.11/Odyssey7Q-User-Manual-2015.11.pdf"
+  },
+  {
+    "filename": "Odyssey7-User-Manual-4.10.100.pdf",
+    "keywords": {
+      "magic": 9,
+      "stripe": 3
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/4.10.100/Odyssey7-User-Manual-4.10.100.pdf"
+  },
+  {
+    "filename": "Odyssey7Q-User-Manual-2015.8.pdf",
+    "keywords": {
+      "deriv": 2,
+      "stripe": 4
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/2015.8/Odyssey7Q-User-Manual-2015.8.pdf"
+  },
+  {
+    "filename": "Odyssey7Q-User-Manual-2015.5.pdf",
+    "keywords": {
+      "magic": 9,
+      "stripe": 5
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/2015.5/Odyssey7Q-User-Manual-2015.5.pdf"
+  },
+  {
+    "filename": "Odyssey7Q-User-Manual-4.10.100.pdf",
+    "keywords": {
+      "magic": 14,
+      "stripe": 4
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/4.10.100/Odyssey7Q-User-Manual-4.10.100.pdf"
+  },
+  {
+    "filename": "Odyssey7-User-Manual-5.10.100.pdf",
+    "keywords": {
+      "magic": 8,
+      "stripe": 3
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/5.10.100/Odyssey7-User-Manual-5.10.100.pdf"
+  },
+  {
+    "filename": "Odyssey7Q-User-Manual-v5.10.100.pdf",
+    "keywords": {
+      "deriv": 1,
+      "magic": 12,
+      "stripe": 4
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/5.10.100/Odyssey7Q-User-Manual-v5.10.100.pdf"
+  },
+  {
+    "filename": "User-Manual-Odyssey7_v2_11_110-19AUG2014.pdf",
+    "keywords": {
+      "magic": 1
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/Manuals/User-Manual-Odyssey7_v2_11_110-19AUG2014.pdf"
+  },
+  {
+    "filename": "User-Manual-Odyssey7Q_v2_11_110-19AUG2014.pdf",
+    "keywords": {
+      "deriv": 1,
+      "magic": 8
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/Manuals/User-Manual-Odyssey7Q_v2_11_110-19AUG2014.pdf"
+  },
+  {
+    "filename": "Odyssey7-User-Manual-3.10.100.pdf",
+    "keywords": {
+      "magic": 7,
+      "stripe": 3
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/Odyssey7/Odyssey7-User-Manual-3.10.100.pdf"
+  },
+  {
+    "filename": "Odyssey7-User-Manual-2015.7.pdf",
+    "keywords": {
+      "magic": 3,
+      "stripe": 4
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/Odyssey7/Odyssey7-User-Manual-2015.7.pdf"
+  },
+  {
+    "filename": "User-Manual-Odyssey7Q-2.10.141-07-21-2014.pdf",
+    "keywords": {
+      "deriv": 1,
+      "magic": 8
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/Odyssey7Q/User-Manual-Odyssey7Q-2.10.141-07-21-2014.pdf"
+  },
+  {
+    "filename": "User-Manual-Odyssey7Q_2.10.141_07-21-2014.pdf",
+    "keywords": {
+      "magic": 1
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/Odyssey7/User-Manual-Odyssey7Q_2.10.141_07-21-2014.pdf"
+  },
+  {
+    "filename": "Odyssey7Q-User-Manual-3.10.100.pdf",
+    "keywords": {
+      "deriv": 1,
+      "magic": 9,
+      "stripe": 4
+    },
+    "url": "https://web-download.s3.amazonaws.com/Docs/Odyssey7Q/Odyssey7Q-User-Manual-3.10.100.pdf"
+  },
+  {
+    "filename": "de_aqalifes_manual.pdf",
+    "keywords": {
+      "roche": 5,
+      "zte": 3
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/de_aqalifes_manual.pdf"
+  },
+  {
+    "filename": "Odyssey7Q-User-Manual-2015.7.pdf",
+    "keywords": {
+      "magic": 7,
+      "stripe": 5
+    },
+    "url": "https://web-download.s3.amazonaws.com/Firmware/Odyssey7Q/Odyssey7Q-User-Manual-2015.7.pdf"
+  },
+  {
+    "filename": "Odyssey7-User-Manual-2015.7.pdf",
+    "keywords": {
+      "magic": 3,
+      "stripe": 4
+    },
+    "url": "https://web-download.s3.amazonaws.com/Firmware/Odyssey7Q/Odyssey7-User-Manual-2015.7.pdf"
+  },
+  {
+    "filename": "de_bewadespairox_manual.pdf",
+    "keywords": {
+      "temu": 7,
+      "uber": 2,
+      "zte": 11
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/de_bewadespairox_manual.pdf"
+  },
+  {
+    "filename": "de_moro350_manual.pdf",
+    "keywords": {
+      "ATG": 2,
+      "uber": 1,
+      "zte": 3
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/de_moro350_manual.pdf"
+  },
+  {
+    "filename": "de_multiblockgit_manual.pdf",
+    "keywords": {
+      "roche": 2
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/de_multiblockgit_manual.pdf"
+  },
+  {
+    "filename": "en_coolzon_manual.pdf",
+    "keywords": {
+      "redox": 20,
+      "valve": 42
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_coolzon_manual.pdf"
+  },
+  {
+    "filename": "en_erf_manual.pdf",
+    "keywords": {
+      "lyst": 2,
+      "valve": 73
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_erf_manual.pdf"
+  },
+  {
+    "filename": "en_bewadeslc_manual.pdf",
+    "keywords": {
+      "valve": 5
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bewadeslc_manual.pdf"
+  },
+  {
+    "filename": "en_filtermini_manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_filtermini_manual.pdf"
+  },
+  {
+    "filename": "de_rondomathwz_manual.pdf",
+    "keywords": {
+      "roche": 1,
+      "zte": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_rondomathwz_manual.pdf"
+  },
+  {
+    "filename": "en_hw_manual.pdf",
+    "keywords": {
+      "valve": 11
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_hw_manual.pdf"
+  },
+  {
+    "filename": "de_permaqpicoon-off_manual.pdf",
+    "keywords": {
+      "Salt": 1,
+      "uber": 2,
+      "zte": 11
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_permaqpicoon-off_manual.pdf"
+  },
+  {
+    "filename": "de_rondomatduos_manual.pdf",
+    "keywords": {
+      "roche": 1,
+      "zte": 5
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_rondomatduos_manual.pdf"
+  },
+  {
+    "filename": "de_sek28_manual.pdf",
+    "keywords": {
+      "visa": 5
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_sek28_manual.pdf"
+  },
+  {
+    "filename": "en_infinitya-ap_manual.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_infinitya-ap_manual.pdf"
+  },
+  {
+    "filename": "de_univalveblock_manual.pdf",
+    "keywords": {
+      "roche": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_univalveblock_manual.pdf"
+  },
+  {
+    "filename": "en_infinitym_manual.pdf",
+    "keywords": {
+      "valve": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_infinitym_manual.pdf"
+  },
+  {
+    "filename": "de_rondomatduos_manual.pdf",
+    "keywords": {
+      "roche": 1,
+      "zte": 5
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/de_rondomatduos_manual.pdf"
+  },
+  {
+    "filename": "en_aqa_drink_protect_mp_manual.pdf",
+    "keywords": {
+      "omise": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_aqa_drink_protect_mp_manual.pdf"
+  },
+  {
+    "filename": "de_rondomathwz_manual.pdf",
+    "keywords": {
+      "roche": 1,
+      "zte": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/de_rondomathwz_manual.pdf"
+  },
+  {
+    "filename": "de_sek28_manual.pdf",
+    "keywords": {
+      "visa": 5
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/de_sek28_manual.pdf"
+  },
+  {
+    "filename": "en_aqanano_manual.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_aqanano_manual.pdf"
+  },
+  {
+    "filename": "de_permaqpicoon-off_manual.pdf",
+    "keywords": {
+      "Salt": 1,
+      "uber": 2,
+      "zte": 11
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/de_permaqpicoon-off_manual.pdf"
+  },
+  {
+    "filename": "en_multic_manual.pdf",
+    "keywords": {
+      "valve": 5
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_multic_manual.pdf"
+  },
+  {
+    "filename": "de_univalveblock_manual.pdf",
+    "keywords": {
+      "roche": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/de_univalveblock_manual.pdf"
+  },
+  {
+    "filename": "en_aquadial_manual.pdf",
+    "keywords": {
+      "Salt": 3,
+      "valve": 16
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_aquadial_manual.pdf"
+  },
+  {
+    "filename": "en_aqanano_manual.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_aqanano_manual.pdf"
+  },
+  {
+    "filename": "en_multipurap_manual.pdf",
+    "keywords": {
+      "valve": 3
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_multipurap_manual.pdf"
+  },
+  {
+    "filename": "en_kalkexmobil_manual.pdf",
+    "keywords": {
+      "valve": 56
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_kalkexmobil_manual.pdf"
+  },
+  {
+    "filename": "en_avantihws_manual.pdf",
+    "keywords": {
+      "valve": 32
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_avantihws_manual.pdf"
+  },
+  {
+    "filename": "en_aqaperla_manual.pdf",
+    "keywords": {
+      "Salt": 29,
+      "valve": 11,
+      "visa": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_aqaperla_manual.pdf"
+  },
+  {
+    "filename": "en_multipurmdn65-80_manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_multipurmdn65-80_manual.pdf"
+  },
+  {
+    "filename": "en_aquadial_manual.pdf",
+    "keywords": {
+      "Salt": 3,
+      "valve": 16
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_aquadial_manual.pdf"
+  },
+  {
+    "filename": "en_avantirf_manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_avantirf_manual.pdf"
+  },
+  {
+    "filename": "en_avantiwf_manual.pdf",
+    "keywords": {
+      "valve": 7
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_avantiwf_manual.pdf"
+  },
+  {
+    "filename": "en_protectorbw_manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_protectorbw_manual.pdf"
+  },
+  {
+    "filename": "en_avantihws_manual.pdf",
+    "keywords": {
+      "valve": 32
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_avantihws_manual.pdf"
+  },
+  {
+    "filename": "en_avantirf_manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_avantirf_manual.pdf"
+  },
+  {
+    "filename": "en_multis_manual.pdf",
+    "keywords": {
+      "valve": 7
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_multis_manual.pdf"
+  },
+  {
+    "filename": "en_aqaperla_xl_manual.pdf",
+    "keywords": {
+      "Salt": 20,
+      "valve": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_aqaperla_xl_manual.pdf"
+  },
+  {
+    "filename": "en_protectorc_manual.pdf",
+    "keywords": {
+      "valve": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_protectorc_manual.pdf"
+  },
+  {
+    "filename": "en_protectorhw_manual.pdf",
+    "keywords": {
+      "valve": 8
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_protectorhw_manual.pdf"
+  },
+  {
+    "filename": "en_aqaperla_manual.pdf",
+    "keywords": {
+      "Salt": 29,
+      "valve": 11,
+      "visa": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_aqaperla_manual.pdf"
+  },
+  {
+    "filename": "en_bewades_hi_manual.pdf",
+    "keywords": {
+      "valve": 17
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bewades_hi_manual.pdf"
+  },
+  {
+    "filename": "en_bewades_lc_manual.pdf",
+    "keywords": {
+      "valve": 13
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bewades_lc_manual.pdf"
+  },
+  {
+    "filename": "en_protectorcmini_manual.pdf",
+    "keywords": {
+      "valve": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_protectorcmini_manual.pdf"
+  },
+  {
+    "filename": "en_bewades_hi-hp_manual.pdf",
+    "keywords": {
+      "valve": 9
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bewades_hi-hp_manual.pdf"
+  },
+  {
+    "filename": "en_bewades_blue_manual.pdf",
+    "keywords": {
+      "omise": 1,
+      "valve": 14
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bewades_blue_manual.pdf"
+  },
+  {
+    "filename": "en_rfm-rfa_manual.pdf",
+    "keywords": {
+      "valve": 3
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_rfm-rfa_manual.pdf"
+  },
+  {
+    "filename": "en_bewadeseu_manual.pdf",
+    "keywords": {
+      "valve": 16
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bewadeseu_manual.pdf"
+  },
+  {
+    "filename": "en_rondomatduo1dvgw_manual.pdf",
+    "keywords": {
+      "Salt": 28,
+      "omise": 1,
+      "valve": 25
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_rondomatduo1dvgw_manual.pdf"
+  },
+  {
+    "filename": "en_rondomatduo2-3-6-10idvgw_manual.pdf",
+    "keywords": {
+      "Salt": 31,
+      "valve": 49
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_rondomatduo2-3-6-10idvgw_manual.pdf"
+  },
+  {
+    "filename": "en_avantiwf_manual.pdf",
+    "keywords": {
+      "valve": 7
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_avantiwf_manual.pdf"
+  },
+  {
+    "filename": "en_saltcontrol_manual.pdf",
+    "keywords": {
+      "Salt": 52,
+      "valve": 74
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_saltcontrol_manual.pdf"
+  },
+  {
+    "filename": "en_multipurap_manual.pdf",
+    "keywords": {
+      "valve": 3
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_multipurap_manual.pdf"
+  },
+  {
+    "filename": "en_bewadesuvcontrolii_manual.pdf",
+    "keywords": {
+      "valve": 30
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bewadesuvcontrolii_manual.pdf"
+  },
+  {
+    "filename": "en_uo40-300_manual.pdf",
+    "keywords": {
+      "Salt": 7,
+      "valve": 27
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_uo40-300_manual.pdf"
+  },
+  {
+    "filename": "en_bewados_manual.pdf",
+    "keywords": {
+      "valve": 9,
+      "visa": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bewados_manual.pdf"
+  },
+  {
+    "filename": "en_blendingfittings_manual.pdf",
+    "keywords": {
+      "valve": 5
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_blendingfittings_manual.pdf"
+  },
+  {
+    "filename": "en_uo3000-12000_manual.pdf",
+    "keywords": {
+      "Salt": 9,
+      "valve": 27
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_uo3000-12000_manual.pdf"
+  },
+  {
+    "filename": "en_bewamata_manual.pdf",
+    "keywords": {
+      "Salt": 40,
+      "valve": 8
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bewamata_manual.pdf"
+  },
+  {
+    "filename": "en_wodapureenergy_manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_wodapureenergy_manual.pdf"
+  },
+  {
+    "filename": "en_bolerorf-hws_manual.pdf",
+    "keywords": {
+      "valve": 15
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bolerorf-hws_manual.pdf"
+  },
+  {
+    "filename": "en_bewadesndvgw_manual.pdf",
+    "keywords": {
+      "valve": 4,
+      "visa": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bewadesndvgw_manual.pdf"
+  },
+  {
+    "filename": "en_uo400-1950_manual.pdf",
+    "keywords": {
+      "Salt": 7,
+      "pleo": 12,
+      "uber": 18,
+      "valve": 32,
+      "visa": 3,
+      "zte": 10
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_uo400-1950_manual.pdf"
+  },
+  {
+    "filename": "de_aqalifes_manual.pdf",
+    "keywords": {
+      "roche": 5,
+      "zte": 3
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_aqalifes_manual.pdf"
+  },
+  {
+    "filename": "en_bwt_thero_manual.pdf",
+    "keywords": {
+      "Salt": 5,
+      "deriv": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bwt_thero_manual.pdf"
+  },
+  {
+    "filename": "de_aqa_drink_protect_mp_manual.pdf",
+    "keywords": {
+      "uber": 3
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_aqa_drink_protect_mp_manual.pdf"
+  },
+  {
+    "filename": "en_celsius80_manual.pdf",
+    "keywords": {
+      "valve": 10
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_celsius80_manual.pdf"
+  },
+  {
+    "filename": "en_bewadeseu_manual.pdf",
+    "keywords": {
+      "valve": 16
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_bewadeseu_manual.pdf"
+  },
+  {
+    "filename": "en_bwte1hws_manual.pdf",
+    "keywords": {
+      "valve": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_bwte1hws_manual.pdf"
+  },
+  {
+    "filename": "en_connectionhosedn32-32dvgw_manual.pdf",
+    "keywords": {
+      "Salt": 2
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_connectionhosedn32-32dvgw_manual.pdf"
+  },
+  {
+    "filename": "en_bewadeslc_manual.pdf",
+    "keywords": {
+      "valve": 5
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_bewadeslc_manual.pdf"
+  },
+  {
+    "filename": "en_bewadesuvcontrolii_manual.pdf",
+    "keywords": {
+      "valve": 30
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_bewadesuvcontrolii_manual.pdf"
+  },
+  {
+    "filename": "en_connectionhosedn50dvgw_manual.pdf",
+    "keywords": {
+      "Salt": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_connectionhosedn50dvgw_manual.pdf"
+  },
+  {
+    "filename": "en_bewados_manual.pdf",
+    "keywords": {
+      "valve": 9,
+      "visa": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_bewados_manual.pdf"
+  },
+  {
+    "filename": "en_blendingfittings_manual.pdf",
+    "keywords": {
+      "valve": 5
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_blendingfittings_manual.pdf"
+  },
+  {
+    "filename": "en_bolerorf-hws_manual.pdf",
+    "keywords": {
+      "valve": 15
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_bolerorf-hws_manual.pdf"
+  },
+  {
+    "filename": "de_bewadespairox_manual.pdf",
+    "keywords": {
+      "temu": 7,
+      "uber": 2,
+      "zte": 11
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_bewadespairox_manual.pdf"
+  },
+  {
+    "filename": "en_bewamata_manual.pdf",
+    "keywords": {
+      "Salt": 40,
+      "valve": 8
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_bewamata_manual.pdf"
+  },
+  {
+    "filename": "en_celsius80_manual.pdf",
+    "keywords": {
+      "valve": 10
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_celsius80_manual.pdf"
+  },
+  {
+    "filename": "en_bwte1hws_manual.pdf",
+    "keywords": {
+      "valve": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_bwte1hws_manual.pdf"
+  },
+  {
+    "filename": "en_connectionhosedn32-32dvgw_manual.pdf",
+    "keywords": {
+      "Salt": 2
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_connectionhosedn32-32dvgw_manual.pdf"
+  },
+  {
+    "filename": "de_en_bwt_ro3uv_manual.pdf",
+    "keywords": {
+      "koho": 1,
+      "valve": 12,
+      "zte": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_en_bwt_ro3uv_manual.pdf"
+  },
+  {
+    "filename": "en_connectionhosedn50dvgw_manual.pdf",
+    "keywords": {
+      "Salt": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_connectionhosedn50dvgw_manual.pdf"
+  },
+  {
+    "filename": "en_bewadesndvgw_manual.pdf",
+    "keywords": {
+      "valve": 4,
+      "visa": 1
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_bewadesndvgw_manual.pdf"
+  },
+  {
+    "filename": "en_connectionmodules-dr-hws_manual.pdf",
+    "keywords": {
+      "valve": 8
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/en_connectionmodules-dr-hws_manual.pdf"
+  },
+  {
+    "filename": "de_en_fr_es_it_ru_pt_aqa_drink_protect_care_mpc_manual.pdf",
+    "keywords": {
+      "Salt": 1,
+      "airlock": 1,
+      "deriv": 10,
+      "omise": 1,
+      "uber": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_en_fr_es_it_ru_pt_aqa_drink_protect_care_mpc_manual.pdf"
+  },
+  {
+    "filename": "de_moro350_manual.pdf",
+    "keywords": {
+      "ATG": 2,
+      "uber": 1,
+      "zte": 3
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_moro350_manual.pdf"
+  },
+  {
+    "filename": "de_multiblocke_manual.pdf",
+    "keywords": {
+      "roche": 2
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_multiblocke_manual.pdf"
+  },
+  {
+    "filename": "de_en_fr_es_it_ru_pt_aqa_drink_protect_mp_manual.pdf",
+    "keywords": {
+      "deriv": 10,
+      "omise": 1,
+      "uber": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_en_fr_es_it_ru_pt_aqa_drink_protect_mp_manual.pdf"
+  },
+  {
+    "filename": "en_hw_manual.pdf",
+    "keywords": {
+      "valve": 11
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_hw_manual.pdf"
+  },
+  {
+    "filename": "de_en_fr_es_it_dk_nl_bwt_r1_manual.pdf",
+    "keywords": {
+      "deriv": 1,
+      "uber": 2,
+      "valve": 12
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_en_fr_es_it_dk_nl_bwt_r1_manual.pdf"
+  },
+  {
+    "filename": "de_multiblockgit_manual.pdf",
+    "keywords": {
+      "roche": 2
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_multiblockgit_manual.pdf"
+  },
+  {
+    "filename": "en_connectionpieces-hws_manual.pdf",
+    "keywords": {
+      "valve": 12
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_connectionpieces-hws_manual.pdf"
+  },
+  {
+    "filename": "en_coolzon_manual.pdf",
+    "keywords": {
+      "redox": 20,
+      "valve": 42
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_coolzon_manual.pdf"
+  },
+  {
+    "filename": "en_connectionmodules-dr-hws_manual.pdf",
+    "keywords": {
+      "valve": 8
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_connectionmodules-dr-hws_manual.pdf"
+  },
+  {
+    "filename": "en_da-gen_manual.pdf",
+    "keywords": {
+      "Salt": 9,
+      "redox": 18,
+      "valve": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_da-gen_manual.pdf"
+  },
+  {
+    "filename": "en_infinitya-ap_manual.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_infinitya-ap_manual.pdf"
+  },
+  {
+    "filename": "en_erf_manual.pdf",
+    "keywords": {
+      "lyst": 2,
+      "valve": 73
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_erf_manual.pdf"
+  },
+  {
+    "filename": "en_infinitym_manual.pdf",
+    "keywords": {
+      "valve": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_infinitym_manual.pdf"
+  },
+  {
+    "filename": "en_filtermini_manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_filtermini_manual.pdf"
+  },
+  {
+    "filename": "en_kalkexmobil_manual.pdf",
+    "keywords": {
+      "valve": 56
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_kalkexmobil_manual.pdf"
+  },
+  {
+    "filename": "de_en_rondomat_duo_s_international_manual.pdf",
+    "keywords": {
+      "Okto": 1,
+      "Salt": 22,
+      "roche": 1,
+      "zte": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_en_rondomat_duo_s_international_manual.pdf"
+  },
+  {
+    "filename": "en_multi_as_manual.pdf",
+    "keywords": {
+      "valve": 7
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_multi_as_manual.pdf"
+  },
+  {
+    "filename": "en_multi_g_manual.pdf",
+    "keywords": {
+      "valve": 11
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_multi_g_manual.pdf"
+  },
+  {
+    "filename": "en_flowvis_manual.pdf",
+    "keywords": {
+      "valve": 32
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_flowvis_manual.pdf"
+  },
+  {
+    "filename": "en_multipurmdn65-80_manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_multipurmdn65-80_manual.pdf"
+  },
+  {
+    "filename": "en_multic_manual.pdf",
+    "keywords": {
+      "valve": 9
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_multic_manual.pdf"
+  },
+  {
+    "filename": "en_multis_manual.pdf",
+    "keywords": {
+      "valve": 7
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_multis_manual.pdf"
+  },
+  {
+    "filename": "Manual para rotulación de fachadas.pdf",
+    "keywords": {
+      "visa": 1
+    },
+    "url": "https://axxess.blob.core.windows.net/axxess/Manual para rotulación de fachadas.pdf"
+  },
+  {
+    "filename": "en_protectorbw_manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_protectorbw_manual.pdf"
+  },
+  {
+    "filename": "en_protectorc_manual.pdf",
+    "keywords": {
+      "valve": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_protectorc_manual.pdf"
+  },
+  {
+    "filename": "en_protectorhw_manual.pdf",
+    "keywords": {
+      "valve": 8
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_protectorhw_manual.pdf"
+  },
+  {
+    "filename": "en_protectorcmini_manual.pdf",
+    "keywords": {
+      "valve": 6
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_protectorcmini_manual.pdf"
+  },
+  {
+    "filename": "en_rfm-rfa_manual.pdf",
+    "keywords": {
+      "valve": 3
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_rfm-rfa_manual.pdf"
+  },
+  {
+    "filename": "en_rondomatduo2-3-6-10idvgw_manual.pdf",
+    "keywords": {
+      "Salt": 31,
+      "valve": 49
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_rondomatduo2-3-6-10idvgw_manual.pdf"
+  },
+  {
+    "filename": "en_rondomatduo1dvgw_manual.pdf",
+    "keywords": {
+      "Salt": 28,
+      "omise": 1,
+      "valve": 25
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_rondomatduo1dvgw_manual.pdf"
+  },
+  {
+    "filename": "im_forest_2hp_manual_cont.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://vivacdn.blob.core.windows.net/cdn/contrib/drc/manuals/im_forest_2hp_manual_cont.pdf"
+  },
+  {
+    "filename": "scanx_operator_manual.pdf",
+    "keywords": {
+      "visa": 1
+    },
+    "url": "https://vivacdn.blob.core.windows.net/cdn/contrib/drc/manuals/scanx_operator_manual.pdf"
+  },
+  {
+    "filename": "en_saltcontrol_manual.pdf",
+    "keywords": {
+      "Salt": 52,
+      "valve": 74
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_saltcontrol_manual.pdf"
+  },
+  {
+    "filename": "en_uo40-300_manual.pdf",
+    "keywords": {
+      "Salt": 7,
+      "valve": 27
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_uo40-300_manual.pdf"
+  },
+  {
+    "filename": "en_wodapure_clear_mineralizer_manual.pdf",
+    "keywords": {
+      "omise": 1,
+      "valve": 13
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_wodapure_clear_mineralizer_manual.pdf"
+  },
+  {
+    "filename": "en_uo3000-12000_manual.pdf",
+    "keywords": {
+      "Salt": 9,
+      "valve": 27
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_uo3000-12000_manual.pdf"
+  },
+  {
+    "filename": "LKK2Y Manual Android.pdf",
+    "keywords": {
+      "crypto": 2,
+      "ethereum": 1
+    },
+    "url": "https://lkefiles.blob.core.windows.net/files/LKK2Y Manual Android.pdf"
+  },
+  {
+    "filename": "en_wodapure_f_c_uf_cuf_manual.pdf",
+    "keywords": {
+      "valve": 11
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_wodapure_f_c_uf_cuf_manual.pdf"
+  },
+  {
+    "filename": "en_wodapureenergy_manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_wodapureenergy_manual.pdf"
+  },
+  {
+    "filename": "LKK2Y Manual iOS.pdf",
+    "keywords": {
+      "crypto": 2,
+      "ethereum": 1
+    },
+    "url": "https://lkefiles.blob.core.windows.net/files/LKK2Y Manual iOS.pdf"
+  },
+  {
+    "filename": "Anexo 5 Manual para Concesionario.pdf",
+    "keywords": {
+      "deriv": 2
+    },
+    "url": "https://axxess.blob.core.windows.net/axxess/Anexo 5 Manual para Concesionario.pdf"
+  },
+  {
+    "filename": "en_uo400-1950_manual.pdf",
+    "keywords": {
+      "Salt": 7,
+      "pleo": 12,
+      "uber": 18,
+      "valve": 32,
+      "visa": 3,
+      "zte": 10
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/en_uo400-1950_manual.pdf"
+  },
+  {
+    "filename": "MT2450 Service Manual.pdf",
+    "keywords": {
+      "deriv": 2,
+      "valve": 2
+    },
+    "url": "https://premastorage.blob.core.windows.net/documents/service-manuals/MT2450 Service Manual.pdf"
+  },
+  {
+    "filename": "de_en_fr_it_nl_da_es_pt_pl_hu_ru_bwt_bestaqua_14_roc_manual.pdf",
+    "keywords": {
+      "Salt": 18,
+      "deriv": 7,
+      "tide": 3,
+      "uber": 13
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/de_en_fr_it_nl_da_es_pt_pl_hu_ru_bwt_bestaqua_14_roc_manual.pdf"
+  },
+  {
+    "filename": "Healcerion_SONON_300C_User_Manual.pdf",
+    "keywords": {
+      "deriv": 1,
+      "doppler": 36,
+      "omise": 1
+    },
+    "url": "https://janzcorp.blob.core.windows.net/pdf/Healcerion_SONON_300C_User_Manual.pdf"
+  },
+  {
+    "filename": "Manual para Exhibición de Planogramas en Tienda Tradicional.pdf",
+    "keywords": {
+      "visa": 1
+    },
+    "url": "https://axxess.blob.core.windows.net/axxess/Formatos de tienda/Planogramas/Manual para Exhibición de Planogramas en Tienda Tradicional.pdf"
+  },
+  {
+    "filename": "infinity a+ap manual 311006 gb.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://iwater.blob.core.windows.net/downloads/manuals/infinity a+ap manual 311006 gb.pdf"
+  },
+  {
+    "filename": "Manual para Exhibición de Planogramas en Tienda Tradicional.pdf",
+    "keywords": {
+      "visa": 1
+    },
+    "url": "https://axxess.blob.core.windows.net/axxess/Formatos de tienda/Planogramas/Manual para Exhibición de Planogramas en Tienda Tradicional.pdf"
+  },
+  {
+    "filename": "MANUAL NC ACUERDO COMERCIAL.pdf",
+    "keywords": {
+      "visa": 1
+    },
+    "url": "https://axxess.blob.core.windows.net/axxess/MANUAL NC ACUERDO COMERCIAL.pdf"
+  },
+  {
+    "filename": "Philips_SureSigns_VM4_Owners_Manual.pdf",
+    "keywords": {
+      "deriv": 8,
+      "omise": 3,
+      "slack": 1,
+      "valve": 1
+    },
+    "url": "https://janzcorp.blob.core.windows.net/pdf/Philips_SureSigns_VM4_Owners_Manual.pdf"
+  },
+  {
+    "filename": "RegenLab_642VFD_Centrifuge_Operators_Manual.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://janzcorp.blob.core.windows.net/pdf/RegenLab_642VFD_Centrifuge_Operators_Manual.pdf"
+  },
+  {
+    "filename": "Welch_Allyn_Propaq_LT_Service_Manual.pdf",
+    "keywords": {
+      "omise": 1,
+      "valve": 23
+    },
+    "url": "https://janzcorp.blob.core.windows.net/pdf/Welch_Allyn_Propaq_LT_Service_Manual.pdf"
+  },
+  {
+    "filename": "the mastery manual by Robin Sharma (z-lib.org).pdf",
+    "keywords": {
+      "MCN": 1,
+      "Maya": 1,
+      "amazon": 1,
+      "brave": 1,
+      "elisa": 1,
+      "omise": 8,
+      "starbucks": 1,
+      "uber": 1
+    },
+    "url": "https://ubooks.nyc3.digitaloceanspaces.com/the mastery manual by Robin Sharma (z-lib.org).pdf"
+  },
+  {
+    "filename": "Physio_Control_LIFEPAK_20_e_Operators_Manual.pdf",
+    "keywords": {
+      "valve": 1,
+      "visa": 1
+    },
+    "url": "https://janzcorp.blob.core.windows.net/pdf/Physio_Control_LIFEPAK_20_e_Operators_Manual.pdf"
+  },
+  {
+    "filename": "Landscraper Operator Manual_1293.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Landscraper Operator Manual_1293.pdf"
+  },
+  {
+    "filename": "Physio_Control_LIFEPAK_15_Operators_Manual.pdf",
+    "keywords": {
+      "uber": 2,
+      "valve": 1
+    },
+    "url": "https://janzcorp.blob.core.windows.net/pdf/Physio_Control_LIFEPAK_15_Operators_Manual.pdf"
+  },
+  {
+    "filename": "CLOUDCHERRY_CULTURE_MANUAL.pdf",
+    "keywords": {
+      "Salt": 1,
+      "hootsuite": 1,
+      "omise": 1
+    },
+    "url": "https://contentcdn.blob.core.windows.net/assets/CLOUDCHERRY_CULTURE_MANUAL.pdf"
+  },
+  {
+    "filename": "Landscraper Operator Manual_1550.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Landscraper Operator Manual_1550.pdf"
+  },
+  {
+    "filename": "Landscraper Operator Manual_3269.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Landscraper Operator Manual_3269.pdf"
+  },
+  {
+    "filename": "Landscraper Operator Manual_4351.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Landscraper Operator Manual_4351.pdf"
+  },
+  {
+    "filename": "Aquila Raptor Operations Manual.pdf",
+    "keywords": {
+      "deriv": 7,
+      "koho": 1,
+      "omise": 1,
+      "pleo": 3,
+      "riot": 1,
+      "roche": 8,
+      "tide": 1,
+      "uber": 1,
+      "valve": 53,
+      "visa": 5,
+      "zte": 13
+    },
+    "url": "https://premastorage.blob.core.windows.net/documents/operation-manuals/Aquila Raptor Operations Manual.pdf"
+  },
+  {
+    "filename": "OPERATORS MANUAL LANDSCRAPER.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/OPERATORS MANUAL LANDSCRAPER.pdf"
+  },
+  {
+    "filename": "Operation Manual Auger Drives.pdf",
+    "keywords": {
+      "valve": 13
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Operation Manual Auger Drives.pdf"
+  },
+  {
+    "filename": "Manual rápido AQ50.pdf",
+    "keywords": {
+      "MCN": 2,
+      "OVH": 23,
+      "Salt": 1,
+      "VFS": 14,
+      "mux": 13,
+      "okg": 2,
+      "ovh": 23,
+      "sofi": 2,
+      "zte": 1
+    },
+    "url": "https://lapos.blob.core.windows.net/site/Manual rápido AQ50.pdf"
+  },
+  {
+    "filename": "Operator Manual ECV.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Operator Manual ECV.pdf"
+  },
+  {
+    "filename": "Sunpine+Grafisk+manual_13-37-30.pdf",
+    "keywords": {
+      "tide": 2
+    },
+    "url": "https://ppstorage.s3.amazonaws.com/storage/logotype/5898/2023-09-18/Sunpine+Grafisk+manual_13-37-30.pdf"
+  },
+  {
+    "filename": "1200C Manual.pdf",
+    "keywords": {
+      "Ercom": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/1200C Manual.pdf"
+  },
+  {
+    "filename": "HPD 16 22Q 2014 Manual.pdf",
+    "keywords": {
+      "visa": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/HPD 16 22Q 2014 Manual.pdf"
+  },
+  {
+    "filename": "Big Arm Manual.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Big Arm Manual.pdf"
+  },
+  {
+    "filename": "Landscraper Operator Manual_1027.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Landscraper Operator Manual_1027.pdf"
+  },
+  {
+    "filename": "Landscraper Operator Manual_1032.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Landscraper Operator Manual_1032.pdf"
+  },
+  {
+    "filename": "Ops Manual 580.pdf",
+    "keywords": {
+      "valve": 8
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual 580.pdf"
+  },
+  {
+    "filename": "Ops Manual ES Spreaders.pdf",
+    "keywords": {
+      "Ercom": 2,
+      "Salt": 2,
+      "slack": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual ES Spreaders.pdf"
+  },
+  {
+    "filename": "Ops Manual A-Drill.pdf",
+    "keywords": {
+      "valve": 4,
+      "visa": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual A-Drill.pdf"
+  },
+  {
+    "filename": "Ops Manual Extra 624T-628T.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Extra 624T-628T.pdf"
+  },
+  {
+    "filename": "Ops Manual Extra 100.pdf",
+    "keywords": {
+      "pleo": 2,
+      "slack": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Extra 100.pdf"
+  },
+  {
+    "filename": "Ops Manual CD400-500.pdf",
+    "keywords": {
+      "roche": 5,
+      "valve": 21
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual CD400-500.pdf"
+  },
+  {
+    "filename": "Ops Manual A1000.pdf",
+    "keywords": {
+      "roche": 5,
+      "slack": 2,
+      "valve": 56
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual A1000.pdf"
+  },
+  {
+    "filename": "Ops Manual Extra 332F.pdf",
+    "keywords": {
+      "slack": 3,
+      "valve": 7
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Extra 332F.pdf"
+  },
+  {
+    "filename": "Ops Manual A1500.pdf",
+    "keywords": {
+      "roche": 4,
+      "slack": 3,
+      "valve": 60
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual A1500.pdf"
+  },
+  {
+    "filename": "Ops Manual A200.pdf",
+    "keywords": {
+      "roche": 8,
+      "slack": 1,
+      "valve": 43
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual A200.pdf"
+  },
+  {
+    "filename": "Ops Manual A270.pdf",
+    "keywords": {
+      "roche": 7,
+      "slack": 2,
+      "valve": 49
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual A270.pdf"
+  },
+  {
+    "filename": "Ops Manual CFR650.pdf",
+    "keywords": {
+      "valve": 5
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual CFR650.pdf"
+  },
+  {
+    "filename": "Ops Manual A400.pdf",
+    "keywords": {
+      "roche": 6,
+      "slack": 1,
+      "valve": 66
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual A400.pdf"
+  },
+  {
+    "filename": "Ops Manual A500.pdf",
+    "keywords": {
+      "roche": 6,
+      "slack": 1,
+      "valve": 61
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual A500.pdf"
+  },
+  {
+    "filename": "Ops Manual Extra 532-540.pdf",
+    "keywords": {
+      "valve": 41
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Extra 532-540.pdf"
+  },
+  {
+    "filename": "Ops Manual HD400.pdf",
+    "keywords": {
+      "roche": 5,
+      "valve": 30
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual HD400.pdf"
+  },
+  {
+    "filename": "Ops Manual Extra 632FT-635FT.pdf",
+    "keywords": {
+      "slack": 1,
+      "valve": 11
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Extra 632FT-635FT.pdf"
+  },
+  {
+    "filename": "Ops Manual Fanex 524.pdf",
+    "keywords": {
+      "valve": 7
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Fanex 524.pdf"
+  },
+  {
+    "filename": "Ops Manual Extra 632FR.pdf",
+    "keywords": {
+      "slack": 2,
+      "valve": 9
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Extra 632FR.pdf"
+  },
+  {
+    "filename": "Ops Manual AJ401.pdf",
+    "keywords": {
+      "omise": 2,
+      "roche": 15,
+      "slack": 2,
+      "valve": 47,
+      "visa": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual AJ401.pdf"
+  },
+  {
+    "filename": "Ops Manual Extra 632T.pdf",
+    "keywords": {
+      "valve": 10
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Extra 632T.pdf"
+  },
+  {
+    "filename": "Ops Manual ATVK400.pdf",
+    "keywords": {
+      "Ercom": 2,
+      "Salt": 4,
+      "visa": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual ATVK400.pdf"
+  },
+  {
+    "filename": "Ops Manual Extra 690T.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Extra 690T.pdf"
+  },
+  {
+    "filename": "Ops Manual Fanex 524T.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Fanex 524T.pdf"
+  },
+  {
+    "filename": "Ops Manual Fanex 834T.pdf",
+    "keywords": {
+      "valve": 8
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Fanex 834T.pdf"
+  },
+  {
+    "filename": "Ops Manual Andex 1104.pdf",
+    "keywords": {
+      "slack": 1,
+      "valve": 19
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Andex 1104.pdf"
+  },
+  {
+    "filename": "Ops Manual Fanex 1134T.pdf",
+    "keywords": {
+      "valve": 10
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Fanex 1134T.pdf"
+  },
+  {
+    "filename": "Ops Manual Andex 323.pdf",
+    "keywords": {
+      "sheer": 1,
+      "valve": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Andex 323.pdf"
+  },
+  {
+    "filename": "Ops Manual Extra 828T,832T,835T.pdf",
+    "keywords": {
+      "valve": 23
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Extra 828T,832T,835T.pdf"
+  },
+  {
+    "filename": "Ops Manual Grain Sys CFR651.pdf",
+    "keywords": {
+      "Salt": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Grain Sys CFR651.pdf"
+  },
+  {
+    "filename": "Ops Manual Andex 424T.pdf",
+    "keywords": {
+      "valve": 7
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Andex 424T.pdf"
+  },
+  {
+    "filename": "Ops Manual Extra 832R,CR,835R.pdf",
+    "keywords": {
+      "valve": 19
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Extra 832R,CR,835R.pdf"
+  },
+  {
+    "filename": "Ops Manual Andex 474T.pdf",
+    "keywords": {
+      "valve": 7
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Andex 474T.pdf"
+  },
+  {
+    "filename": "Ops Manual Andex 714T EVO.pdf",
+    "keywords": {
+      "valve": 14
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Andex 714T EVO.pdf"
+  },
+  {
+    "filename": "Ops Manual Andex 714T Vario.pdf",
+    "keywords": {
+      "valve": 10
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Andex 714T Vario.pdf"
+  },
+  {
+    "filename": "Ops Manual Andex 724.pdf",
+    "keywords": {
+      "slack": 1,
+      "valve": 11
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Andex 724.pdf"
+  },
+  {
+    "filename": "Ops Manual Andex 764.pdf",
+    "keywords": {
+      "slack": 1,
+      "valve": 10
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Andex 764.pdf"
+  },
+  {
+    "filename": "Ops Manual Andex 774.pdf",
+    "keywords": {
+      "valve": 14
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Andex 774.pdf"
+  },
+  {
+    "filename": "Ops Manual Auger Drives.pdf",
+    "keywords": {
+      "valve": 13
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Auger Drives.pdf"
+  },
+  {
+    "filename": "Ops Manual Andex 844.pdf",
+    "keywords": {
+      "slack": 1,
+      "valve": 4
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Andex 844.pdf"
+  },
+  {
+    "filename": "Ops Manual Grain Sys CFR650.pdf",
+    "keywords": {
+      "3cx": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Grain Sys CFR650.pdf"
+  },
+  {
+    "filename": "Ops Manual HPD16-20.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual HPD16-20.pdf"
+  },
+  {
+    "filename": "Ops Manual HPD16-20SHC-SWO.pdf",
+    "keywords": {
+      "valve": 86,
+      "visa": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual HPD16-20SHC-SWO.pdf"
+  },
+  {
+    "filename": "Ops Manual BW2100.pdf",
+    "keywords": {
+      "valve": 26
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual BW2100.pdf"
+  },
+  {
+    "filename": "Ops Manual HPD24SHC-SWO.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual HPD24SHC-SWO.pdf"
+  },
+  {
+    "filename": "Ops Manual BW2400.pdf",
+    "keywords": {
+      "valve": 33,
+      "visa": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual BW2400.pdf"
+  },
+  {
+    "filename": "Ops Manual PS Series.pdf",
+    "keywords": {
+      "Salt": 13,
+      "valve": 7
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual PS Series.pdf"
+  },
+  {
+    "filename": "Ops Manual RO-M EW.pdf",
+    "keywords": {
+      "Salt": 2,
+      "valve": 7
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual RO-M EW.pdf"
+  },
+  {
+    "filename": "Ops Manual Post Drivers.pdf",
+    "keywords": {
+      "valve": 22
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Post Drivers.pdf"
+  },
+  {
+    "filename": "Ops Manual PSEDII.pdf",
+    "keywords": {
+      "Salt": 1,
+      "elastic": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual PSEDII.pdf"
+  },
+  {
+    "filename": "Ops Manual Pulsar.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Pulsar.pdf"
+  },
+  {
+    "filename": "Ops Manual CFR651.pdf",
+    "keywords": {
+      "Salt": 2,
+      "eero": 10,
+      "mux": 3
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual CFR651.pdf"
+  },
+  {
+    "filename": "Ops Manual QD.pdf",
+    "keywords": {
+      "visa": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual QD.pdf"
+  },
+  {
+    "filename": "Ops Manual RT9.pdf",
+    "keywords": {
+      "roche": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual RT9.pdf"
+  },
+  {
+    "filename": "Ops Manual QDT.pdf",
+    "keywords": {
+      "valve": 2,
+      "visa": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual QDT.pdf"
+  },
+  {
+    "filename": "Ops Manual Ripper-Buster.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Ripper-Buster.pdf"
+  },
+  {
+    "filename": "Ops Manual R130.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual R130.pdf"
+  },
+  {
+    "filename": "Ops Manual RO-XL CCII.pdf",
+    "keywords": {
+      "Salt": 2,
+      "valve": 5
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual RO-XL CCII.pdf"
+  },
+  {
+    "filename": "Ops Manual RO-M.pdf",
+    "keywords": {
+      "Salt": 2,
+      "valve": 14
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual RO-M.pdf"
+  },
+  {
+    "filename": "Ops Manual S2000.pdf",
+    "keywords": {
+      "valve": 15
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual S2000.pdf"
+  },
+  {
+    "filename": "Ops Manual RO Trailer.pdf",
+    "keywords": {
+      "valve": 3
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual RO Trailer.pdf"
+  },
+  {
+    "filename": "Ops Manual RO-XL.pdf",
+    "keywords": {
+      "Salt": 2,
+      "valve": 13
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual RO-XL.pdf"
+  },
+  {
+    "filename": "Ops Manual RO-EDW.pdf",
+    "keywords": {
+      "Salt": 2,
+      "valve": 5
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual RO-EDW.pdf"
+  },
+  {
+    "filename": "Ops Manual Sapphire.pdf",
+    "keywords": {
+      "Ercom": 1,
+      "roche": 4,
+      "slack": 5,
+      "valve": 61
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Sapphire.pdf"
+  },
+  {
+    "filename": "Ops Manual RO-M CCII.pdf",
+    "keywords": {
+      "Salt": 2,
+      "valve": 11
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual RO-M CCII.pdf"
+  },
+  {
+    "filename": "Ops Manual Nitro450.pdf",
+    "keywords": {
+      "slack": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Nitro450.pdf"
+  },
+  {
+    "filename": "Ops Manual Nitro600.pdf",
+    "keywords": {
+      "slack": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Nitro600.pdf"
+  },
+  {
+    "filename": "Ops Manual Nitro750.pdf",
+    "keywords": {
+      "slack": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual Nitro750.pdf"
+  },
+  {
+    "filename": "Ops Manual RO-EDW-GEO.pdf",
+    "keywords": {
+      "valve": 4,
+      "visa": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual RO-EDW-GEO.pdf"
+  },
+  {
+    "filename": "Ops Manual KM3200-4000S.pdf",
+    "keywords": {
+      "slack": 1,
+      "valve": 10,
+      "visa": 2,
+      "zte": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual KM3200-4000S.pdf"
+  },
+  {
+    "filename": "Ops Manual UBH2000.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual UBH2000.pdf"
+  },
+  {
+    "filename": "Ops Manual PH400SA.pdf",
+    "keywords": {
+      "roche": 2,
+      "slack": 1,
+      "valve": 52
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual PH400SA.pdf"
+  },
+  {
+    "filename": "Ops Manual UBH2072.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual UBH2072.pdf"
+  },
+  {
+    "filename": "Ops Parts Manual Debris Blowers.pdf",
+    "keywords": {
+      "3cx": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Parts Manual Debris Blowers.pdf"
+  },
+  {
+    "filename": "Ops Manual WE.pdf",
+    "keywords": {
+      "slack": 1,
+      "valve": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Manual WE.pdf"
+  },
+  {
+    "filename": "Ops Parts Manual SB13-18-54.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Parts Manual SB13-18-54.pdf"
+  },
+  {
+    "filename": "Ops Parts Manual TV470.pdf",
+    "keywords": {
+      "visa": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Parts Manual TV470.pdf"
+  },
+  {
+    "filename": "Ops Parts Manual TV1080.pdf",
+    "keywords": {
+      "slack": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Parts Manual TV1080.pdf"
+  },
+  {
+    "filename": "Ops Parts Manual TM48.pdf",
+    "keywords": {
+      "slack": 1,
+      "valve": 14
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Parts Manual TM48.pdf"
+  },
+  {
+    "filename": "Parts Manual A1500.pdf",
+    "keywords": {
+      "tide": 1,
+      "valve": 45
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual A1500.pdf"
+  },
+  {
+    "filename": "Ops Parts Manual TV40.pdf",
+    "keywords": {
+      "valve": 7
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Parts Manual TV40.pdf"
+  },
+  {
+    "filename": "Ops Parts Manual VC60.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Parts Manual VC60.pdf"
+  },
+  {
+    "filename": "Parts Manual AJ401.pdf",
+    "keywords": {
+      "valve": 19
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual AJ401.pdf"
+  },
+  {
+    "filename": "Parts Manual A200.pdf",
+    "keywords": {
+      "valve": 27
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual A200.pdf"
+  },
+  {
+    "filename": "Parts Manual A270.pdf",
+    "keywords": {
+      "valve": 28
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual A270.pdf"
+  },
+  {
+    "filename": "Ops Parts Manual TV60.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Parts Manual TV60.pdf"
+  },
+  {
+    "filename": "Parts Manual A400VDC.pdf",
+    "keywords": {
+      "valve": 27
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual A400VDC.pdf"
+  },
+  {
+    "filename": "Parts Manual A500N.pdf",
+    "keywords": {
+      "valve": 27
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual A500N.pdf"
+  },
+  {
+    "filename": "Parts Manual A500T.pdf",
+    "keywords": {
+      "valve": 27
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual A500T.pdf"
+  },
+  {
+    "filename": "Parts Manual A1000.pdf",
+    "keywords": {
+      "valve": 56
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual A1000.pdf"
+  },
+  {
+    "filename": "Ops Parts Manual TV30.pdf",
+    "keywords": {
+      "stripe": 2,
+      "valve": 6
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Ops Parts Manual TV30.pdf"
+  },
+  {
+    "filename": "Parts Manual BW2100C.pdf",
+    "keywords": {
+      "elastic": 10,
+      "valve": 1,
+      "zte": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual BW2100C.pdf"
+  },
+  {
+    "filename": "Parts Manual BW2400M.pdf",
+    "keywords": {
+      "elastic": 5,
+      "roche": 1,
+      "zte": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual BW2400M.pdf"
+  },
+  {
+    "filename": "Parts Manual J1000.pdf",
+    "keywords": {
+      "valve": 24
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual J1000.pdf"
+  },
+  {
+    "filename": "Parts Manual J600CHT.pdf",
+    "keywords": {
+      "valve": 30
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual J600CHT.pdf"
+  },
+  {
+    "filename": "Parts Manual J2000-2600.pdf",
+    "keywords": {
+      "valve": 38
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual J2000-2600.pdf"
+  },
+  {
+    "filename": "Parts Manual J600EL.pdf",
+    "keywords": {
+      "valve": 25
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual J600EL.pdf"
+  },
+  {
+    "filename": "Parts Manual J400.pdf",
+    "keywords": {
+      "valve": 29
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual J400.pdf"
+  },
+  {
+    "filename": "Parts Manual RO-M EW.pdf",
+    "keywords": {
+      "zte": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual RO-M EW.pdf"
+  },
+  {
+    "filename": "Parts Manual KM4000S.pdf",
+    "keywords": {
+      "zte": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual KM4000S.pdf"
+  },
+  {
+    "filename": "Parts Manual RO-C.pdf",
+    "keywords": {
+      "zte": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual RO-C.pdf"
+  },
+  {
+    "filename": "Parts Manual PS225.pdf",
+    "keywords": {
+      "zte": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual PS225.pdf"
+  },
+  {
+    "filename": "Parts Manual PH400SA.pdf",
+    "keywords": {
+      "valve": 36
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual PH400SA.pdf"
+  },
+  {
+    "filename": "Parts Manual RO-XL.pdf",
+    "keywords": {
+      "zte": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual RO-XL.pdf"
+  },
+  {
+    "filename": "Parts Manual Post Drivers.pdf",
+    "keywords": {
+      "valve": 8
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual Post Drivers.pdf"
+  },
+  {
+    "filename": "Parts Manual Sapphire.pdf",
+    "keywords": {
+      "stripe": 2,
+      "valve": 38
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual Sapphire.pdf"
+  },
+  {
+    "filename": "Side Discharge Manual.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Side Discharge Manual.pdf"
+  },
+  {
+    "filename": "SB1000 Manual.pdf",
+    "keywords": {
+      "valve": 3
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/SB1000 Manual.pdf"
+  },
+  {
+    "filename": "SB3000 Manual.pdf",
+    "keywords": {
+      "valve": 4
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/SB3000 Manual.pdf"
+  },
+  {
+    "filename": "SB3600V Manual.pdf",
+    "keywords": {
+      "valve": 8
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/SB3600V Manual.pdf"
+  },
+  {
+    "filename": "Parts Manual RO-M CCII.pdf",
+    "keywords": {
+      "Salt": 2,
+      "valve": 11
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual RO-M CCII.pdf"
+  },
+  {
+    "filename": "Power Tine Forks Manual.pdf",
+    "keywords": {
+      "VFS": 2,
+      "kfc": 1
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Power Tine Forks Manual.pdf"
+  },
+  {
+    "filename": "Parts Manual Rockpicker.pdf",
+    "keywords": {
+      "3cx": 3,
+      "okg": 2
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Parts Manual Rockpicker.pdf"
+  },
+  {
+    "filename": "Svc Manual WE.pdf",
+    "keywords": {
+      "slack": 1,
+      "valve": 8
+    },
+    "url": "https://aciwebdata.blob.core.windows.net/documents/Svc Manual WE.pdf"
+  },
+  {
+    "filename": "Siemens-KU15LA60GB-manual.pdf",
+    "keywords": {
+      "uber": 1,
+      "valve": 1
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/kitchen/Siemens-KU15LA60GB-manual.pdf"
+  },
+  {
+    "filename": "miele-km-6115-manual.pdf",
+    "keywords": {
+      "Salt": 1,
+      "lyst": 1,
+      "visa": 1
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/kitchen/miele-km-6115-manual.pdf"
+  },
+  {
+    "filename": "Siemens-KI87VVS30G-manual.pdf",
+    "keywords": {
+      "uber": 1,
+      "valve": 1
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/kitchen/Siemens-KI87VVS30G-manual.pdf"
+  },
+  {
+    "filename": "miele-h-6200-bp-manual.pdf",
+    "keywords": {
+      "Salt": 117,
+      "elastic": 1,
+      "omise": 1,
+      "visa": 2
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/kitchen/miele-h-6200-bp-manual.pdf"
+  },
+  {
+    "filename": "TE-Policy-and-Procedures-Manual-outline.pdf",
+    "keywords": {
+      "lyft": 1
+    },
+    "url": "https://clearlaw.nyc3.digitaloceanspaces.com/wpcli/wp-content/uploads/2017/02/03232145/TE-Policy-and-Procedures-Manual-outline.pdf"
+  },
+  {
+    "filename": "Siemens-GU15DA50GB-manual.pdf",
+    "keywords": {
+      "uber": 1,
+      "valve": 1
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/kitchen/Siemens-GU15DA50GB-manual.pdf"
+  },
+  {
+    "filename": "miele-h-6200-bm-manual.pdf",
+    "keywords": {
+      "Salt": 117,
+      "elastic": 1,
+      "omise": 1,
+      "visa": 2
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/kitchen/miele-h-6200-bm-manual.pdf"
+  },
+  {
+    "filename": "comelit-app-user-manual.pdf",
+    "keywords": {
+      "omise": 2
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/intercom/comelit-app-user-manual.pdf"
+  },
+  {
+    "filename": "8-1-4-2-nuaire-mrxbox-eco2-manual.pdf",
+    "keywords": {
+      "airlock": 1,
+      "visa": 1
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/pdfs/8-1-4-2-nuaire-mrxbox-eco2-manual.pdf"
+  },
+  {
+    "filename": "8-1-4-4-nuaire-mrxbox-eco4-manual.pdf",
+    "keywords": {
+      "airlock": 1,
+      "visa": 1
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/pdfs/8-1-4-4-nuaire-mrxbox-eco4-manual.pdf"
+  },
+  {
+    "filename": "u5a-siemens-wk14d541gb-manual.pdf",
+    "keywords": {
+      "omise": 1,
+      "valve": 1,
+      "visa": 1
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/pdfs/u5a-siemens-wk14d541gb-manual.pdf"
+  },
+  {
+    "filename": "u5b-lg-fwj685wn-manual.pdf",
+    "keywords": {
+      "google": 1
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/kitchen/u5b-lg-fwj685wn-manual.pdf"
+  },
+  {
+    "filename": "u5b-lg-fwj685wn-manual.pdf",
+    "keywords": {
+      "google": 1
+    },
+    "url": "https://bpsstorage.blob.core.windows.net/public/apartment-guide-images/pdfs/u5b-lg-fwj685wn-manual.pdf"
+  },
+  {
+    "filename": "The Manual of Photography, Tent - Elizabeth Allen.pdf",
+    "keywords": {
+      "Ercom": 14,
+      "Salt": 18,
+      "chromium": 2,
+      "deriv": 121,
+      "lyst": 4,
+      "omise": 8,
+      "qualcomm": 1,
+      "ripple": 4,
+      "roche": 3,
+      "stripe": 10,
+      "visa": 7
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Elizabeth Allen/The Manual of Photography, Tenth Ed (3575)/The Manual of Photography, Tent - Elizabeth Allen.pdf"
+  },
+  {
+    "filename": "IBM100677_manual.pdf",
+    "keywords": {
+      "visa": 2
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/IBM100677/IBM100677_manual.pdf"
+  },
+  {
+    "filename": "The Hasselblad Manual, Seventh  - Ernst Wildi.pdf",
+    "keywords": {
+      "3cx": 6,
+      "cobalt": 1,
+      "google": 2,
+      "omise": 8
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Ernst Wildi/The Hasselblad Manual, Seventh Edit (2608)/The Hasselblad Manual, Seventh  - Ernst Wildi.pdf"
+  },
+  {
+    "filename": "IMF100389_manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/IMF100389/IMF100389_manual.pdf"
+  },
+  {
+    "filename": "IMF100375_manual.pdf",
+    "keywords": {
+      "uber": 1,
+      "valve": 2
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/IMF100375/IMF100375_manual.pdf"
+  },
+  {
+    "filename": "ITL102384_manual.pdf",
+    "keywords": {
+      "roche": 2
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/ITL102384/ITL102384_manual.pdf"
+  },
+  {
+    "filename": "ITL102384_manual_datasheet.pdf",
+    "keywords": {
+      "roche": 2
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/ITL102384/ITL102384_manual_datasheet.pdf"
+  },
+  {
+    "filename": "ITL103120_manual.pdf",
+    "keywords": {
+      "slack": 20
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/ITL103120/ITL103120_manual.pdf"
+  },
+  {
+    "filename": "TCC100003_manual.pdf",
+    "keywords": {
+      "slack": 20
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TCC100003/TCC100003_manual.pdf"
+  },
+  {
+    "filename": "TCC100482_manual.pdf",
+    "keywords": {
+      "slack": 20
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TCC100482/TCC100482_manual.pdf"
+  },
+  {
+    "filename": "TCC100005_manual.pdf",
+    "keywords": {
+      "slack": 20
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TCC100005/TCC100005_manual.pdf"
+  },
+  {
+    "filename": "TCC100483_manual.pdf",
+    "keywords": {
+      "slack": 20
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TCC100483/TCC100483_manual.pdf"
+  },
+  {
+    "filename": "TCC100484_manual.pdf",
+    "keywords": {
+      "slack": 20
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TCC100484/TCC100484_manual.pdf"
+  },
+  {
+    "filename": "TCC100485_manual.pdf",
+    "keywords": {
+      "slack": 20
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TCC100485/TCC100485_manual.pdf"
+  },
+  {
+    "filename": "TCC100490_manual.pdf",
+    "keywords": {
+      "slack": 20
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TCC100490/TCC100490_manual.pdf"
+  },
+  {
+    "filename": "TCL100846_manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TCL100846/TCL100846_manual.pdf"
+  },
+  {
+    "filename": "A Manual of Photographic Chemis - Hardwich T. Frederick.pdf",
+    "keywords": {
+      "Ercom": 14,
+      "Salt": 507,
+      "Sovereign": 2,
+      "chromium": 11,
+      "cobalt": 1,
+      "deriv": 23,
+      "elastic": 1,
+      "lyst": 1,
+      "omise": 2,
+      "riot": 1,
+      "uber": 1,
+      "visa": 22
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Hardwich T. Frederick/A Manual of Photographic Chemistry, (3574)/A Manual of Photographic Chemis - Hardwich T. Frederick.pdf"
+  },
+  {
+    "filename": "TPP100158_manual.pdf",
+    "keywords": {
+      "uber": 8,
+      "valve": 1
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TPP100158/TPP100158_manual.pdf"
+  },
+  {
+    "filename": "TPP100012_manual.pdf",
+    "keywords": {
+      "uber": 2,
+      "valve": 2
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TPP100012/TPP100012_manual.pdf"
+  },
+  {
+    "filename": "TPP100159_manual.pdf",
+    "keywords": {
+      "uber": 8,
+      "valve": 1
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TPP100159/TPP100159_manual.pdf"
+  },
+  {
+    "filename": "TPP100160_manual.pdf",
+    "keywords": {
+      "uber": 8,
+      "valve": 1
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TPP100160/TPP100160_manual.pdf"
+  },
+  {
+    "filename": "TPP100846_manual.pdf",
+    "keywords": {
+      "uber": 8,
+      "valve": 1
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TPP100846/TPP100846_manual.pdf"
+  },
+  {
+    "filename": "TPP100790_manual.pdf",
+    "keywords": {
+      "uber": 1,
+      "valve": 1
+    },
+    "url": "https://webshop.s3.amazonaws.com/data/amadys/downloads/TPP100790/TPP100790_manual.pdf"
+  },
+  {
+    "filename": "Nikon SnapBridge Manual - Nikon Corporation.pdf",
+    "keywords": {
+      "google": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Nikon Corporation/Nikon SnapBridge Manual (6658)/Nikon SnapBridge Manual - Nikon Corporation.pdf"
+  },
+  {
+    "filename": "Nikon D610 Manual - Nikon Corporation.pdf",
+    "keywords": {
+      "Salt": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Nikon Corporation/Nikon D610 Manual (6626)/Nikon D610 Manual - Nikon Corporation.pdf"
+  },
+  {
+    "filename": "Nikon D600 Manual - Nikon Corporation.pdf",
+    "keywords": {
+      "Salt": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Nikon Corporation/Nikon D600 Manual (1377)/Nikon D600 Manual - Nikon Corporation.pdf"
+  },
+  {
+    "filename": "Nikon D7200 Manual - Nikon Corporation.pdf",
+    "keywords": {
+      "Salt": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Nikon Corporation/Nikon D7200 Manual (6657)/Nikon D7200 Manual - Nikon Corporation.pdf"
+  },
+  {
+    "filename": "Nikon Z7 _ Z6 Manual - Nikon Corporation.pdf",
+    "keywords": {
+      "Salt": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Nikon Corporation/Nikon Z7 _ Z6 Manual (6735)/Nikon Z7 _ Z6 Manual - Nikon Corporation.pdf"
+  },
+  {
+    "filename": "Manual de Nutricao - Sociedade Brasileira de Diabete.pdf",
+    "keywords": {
+      "deriv": 1,
+      "visa": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Sociedade Brasileira de Diabetes/Manual de Nutricao (6547)/Manual de Nutricao - Sociedade Brasileira de Diabete.pdf"
+  },
+  {
+    "filename": "The Manual of Photography_ Phot - R. E. Jacobson.pdf",
+    "keywords": {
+      "Ercom": 12,
+      "Salt": 42,
+      "chromium": 5,
+      "deriv": 87,
+      "lyst": 5,
+      "magic": 3,
+      "omise": 12,
+      "ripple": 3,
+      "roche": 3,
+      "stripe": 1,
+      "visa": 6
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/R. E. Jacobson/The Manual of Photography_ Photogra (3576)/The Manual of Photography_ Phot - R. E. Jacobson.pdf"
+  },
+  {
+    "filename": "Nikon D80 Manual - Nikon Corporation.pdf",
+    "keywords": {
+      "Salt": 2
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Nikon Corporation/Nikon D80 Manual (6511)/Nikon D80 Manual - Nikon Corporation.pdf"
+  },
+  {
+    "filename": "Holga Manual - Unknown.pdf",
+    "keywords": {
+      "deriv": 1,
+      "slack": 1,
+      "uber": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Unknown/Holga Manual (2717)/Holga Manual - Unknown.pdf"
+  },
+  {
+    "filename": "Nikon D7500 Manual - Nikon Corporation.pdf",
+    "keywords": {
+      "Salt": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Nikon Corporation/Nikon D7500 Manual (6660)/Nikon D7500 Manual - Nikon Corporation.pdf"
+  },
+  {
+    "filename": "Instructor Manual_ Introduction - Unknown.pdf",
+    "keywords": {
+      "etsy": 1,
+      "omise": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/Unknown/Instructor Manual_ Introduction to  (2970)/Instructor Manual_ Introduction - Unknown.pdf"
+  },
+  {
+    "filename": "The Manual of Photography, Tent - Elizabeth Allen.pdf",
+    "keywords": {
+      "Ercom": 14,
+      "Salt": 18,
+      "chromium": 2,
+      "deriv": 121,
+      "lyst": 4,
+      "omise": 8,
+      "qualcomm": 1,
+      "ripple": 4,
+      "roche": 3,
+      "stripe": 10,
+      "visa": 7
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/_gsdata_/_saved_/Elizabeth Allen/The Manual of Photography, Tenth Ed (3575)/The Manual of Photography, Tent - Elizabeth Allen.pdf"
+  },
+  {
+    "filename": "Advanced_SmartList_User_Manual_2013.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/Advanced_SmartList/GP2013/User_Manual/Advanced_SmartList_User_Manual_2013.pdf"
+  },
+  {
+    "filename": "Auto_Rec_User_Manual_GP2013.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/Bank_Reconciliation/GP2013/User_Manual/Auto_Reconciler/Auto_Rec_User_Manual_GP2013.pdf"
+  },
+  {
+    "filename": "The Hasselblad Manual, Seventh  - Ernst Wildi.pdf",
+    "keywords": {
+      "3cx": 6,
+      "cobalt": 1,
+      "google": 2,
+      "omise": 8
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/_gsdata_/_saved_/Ernst Wildi/The Hasselblad Manual, Seventh Edit (2608)/The Hasselblad Manual, Seventh  - Ernst Wildi.pdf"
+  },
+  {
+    "filename": "Account_Rec_User_Manual_GP2013.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/Bank_Reconciliation/GP2013/User_Manual/Account_Reconciler/Account_Rec_User_Manual_GP2013.pdf"
+  },
+  {
+    "filename": "Project_Tracking_User_Manual_GP2013.pdf",
+    "keywords": {
+      "Ercom": 5,
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/Project_Tracking/GP2013/User_Manual/Project_Tracking_User_Manual_GP2013.pdf"
+  },
+  {
+    "filename": "A Manual of Photographic Chemis - Hardwich T. Frederick.pdf",
+    "keywords": {
+      "Ercom": 14,
+      "Salt": 507,
+      "Sovereign": 2,
+      "chromium": 11,
+      "cobalt": 1,
+      "deriv": 23,
+      "elastic": 1,
+      "lyst": 1,
+      "omise": 2,
+      "riot": 1,
+      "uber": 1,
+      "visa": 22
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/_gsdata_/_saved_/Hardwich T. Frederick/A Manual of Photographic Chemistry, (3574)/A Manual of Photographic Chemis - Hardwich T. Frederick.pdf"
+  },
+  {
+    "filename": "Subscription_Billing_User_Manual_GP2013.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/Subscription_Billing/GP2013/User_Manual/Subscription_Billing_Manual/Subscription_Billing_User_Manual_GP2013.pdf"
+  },
+  {
+    "filename": "ePayStub_User_Manual_GP2016.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/ePayStub/GP18.2/User_Manual/ePayStub_User_Manual_GP2016.pdf"
+  },
+  {
+    "filename": "ePayStub_User_Manual_GP2015.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/ePayStub/GP2015/User_Manual/ePayStub_User_Manual_GP2015.pdf"
+  },
+  {
+    "filename": "ePayStub_User_Manual_GP2016.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/ePayStub/GP18.3/User_Manual/ePayStub_User_Manual_GP2016.pdf"
+  },
+  {
+    "filename": "Tax_Distribution_User_Manual_GP2013.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/Tax_Distribution/GP2013/User_Manual/Tax_Distribution_User_Manual_GP2013.pdf"
+  },
+  {
+    "filename": "ePayStub_User_Manual_GP2016.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/ePayStub/GP2018/User_Manual/ePayStub_User_Manual_GP2016.pdf"
+  },
+  {
+    "filename": "ePayStub_User_Manual_GP2016.pdf",
+    "keywords": {
+      "deriv": 1
+    },
+    "url": "https://encoreproducts.blob.core.windows.net/encoreproducts/ePayStub/GP2016/User_Manual/ePayStub_User_Manual_GP2016.pdf"
+  },
+  {
+    "filename": "SF_manual_1.1.pdf",
+    "keywords": {
+      "visa": 4
+    },
+    "url": "https://ppstorage.s3.amazonaws.com/storage/proof/2373/SF_manual_1.1.pdf"
+  },
+  {
+    "filename": "Holga Manual - Unknown.pdf",
+    "keywords": {
+      "deriv": 1,
+      "slack": 1,
+      "uber": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/_gsdata_/_saved_/Unknown/Holga Manual (2717)/Holga Manual - Unknown.pdf"
+  },
+  {
+    "filename": "D600 Manual - Nikon Corporation.pdf",
+    "keywords": {
+      "Salt": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/_gsdata_/_saved_/Nikon Corporation/D600 Manual (1377)/D600 Manual - Nikon Corporation.pdf"
+  },
+  {
+    "filename": "The Manual of Photography_ Phot - R. E. Jacobson.pdf",
+    "keywords": {
+      "Ercom": 12,
+      "Salt": 42,
+      "chromium": 5,
+      "deriv": 87,
+      "lyst": 5,
+      "magic": 3,
+      "omise": 12,
+      "ripple": 3,
+      "roche": 3,
+      "stripe": 1,
+      "visa": 6
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/_gsdata_/_saved_/R. E. Jacobson/The Manual of Photography_ Photogra (3576)/The Manual of Photography_ Phot - R. E. Jacobson.pdf"
+  },
+  {
+    "filename": "Instructor Manual_ Introduction - Unknown.pdf",
+    "keywords": {
+      "etsy": 1,
+      "omise": 1
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/_gsdata_/_saved_/Unknown/Instructor Manual_ Introduction to  (2970)/Instructor Manual_ Introduction - Unknown.pdf"
+  },
+  {
+    "filename": "22-23 BKL Directors Manual Appendix.pdf",
+    "keywords": {
+      "youtube": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/BKL/22-23 BKL Directors Manual Appendix.pdf"
+  },
+  {
+    "filename": "BSC_Director Manual PDF.pdf",
+    "keywords": {
+      "brave": 1,
+      "omise": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/Camps/BSC/BSC_Director Manual PDF.pdf"
+  },
+  {
+    "filename": "22-23 VBO_Director Manual.pdf",
+    "keywords": {
+      "magic": 1,
+      "omise": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/Clinics/22-23 VBO_Director Manual.pdf"
+  },
+  {
+    "filename": "22-23 BKO_Director Manual.pdf",
+    "keywords": {
+      "magic": 1,
+      "omise": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/Clinics/BKO/22-23 BKO_Director Manual.pdf"
+  },
+  {
+    "filename": "22-23 SOL Directors Manual Appendix.pdf",
+    "keywords": {
+      "youtube": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/SOL/22-23 SOL Directors Manual Appendix.pdf"
+  },
+  {
+    "filename": "BSO_Director Manual_Complete.pdf",
+    "keywords": {
+      "magic": 1,
+      "omise": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/Clinics/BSO/BSO_Director Manual_Complete.pdf"
+  },
+  {
+    "filename": "22-23 CHO_Director Manual.pdf",
+    "keywords": {
+      "magic": 1,
+      "omise": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/Clinics/CHO/22-23 CHO_Director Manual.pdf"
+  },
+  {
+    "filename": "22-23 VBL Directors Manual Appendix.pdf",
+    "keywords": {
+      "youtube": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/VBL/22-23 VBL Directors Manual Appendix.pdf"
+  },
+  {
+    "filename": "22-23 FBO_Director Manual.pdf",
+    "keywords": {
+      "magic": 1,
+      "omise": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/Clinics/FBO/22-23 FBO_Director Manual.pdf"
+  },
+  {
+    "filename": "22-23 FBL Directors Manual Appendix.pdf",
+    "keywords": {
+      "youtube": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/FBL/22-23 FBL Directors Manual Appendix.pdf"
+  },
+  {
+    "filename": "22-23 SOO_Director Manual.pdf",
+    "keywords": {
+      "magic": 1,
+      "omise": 1
+    },
+    "url": "https://upwardresources.blob.core.windows.net/media/Default/Volunteers/22-23/Clinics/SOO/22-23 SOO_Director Manual.pdf"
+  },
+  {
+    "filename": "Fujitsu_ARTA45LATN_Operating_Manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Fujitsu_ARTA45LATN_Operating_Manual.pdf"
+  },
+  {
+    "filename": "Fujitsu_ABTA30LBT_Operating_Manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Fujitsu_ABTA30LBT_Operating_Manual.pdf"
+  },
+  {
+    "filename": "Fujitsu_ABTG54LTRA_Operating_Manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Fujitsu_ABTG54LTRA_Operating_Manual.pdf"
+  },
+  {
+    "filename": "Fujitsu_ARTG36LHTB_Operating_Manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Fujitsu_ARTG36LHTB_Operating_Manual.pdf"
+  },
+  {
+    "filename": "Fujitsu_ART90TLA3_Operating_Manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Fujitsu_ART90TLA3_Operating_Manual.pdf"
+  },
+  {
+    "filename": "Fujitsu_ARTG18LLTA_Operating_Manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Fujitsu_ARTG18LLTA_Operating_Manual.pdf"
+  },
+  {
+    "filename": "Mitsubishi_MUX_A22WV_Service_Manual_(OB318A).pdf",
+    "keywords": {
+      "mux": 40,
+      "valve": 18
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Mitsubishi_MUX_A22WV_Service_Manual_(OB318A).pdf"
+  },
+  {
+    "filename": "Fujitus_ARTG30LHTA_Operating_Manual.pdf",
+    "keywords": {
+      "Salt": 1,
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Fujitus_ARTG30LHTA_Operating_Manual.pdf"
+  },
+  {
+    "filename": "Mitsubishi_MXZ_A26_32WV_Installation_Manual_(SG79Y266H01).pdf",
+    "keywords": {
+      "Salt": 1,
+      "valve": 23,
+      "visa": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Mitsubishi_MXZ_A26_32WV_Installation_Manual_(SG79Y266H01).pdf"
+  },
+  {
+    "filename": "Fujitus_ABTG18LUTA_Operating_Manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Fujitus_ABTG18LUTA_Operating_Manual.pdf"
+  },
+  {
+    "filename": "Mitsubishi_MXZ_18TV_Service_Manual_(OB280).pdf",
+    "keywords": {
+      "valve": 23
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Mitsubishi_MXZ_18TV_Service_Manual_(OB280).pdf"
+  },
+  {
+    "filename": "Mitsubishi_MCF_C13_24UV_Installation_Manual_(VN79A057H01).pdf",
+    "keywords": {
+      "Salt": 1,
+      "valve": 2,
+      "visa": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Mitsubishi_MCF_C13_24UV_Installation_Manual_(VN79A057H01).pdf"
+  },
+  {
+    "filename": "Mitsubishi_MXZ_A18WV_Installation_Manual_(SG79Y048H01).pdf",
+    "keywords": {
+      "Salt": 1,
+      "valve": 4,
+      "visa": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Mitsubishi_MXZ_A18WV_Installation_Manual_(SG79Y048H01).pdf"
+  },
+  {
+    "filename": "Mitsubishi_PCA_P3-5_Installation_Manual_(BG79S920H01).pdf",
+    "keywords": {
+      "Toom": 3,
+      "roche": 1,
+      "uber": 39,
+      "valve": 2,
+      "visa": 7,
+      "zte": 3
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Mitsubishi_PCA_P3-5_Installation_Manual_(BG79S920H01).pdf"
+  },
+  {
+    "filename": "Mitsubishi_PLFY_P80_125VAM_Service_Manual_(OC213).pdf",
+    "keywords": {
+      "valve": 35
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Mitsubishi_PLFY_P80_125VAM_Service_Manual_(OC213).pdf"
+  },
+  {
+    "filename": "Trend_Manual.pdf",
+    "keywords": {
+      "deriv": 3,
+      "eero": 2,
+      "omise": 1,
+      "valve": 6
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Trend_Manual.pdf"
+  },
+  {
+    "filename": "Mitsubishi_PUHY_P200_250YREM_A_Installation_Manual_(WT04259X01).pdf",
+    "keywords": {
+      "roche": 1,
+      "uber": 43,
+      "zte": 8
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Mitsubishi_PUHY_P200_250YREM_A_Installation_Manual_(WT04259X01).pdf"
+  },
+  {
+    "filename": "Trend_Manual .pdf",
+    "keywords": {
+      "deriv": 3,
+      "eero": 2,
+      "omise": 1,
+      "valve": 6
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Trend_Manual .pdf"
+  },
+  {
+    "filename": "Mitsubishi_PMH_P1.6_2BA_Installation_Manual_(BG79S115H01).pdf",
+    "keywords": {
+      "Toom": 3,
+      "roche": 4,
+      "uber": 41,
+      "valve": 2,
+      "zte": 3
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Mitsubishi_PMH_P1.6_2BA_Installation_Manual_(BG79S115H01).pdf"
+  },
+  {
+    "filename": "Toshiba__High_Wall_Manual.pdf",
+    "keywords": {
+      "Salt": 1,
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Toshiba__High_Wall_Manual.pdf"
+  },
+  {
+    "filename": "fUJITSU_AUT30UUAR_AOT30UNBWL_Operating_Manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/fUJITSU_AUT30UUAR_AOT30UNBWL_Operating_Manual.pdf"
+  },
+  {
+    "filename": "fujitsu_AUTG54LRLA_Operating_Manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/fujitsu_AUTG54LRLA_Operating_Manual.pdf"
+  },
+  {
+    "filename": "Toshia_High_Static_Ducted_Manual.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Toshia_High_Static_Ducted_Manual.pdf"
+  },
+  {
+    "filename": "Person Centered Planning Training Manual 16-17 (PDF).pdf",
+    "keywords": {
+      "magic": 1
+    },
+    "url": "https://gowise.blob.core.windows.net/media/Default/Documents/Person Centered Planning Training Manual 16-17 (PDF).pdf"
+  },
+  {
+    "filename": "FINAL Oregon Employment First Training Course Manual.pdf",
+    "keywords": {
+      "lyst": 1
+    },
+    "url": "https://gowise.blob.core.windows.net/media/Default/Documents/FINAL Oregon Employment First Training Course Manual.pdf"
+  },
+  {
+    "filename": "5 - Oregon Employment First Training Course Descriptions Manual.pdf",
+    "keywords": {
+      "lyst": 1
+    },
+    "url": "https://gowise.blob.core.windows.net/media/Default/Documents/Robyn Pack 21/5 - Oregon Employment First Training Course Descriptions Manual.pdf"
+  },
+  {
+    "filename": "Person Centered Planning Training Manual 16-17.pdf",
+    "keywords": {
+      "magic": 1
+    },
+    "url": "https://gowise.blob.core.windows.net/media/Default/Documents/Person Centered Planning Training Manual 16-17.pdf"
+  },
+  {
+    "filename": "Oregon Employment First Training Course Descriptions Manual.pdf",
+    "keywords": {
+      "lyst": 1
+    },
+    "url": "https://gowise.blob.core.windows.net/media/Default/Documents/Robyn Pack 2/Robyn Pack 2/Oregon Employment First Training Course Descriptions Manual.pdf"
+  },
+  {
+    "filename": "2024-02-01T12:31:31.978834-Vantrue N4 User Manual.pdf",
+    "keywords": {
+      "amazon": 3,
+      "koho": 1,
+      "roche": 1,
+      "temu": 1
+    },
+    "url": "https://bagel.sfo2.digitaloceanspaces.com/bagel.factory.bucket/auctentic/2024-02-01T12:31:31.978834-Vantrue N4 User Manual.pdf"
+  },
+  {
+    "filename": "Mitsubishi_MS_A30WV_Installation_Manual_(SG79Y324H01).pdf",
+    "keywords": {
+      "Salt": 5,
+      "Toom": 1,
+      "lyft": 1,
+      "pleo": 1,
+      "roche": 8,
+      "uber": 71,
+      "valve": 24,
+      "visa": 6
+    },
+    "url": "https://energydoctorresources.blob.core.windows.net/resources/Mitsubishi_MS_A30WV_Installation_Manual_(SG79Y324H01).pdf"
+  },
+  {
+    "filename": "10-AgileWeb_060818_manual_72ppi-1-1.pdf",
+    "keywords": {
+      "google": 25
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10-AgileWeb_060818_manual_72ppi-1-1.pdf"
+  },
+  {
+    "filename": "sec-3000-instruction-manual.pdf",
+    "keywords": {
+      "roche": 3
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/100192/download/977595/sec-3000-instruction-manual.pdf"
+  },
+  {
+    "filename": "Manual_R40Li_Dutch.pdf",
+    "keywords": {
+      "ATG": 1,
+      "Okto": 1,
+      "Toom": 4
+    },
+    "url": "https://dealerstorage.blob.core.windows.net/files/Gardena/FAQ/robotic/NL/Manual_R40Li_Dutch.pdf"
+  },
+  {
+    "filename": "1-RC31-manual.pdf",
+    "keywords": {
+      "valve": 2
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/1-RC31-manual.pdf"
+  },
+  {
+    "filename": "gardenacom_manual_2014_final.pdf",
+    "keywords": {
+      "flickr": 1,
+      "google": 9
+    },
+    "url": "https://dealerstorage.blob.core.windows.net/files/Gardena/ss/manuals/gardenacom_manual_2014_final.pdf"
+  },
+  {
+    "filename": "Manual_R40Li_French.pdf",
+    "keywords": {
+      "roche": 6
+    },
+    "url": "https://dealerstorage.blob.core.windows.net/files/Gardena/FAQ/robotic/FR/Manual_R40Li_French.pdf"
+  },
+  {
+    "filename": "cn-cx-manual-052208.pdf",
+    "keywords": {
+      "roche": 4
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/100192/download/977618/cn-cx-manual-052208.pdf"
+  },
+  {
+    "filename": "gardenacom_manual_v1_2.pdf",
+    "keywords": {
+      "flickr": 1,
+      "google": 9
+    },
+    "url": "https://dealerstorage.blob.core.windows.net/files/Gardena/ss/manuals/gardenacom_manual_v1_2.pdf"
+  },
+  {
+    "filename": "wca-manual-v5-user-guide.pdf",
+    "keywords": {
+      "visa": 1
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/100192/download/977759/wca-manual-v5-user-guide.pdf"
+  },
+  {
+    "filename": "amc-base-manual-k457-2.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/100192/download/977620/amc-base-manual-k457-2.pdf"
+  },
+  {
+    "filename": "hgm300-rdm800-mini-manual-0.pdf",
+    "keywords": {
+      "valve": 1
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/100192/download/977663/hgm300-rdm800-mini-manual-0.pdf"
+  },
+  {
+    "filename": "hgm-rd-instruction-manual.pdf",
+    "keywords": {
+      "omise": 1,
+      "valve": 2
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/100192/download/977665/hgm-rd-instruction-manual.pdf"
+  },
+  {
+    "filename": "Gardena_CVI_Manual_24_june_2015.pdf",
+    "keywords": {
+      "Ercom": 3,
+      "uber": 1
+    },
+    "url": "https://dealerstorage.blob.core.windows.net/files/Gardena/ss/manuals/Gardena_CVI_Manual_24_june_2015.pdf"
+  },
+  {
+    "filename": "biozone-scientific-icezone-x-owners-manual.pdf",
+    "keywords": {
+      "uber": 3
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/100258/download/978293/biozone-scientific-icezone-x-owners-manual.pdf"
+  },
+  {
+    "filename": "hgm-mz-manual.pdf",
+    "keywords": {
+      "omise": 1,
+      "valve": 1,
+      "visa": 1
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/100192/download/977666/hgm-mz-manual.pdf"
+  },
+  {
+    "filename": "EC9843-Operation-Manual.pdf",
+    "keywords": {
+      "cobalt": 1,
+      "deriv": 1,
+      "stripe": 3,
+      "valve": 73,
+      "visa": 1
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510006/EC9843-Operation-Manual.pdf"
+  },
+  {
+    "filename": "EC9811-Operation-Manual-Rev-B.pdf",
+    "keywords": {
+      "Ercom": 2,
+      "deriv": 2,
+      "lyst": 1,
+      "stripe": 3,
+      "valve": 53,
+      "visa": 1
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/509989/EC9811-Operation-Manual-Rev-B.pdf"
+  },
+  {
+    "filename": "EC9820-Service-Manual.pdf",
+    "keywords": {
+      "deriv": 2,
+      "valve": 30
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510003/EC9820-Service-Manual.pdf"
+  },
+  {
+    "filename": "EC9810-Operation-Manual.pdf",
+    "keywords": {
+      "Ercom": 2,
+      "deriv": 2,
+      "lyst": 1,
+      "stripe": 3,
+      "valve": 63,
+      "visa": 2
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510052/EC9810-Operation-Manual.pdf"
+  },
+  {
+    "filename": "EC9850-Operation-Manual.pdf",
+    "keywords": {
+      "deriv": 1,
+      "stripe": 3,
+      "valve": 65,
+      "visa": 2
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510071/EC9850-Operation-Manual.pdf"
+  },
+  {
+    "filename": "EC9841-Operation-Manual-.pdf",
+    "keywords": {
+      "cobalt": 1,
+      "deriv": 1,
+      "stripe": 3,
+      "valve": 77,
+      "visa": 1
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510067/EC9841-Operation-Manual-.pdf"
+  },
+  {
+    "filename": "Aurora-2000-User-Manual.pdf",
+    "keywords": {
+      "Salt": 1,
+      "valve": 14
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510243/Aurora-2000-User-Manual.pdf"
+  },
+  {
+    "filename": "EC9832-Operational-Manual.pdf",
+    "keywords": {
+      "deriv": 1,
+      "lyst": 1,
+      "stripe": 3,
+      "valve": 63,
+      "visa": 1
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510297/EC9832-Operational-Manual.pdf"
+  },
+  {
+    "filename": "EC9820-Operation-Manual.pdf",
+    "keywords": {
+      "deriv": 1,
+      "stripe": 3,
+      "valve": 62,
+      "visa": 1
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510004/EC9820-Operation-Manual.pdf"
+  },
+  {
+    "filename": "EC9841AS-Service-Manual.pdf",
+    "keywords": {
+      "valve": 53
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510301/EC9841AS-Service-Manual.pdf"
+  },
+  {
+    "filename": "EC9841AS-Operation-Manual.pdf",
+    "keywords": {
+      "cobalt": 1,
+      "deriv": 1,
+      "stripe": 3,
+      "valve": 76,
+      "visa": 1
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510302/EC9841AS-Operation-Manual.pdf"
+  },
+  {
+    "filename": "M010044-Spirant-BAM-User-Manual-Rev-A-V1.pdf",
+    "keywords": {
+      "omise": 1,
+      "slack": 1,
+      "valve": 9
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/513013/M010044-Spirant-BAM-User-Manual-Rev-A-V1.pdf"
+  },
+  {
+    "filename": "EC9832-Service-Manual.pdf",
+    "keywords": {
+      "deriv": 2,
+      "valve": 47
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510296/EC9832-Service-Manual.pdf"
+  },
+  {
+    "filename": "M010047-ACS-1000-User-Manual-1.0.pdf",
+    "keywords": {
+      "kfc": 1,
+      "mux": 1,
+      "okg": 4
+    },
+    "url": "https://ee-files.s3.amazonaws.com/files/10048/download/510263/M010047-ACS-1000-User-Manual-1.0.pdf"
+  },
+  {
+    "filename": "WDPA_Manual_1_4_EN_FINAL.pdf",
+    "keywords": {
+      "lyst": 1
+    },
+    "url": "https://wdpa.s3.amazonaws.com/WDPA_Manual/English/WDPA_Manual_1_4_EN_FINAL.pdf"
+  },
+  {
+    "filename": "WDPA_Manual_1_5_ENG.pdf",
+    "keywords": {
+      "lyst": 1
+    },
+    "url": "https://wdpa.s3.amazonaws.com/WDPA_Manual/English/WDPA_Manual_1_5_ENG.pdf"
+  },
+  {
+    "filename": "WDPA_Manual_1.3_EN.pdf",
+    "keywords": {
+      "lyst": 1
+    },
+    "url": "https://wdpa.s3.amazonaws.com/WDPA_Manual/English/WDPA_Manual_1.3_EN.pdf"
+  },
+  {
+    "filename": "METT_4_Manual_ES.pdf",
+    "keywords": {
+      "uber": 2,
+      "visa": 1
+    },
+    "url": "https://wdpa.s3.amazonaws.com/PAME/METT/METT_4_Manual_ES.pdf"
+  },
+  {
+    "filename": "VIP-Coaching-Manual.pdf",
+    "keywords": {
+      "youtube": 1
+    },
+    "url": "https://elena.blob.core.windows.net/upload/vippackages/154-Page-Private-Manual-Workbooks/VIP-Coaching-Manual.pdf"
+  },
+  {
+    "filename": "OEM6-API-Manual-OM-20000140.pdf",
+    "keywords": {
+      "pleo": 1
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Manuals/OEM6-API-Manual-OM-20000140/OEM6-API-Manual-OM-20000140.pdf"
+  },
+  {
+    "filename": "InertialExplorer850_Manual.pdf",
+    "keywords": {
+      "deriv": 5,
+      "doppler": 3
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Waypoint/Downloads/InertialExplorer850_Manual/InertialExplorer850_Manual.pdf"
+  },
+  {
+    "filename": "InertialExplorer840_Manual.pdf",
+    "keywords": {
+      "deriv": 4,
+      "doppler": 1
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Waypoint/Downloads/InertialExplorer840_Manual/InertialExplorer840_Manual.pdf"
+  },
+  {
+    "filename": "OM-20000082-WAAS-GUS Type-1-Receiver-Manual.pdf",
+    "keywords": {
+      "deriv": 1,
+      "doppler": 8,
+      "visa": 1
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Manuals/WAAS-GUS-Type-1-Receiver/OM-20000082-WAAS-GUS Type-1-Receiver-Manual.pdf"
+  },
+  {
+    "filename": "OM-20000137-WAAS-G-III-Reference-Receiver-Manual.pdf",
+    "keywords": {
+      "doppler": 5,
+      "ripple": 1
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Manuals/OM-20000137-WAAS-G-III-Reference-Receiver-Rev1/OM-20000137-WAAS-G-III-Reference-Receiver-Manual.pdf"
+  },
+  {
+    "filename": "InertialExplorer860_Manual.pdf",
+    "keywords": {
+      "deriv": 10
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Waypoint/Downloads/InertialExplorer860_Manual/InertialExplorer860_Manual.pdf"
+  },
+  {
+    "filename": "NavNet840_Manual.pdf",
+    "keywords": {
+      "doppler": 24,
+      "google": 4
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Waypoint/Downloads/NavNet840_Manual/NavNet840_Manual.pdf"
+  },
+  {
+    "filename": "NavNet850_Manual.pdf",
+    "keywords": {
+      "Ercom": 1,
+      "deriv": 2,
+      "doppler": 25,
+      "google": 2
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Waypoint/Downloads/NavNet850_Manual/NavNet850_Manual.pdf"
+  },
+  {
+    "filename": "NavNet810_Manual.pdf",
+    "keywords": {
+      "deriv": 1,
+      "doppler": 30,
+      "google": 3
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Waypoint/Downloads/NavNet810_Manual/NavNet810_Manual.pdf"
+  },
+  {
+    "filename": "NavNet860_Manual.pdf",
+    "keywords": {
+      "deriv": 4,
+      "doppler": 46,
+      "google": 24,
+      "visa": 1
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Waypoint/Downloads/NavNet860_Manual/NavNet860_Manual.pdf"
+  },
+  {
+    "filename": "LD6-Operations-Manual-Version-105.pdf",
+    "keywords": {
+      "tide": 1
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Veripos/Manuals/LD6-Operations-Manual-Version-105.pdf"
+  },
+  {
+    "filename": "Premarital+Counseling+Manual+.pdf",
+    "keywords": {
+      "omise": 1
+    },
+    "url": "https://kadesh.blob.core.windows.net/static/Premarital+Counseling+Manual+.pdf"
+  },
+  {
+    "filename": "SCP710BMK2SET1_AHACCESS_Users_Manual_EN_DE.pdf",
+    "keywords": {
+      "uber": 2
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/AHACCESS/SCP710BMK2SET1/SCP710BMK2SET1_AHACCESS_Users_Manual_EN_DE.pdf"
+  },
+  {
+    "filename": "CLASZ300_Cameo_Users_Manual_DE_EN_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 4,
+      "roche": 9,
+      "temu": 4,
+      "uber": 1,
+      "zte": 6
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLASZ300/CLASZ300_Cameo_Users_Manual_DE_EN_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLCL200G2_CLI_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 2,
+      "roche": 5,
+      "temu": 5,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLCL200G2/CLCL200G2_CLI_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLAZORS2_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_07-2023.pdf",
+    "keywords": {
+      "Salt": 4,
+      "roche": 6,
+      "temu": 1,
+      "uber": 1,
+      "visa": 2,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLAZORS2/CLAZORS2_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_07-2023.pdf"
+  },
+  {
+    "filename": "CLDROPB1_CAMEO_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 1,
+      "temu": 5,
+      "uber": 2,
+      "zte": 20
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDROPB1/CLDROPB1_CAMEO_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLDROPB1WH_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 1,
+      "temu": 5,
+      "uber": 2,
+      "zte": 20
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDROPB1WH/CLDROPB1WH_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLDROPB4SET1_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 1,
+      "temu": 6,
+      "uber": 2,
+      "zte": 19
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDROPB4SET1/CLDROPB4SET1_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLDL50_CAMEO_user_manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "deriv": 14,
+      "temu": 1,
+      "uber": 1,
+      "visa": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDL50/CLDL50_CAMEO_user_manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLDROPB4_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 1,
+      "temu": 6,
+      "uber": 2,
+      "zte": 19
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDROPB4/CLDROPB4_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "manual.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 1,
+      "temu": 6,
+      "uber": 2,
+      "zte": 19
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDROPB4WH/manual.pdf"
+  },
+  {
+    "filename": "CLAZORW2_CAMEO_user_manual_EN_DE_FR_SP_PL_IT_REV02.pdf",
+    "keywords": {
+      "Salt": 3,
+      "miro": 4,
+      "roche": 6,
+      "uber": 1,
+      "zte": 2
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLAZORW2/CLAZORW2_CAMEO_user_manual_EN_DE_FR_SP_PL_IT_REV02.pdf"
+  },
+  {
+    "filename": "CLDROPB4SET2_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 1,
+      "temu": 6,
+      "uber": 2,
+      "zte": 19
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDROPB4SET2/CLDROPB4SET2_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLDROPB4WH_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 1,
+      "temu": 6,
+      "uber": 2,
+      "zte": 19
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDROPB4WH/CLDROPB4WH_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLDROPP4_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 3,
+      "roche": 6,
+      "six group": 1,
+      "temu": 6,
+      "uber": 2,
+      "zte": 12
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDROPP4/CLDROPP4_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLDROPB4WHSET1_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 1,
+      "temu": 6,
+      "uber": 2,
+      "zte": 19
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDROPB4WHSET1/CLDROPB4WHSET1_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLDL100_CAMEO_user_manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "deriv": 14,
+      "temu": 1,
+      "uber": 1,
+      "visa": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDL100/CLDL100_CAMEO_user_manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLAZORSP2_CAMEO_user_manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 8,
+      "roche": 6,
+      "uber": 2,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLAZORSP2/CLAZORSP2_CAMEO_user_manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLDROPB4WHSET2_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 1,
+      "temu": 6,
+      "uber": 2,
+      "zte": 19
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDROPB4WHSET2/CLDROPB4WHSET2_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLDS400_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_07-2023.pdf",
+    "keywords": {
+      "deriv": 1,
+      "roche": 1,
+      "temu": 1,
+      "tide": 14,
+      "uber": 1,
+      "visa": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDS400/CLDS400_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_07-2023.pdf"
+  },
+  {
+    "filename": "CLDS100_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_07-2023.pdf",
+    "keywords": {
+      "deriv": 1,
+      "roche": 1,
+      "temu": 1,
+      "tide": 14,
+      "uber": 1,
+      "visa": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDS100/CLDS100_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_07-2023.pdf"
+  },
+  {
+    "filename": "CLEW3_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_REV06.pdf",
+    "keywords": {
+      "Salt": 4,
+      "roche": 7,
+      "temu": 5,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLEW3/CLEW3_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_REV06.pdf"
+  },
+  {
+    "filename": "CLDS200_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_07-2023.pdf",
+    "keywords": {
+      "deriv": 1,
+      "roche": 1,
+      "temu": 1,
+      "tide": 14,
+      "uber": 1,
+      "visa": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDS200/CLDS200_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_07-2023.pdf"
+  },
+  {
+    "filename": "CLDS60_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_07-2023.pdf",
+    "keywords": {
+      "deriv": 1,
+      "roche": 1,
+      "temu": 1,
+      "tide": 14,
+      "uber": 1,
+      "visa": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLDS60/CLDS60_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_07-2023.pdf"
+  },
+  {
+    "filename": "CLF1T_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 3,
+      "roche": 13,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF1T/CLF1T_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF1D_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 3,
+      "roche": 13,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF1D/CLF1D_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2D_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 2,
+      "roche": 6,
+      "temu": 3,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2D/CLF2D_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2DIP_CAMEO_users_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "temu": 1,
+      "uber": 1,
+      "visa": 2,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2DIP/CLF2DIP_CAMEO_users_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "Harrisons Manual of Medicine, 1 - Dan L. Longo.pdf",
+    "keywords": {
+      "ATG": 31,
+      "Ercom": 67,
+      "MCN": 1,
+      "Maya": 6,
+      "Salt": 355,
+      "amazon": 8,
+      "avast": 9,
+      "barracuda": 1,
+      "brave": 5,
+      "bumble": 1,
+      "chime": 26,
+      "chromium": 18,
+      "cobalt": 12,
+      "crypto": 299,
+      "deriv": 726,
+      "discourse": 1,
+      "doppler": 132,
+      "elastic": 102,
+      "elisa": 98,
+      "etoro": 7,
+      "exodus": 2,
+      "hiro": 18,
+      "hypr": 2,
+      "lyst": 6,
+      "magic": 3,
+      "miro": 4,
+      "omise": 625,
+      "pleo": 82,
+      "redox": 17,
+      "riot": 2,
+      "roche": 124,
+      "sheer": 2,
+      "six group": 1,
+      "slack": 1,
+      "stripe": 5,
+      "tide": 1557,
+      "uber": 1128,
+      "valve": 945,
+      "visa": 70,
+      "yoti": 19
+    },
+    "url": "https://xiquinho.blob.core.windows.net/images/mybooks/_gsdata_/_saved_/Dan L. Longo/Harrisons Manual of Medicine, 18th  (6420)/Harrisons Manual of Medicine, 1 - Dan L. Longo.pdf"
+  },
+  {
+    "filename": "CLF2DPO_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 2,
+      "roche": 6,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2DPO/CLF2DPO_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF1FC_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 3,
+      "deriv": 1,
+      "roche": 8,
+      "temu": 3,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF1FC/CLF1FC_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2FC_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 3,
+      "deriv": 1,
+      "roche": 4,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2FC/CLF2FC_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2FC_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_before120_12-2021.pdf",
+    "keywords": {
+      "Salt": 4,
+      "deriv": 1,
+      "roche": 4,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2FC/CLF2FC_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_before120_12-2021.pdf"
+  },
+  {
+    "filename": "CLF2FC_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_after120_12-2021.pdf",
+    "keywords": {
+      "Salt": 4,
+      "deriv": 1,
+      "roche": 4,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2FC/CLF2FC_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_after120_12-2021.pdf"
+  },
+  {
+    "filename": "CLF4D_CAMEO_Users_Manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 2,
+      "roche": 6,
+      "temu": 2,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF4D/CLF4D_CAMEO_Users_Manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLEW7_Cameo_user_manual_EN_DE_FR_ES_PL_IT_REV05_06-2023.pdf",
+    "keywords": {
+      "Salt": 4,
+      "roche": 9,
+      "temu": 5,
+      "uber": 1,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLEW7/CLEW7_Cameo_user_manual_EN_DE_FR_ES_PL_IT_REV05_06-2023.pdf"
+  },
+  {
+    "filename": "CLEW7IP_CAMEO_user_manual_09-2023.pdf",
+    "keywords": {
+      "Salt": 4,
+      "roche": 5,
+      "temu": 1,
+      "uber": 2,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLEW7IP/CLEW7IP_CAMEO_user_manual_09-2023.pdf"
+  },
+  {
+    "filename": "CLF2FCIP_CAMEO_users_manual_EN_DE_FR_ES_PL_IT_06-2023.pdf",
+    "keywords": {
+      "Salt": 1,
+      "temu": 2,
+      "uber": 1,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2FCIP/CLF2FCIP_CAMEO_users_manual_EN_DE_FR_ES_PL_IT_06-2023.pdf"
+  },
+  {
+    "filename": "CLF2T_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 2,
+      "roche": 6,
+      "temu": 3,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2T/CLF2T_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2FCPO_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 3,
+      "deriv": 1,
+      "roche": 4,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2FCPO/CLF2FCPO_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2FCPO_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_before120_12-2021.pdf",
+    "keywords": {
+      "Salt": 4,
+      "deriv": 1,
+      "roche": 4,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2FCPO/CLF2FCPO_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_before120_12-2021.pdf"
+  },
+  {
+    "filename": "CLF2FCPO_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_after120_12-2021.pdf",
+    "keywords": {
+      "Salt": 4,
+      "deriv": 1,
+      "roche": 4,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2FCPO/CLF2FCPO_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_after120_12-2021.pdf"
+  },
+  {
+    "filename": "CLF2TIP_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 2,
+      "roche": 6,
+      "temu": 3,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2TIP/CLF2TIP_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2TPO_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 2,
+      "roche": 6,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2TPO/CLF2TPO_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF4D_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 2,
+      "roche": 6,
+      "temu": 2,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF4D/CLF4D_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLF4FC_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_after120_12-2021.pdf",
+    "keywords": {
+      "Salt": 4,
+      "deriv": 1,
+      "roche": 4,
+      "temu": 3,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF4FC/CLF4FC_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_after120_12-2021.pdf"
+  },
+  {
+    "filename": "CLF4T_CAMEO_Users_Manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 2,
+      "roche": 6,
+      "temu": 2,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF4T/CLF4T_CAMEO_Users_Manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2FCPLUS_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_04-2024.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 4,
+      "uber": 1,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2FCPLUS/CLF2FCPLUS_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_04-2024.pdf"
+  },
+  {
+    "filename": "CLF4DPOIP_CAMEO_Users_Manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 6,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF4DPOIP/CLF4DPOIP_CAMEO_Users_Manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF4DPOIP_CLI_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 6,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF4DPOIP/CLF4DPOIP_CLI_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLF4TPOIP_CAMEO_Users_Manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 1,
+      "roche": 6,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF4TPOIP/CLF4TPOIP_CAMEO_Users_Manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF4FC_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_before120_12-2021.pdf",
+    "keywords": {
+      "Salt": 4,
+      "deriv": 1,
+      "roche": 4,
+      "temu": 3,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF4FC/CLF4FC_Cameo_Users_Manual_EN_DE_ES_FR_PL_IT_before120_12-2021.pdf"
+  },
+  {
+    "filename": "CLF4FCPOIP_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Salt": 2,
+      "deriv": 1,
+      "roche": 6,
+      "temu": 4,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF4FCPOIP/CLF4FCPOIP_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLG4TWWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf",
+    "keywords": {
+      "deriv": 1,
+      "roche": 1,
+      "temu": 1,
+      "uber": 1,
+      "zte": 2
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLG4TWWH/CLG4TWWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf"
+  },
+  {
+    "filename": "CLH1D_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf",
+    "keywords": {
+      "Salt": 2,
+      "deriv": 1,
+      "temu": 4,
+      "uber": 1,
+      "visa": 2,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH1D/CLH1D_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf"
+  },
+  {
+    "filename": "CLH1FCWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf",
+    "keywords": {
+      "Salt": 2,
+      "deriv": 1,
+      "temu": 3,
+      "uber": 1,
+      "visa": 2,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH1FCWH/CLH1FCWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf"
+  },
+  {
+    "filename": "CLG4FC_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf",
+    "keywords": {
+      "deriv": 7,
+      "roche": 1,
+      "temu": 1,
+      "uber": 1,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLG4FC/CLG4FC_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf"
+  },
+  {
+    "filename": "CLG4FCWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf",
+    "keywords": {
+      "deriv": 7,
+      "roche": 1,
+      "temu": 1,
+      "uber": 1,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLG4FCWH/CLG4FCWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf"
+  },
+  {
+    "filename": "CLG4N_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf",
+    "keywords": {
+      "deriv": 1,
+      "uber": 1,
+      "zte": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLG4N/CLG4N_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf"
+  },
+  {
+    "filename": "CLH1DWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf",
+    "keywords": {
+      "Salt": 2,
+      "deriv": 1,
+      "temu": 4,
+      "uber": 1,
+      "visa": 2,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH1DWH/CLH1DWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf"
+  },
+  {
+    "filename": "CLG4NWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf",
+    "keywords": {
+      "deriv": 1,
+      "uber": 1,
+      "zte": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLG4NWH/CLG4NWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf"
+  },
+  {
+    "filename": "CLH2D_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 4,
+      "deriv": 2,
+      "roche": 8,
+      "temu": 5,
+      "uber": 2,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH2D/CLH2D_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLH1TWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf",
+    "keywords": {
+      "Salt": 2,
+      "deriv": 1,
+      "temu": 4,
+      "uber": 1,
+      "visa": 2,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH1TWH/CLH1TWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf"
+  },
+  {
+    "filename": "CLG4T_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf",
+    "keywords": {
+      "deriv": 1,
+      "uber": 1,
+      "zte": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLG4T/CLG4T_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf"
+  },
+  {
+    "filename": "CLH1FC_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf",
+    "keywords": {
+      "Salt": 2,
+      "deriv": 1,
+      "temu": 3,
+      "uber": 1,
+      "visa": 2,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH1FC/CLH1FC_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf"
+  },
+  {
+    "filename": "CLH1T_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf",
+    "keywords": {
+      "Salt": 2,
+      "deriv": 1,
+      "temu": 4,
+      "uber": 1,
+      "visa": 2,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH1T/CLH1T_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf"
+  },
+  {
+    "filename": "CLH2DWH_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 4,
+      "deriv": 2,
+      "roche": 8,
+      "temu": 5,
+      "uber": 2,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH2DWH/CLH2DWH_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLG4TWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf",
+    "keywords": {
+      "deriv": 1,
+      "uber": 1,
+      "zte": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLG4TWH/CLG4TWH_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf"
+  },
+  {
+    "filename": "CLG4TW_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf",
+    "keywords": {
+      "deriv": 1,
+      "roche": 1,
+      "temu": 1,
+      "uber": 1,
+      "zte": 2
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLG4TW/CLG4TW_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_11-2023.pdf"
+  },
+  {
+    "filename": "CLMB100_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2022.pdf",
+    "keywords": {
+      "Salt": 8,
+      "roche": 2,
+      "temu": 2,
+      "uber": 1,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLMB100/CLMB100_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2022.pdf"
+  },
+  {
+    "filename": "CLH2T_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 4,
+      "deriv": 2,
+      "roche": 8,
+      "temu": 5,
+      "uber": 2,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH2T/CLH2T_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLH2FC_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2021.pdf",
+    "keywords": {
+      "Salt": 3,
+      "deriv": 2,
+      "roche": 6,
+      "temu": 5,
+      "uber": 2,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH2FC/CLH2FC_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2021.pdf"
+  },
+  {
+    "filename": "CLIREMOTE_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_12-2022.pdf",
+    "keywords": {
+      "roche": 5,
+      "temu": 1,
+      "uber": 1,
+      "visa": 2,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLIREMOTE/CLIREMOTE_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_12-2022.pdf"
+  },
+  {
+    "filename": "CLHB4000RGBW_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_12-2021.pdf",
+    "keywords": {
+      "Salt": 8,
+      "roche": 6,
+      "temu": 8,
+      "uber": 1,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLHB4000RGBW/CLHB4000RGBW_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_12-2021.pdf"
+  },
+  {
+    "filename": "CLH2FCWH_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2021.pdf",
+    "keywords": {
+      "Salt": 3,
+      "deriv": 2,
+      "roche": 6,
+      "temu": 5,
+      "uber": 2,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH2FCWH/CLH2FCWH_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2021.pdf"
+  },
+  {
+    "filename": "CLMFXBAREZ_Cameo_User_Manual_EN_DE_FR_ES_PL_IT_10-2021.pdf",
+    "keywords": {
+      "Salt": 2,
+      "roche": 4,
+      "temu": 3,
+      "uber": 1,
+      "zte": 8
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLMFXBAREZ/CLMFXBAREZ_Cameo_User_Manual_EN_DE_FR_ES_PL_IT_10-2021.pdf"
+  },
+  {
+    "filename": "CLLLEYA2000RGB_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_11-2023.pdf",
+    "keywords": {
+      "miro": 1,
+      "roche": 12,
+      "temu": 2,
+      "uber": 1,
+      "visa": 2,
+      "zte": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLLLEYA2000RGB/CLLLEYA2000RGB_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_11-2023.pdf"
+  },
+  {
+    "filename": "CLLLEYA3000RGB_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_11-2023.pdf",
+    "keywords": {
+      "miro": 1,
+      "roche": 12,
+      "temu": 2,
+      "uber": 1,
+      "visa": 2,
+      "zte": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLLLEYA3000RGB/CLLLEYA3000RGB_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_11-2023.pdf"
+  },
+  {
+    "filename": "CLMBZ100_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2022.pdf",
+    "keywords": {
+      "Salt": 9,
+      "roche": 6,
+      "temu": 12,
+      "uber": 1,
+      "zte": 5
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLMBZ100/CLMBZ100_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2022.pdf"
+  },
+  {
+    "filename": "CLMP3WW_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_06_2022.pdf",
+    "keywords": {
+      "Salt": 2,
+      "miro": 3,
+      "roche": 7,
+      "temu": 4,
+      "uber": 1,
+      "zte": 8
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLMP3WW/CLMP3WW_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_06_2022.pdf"
+  },
+  {
+    "filename": "CLOSP5P_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 4,
+      "roche": 8,
+      "temu": 8,
+      "uber": 1,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOSP5P/CLOSP5P_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLNB600_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_02-2023.pdf",
+    "keywords": {
+      "Salt": 9,
+      "roche": 5,
+      "temu": 2,
+      "uber": 1,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLNB600/CLNB600_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_02-2023.pdf"
+  },
+  {
+    "filename": "CLH2TWH_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 4,
+      "deriv": 2,
+      "roche": 8,
+      "temu": 5,
+      "uber": 2,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLH2TWH/CLH2TWH_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLOS5_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 4,
+      "roche": 8,
+      "temu": 8,
+      "uber": 1,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOS5/CLOS5_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLOH5_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2023.pdf",
+    "keywords": {
+      "Salt": 6,
+      "roche": 10,
+      "temu": 8,
+      "uber": 2,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOH5/CLOH5_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2023.pdf"
+  },
+  {
+    "filename": "CLOSP5FC_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 4,
+      "roche": 8,
+      "temu": 8,
+      "uber": 1,
+      "zte": 3
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOSP5FC/CLOSP5FC_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLMB200_Cameo_User_Manual_EN_DE_FR_ES_PL_IT_10-2021.pdf",
+    "keywords": {
+      "Salt": 3,
+      "roche": 30,
+      "temu": 2,
+      "uber": 1,
+      "visa": 2,
+      "zte": 6
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLMB200/CLMB200_Cameo_User_Manual_EN_DE_FR_ES_PL_IT_10-2021.pdf"
+  },
+  {
+    "filename": "CLOTOSH5_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_09-2023.pdf",
+    "keywords": {
+      "Salt": 3,
+      "roche": 10,
+      "temu": 6,
+      "uber": 2,
+      "visa": 2,
+      "zte": 2
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOTOSH5/CLOTOSH5_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_09-2023.pdf"
+  },
+  {
+    "filename": "CLOW5_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf",
+    "keywords": {
+      "Salt": 5,
+      "roche": 6,
+      "temu": 8,
+      "uber": 1,
+      "visa": 2,
+      "zte": 4
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOW5/CLOW5_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_01-2022.pdf"
+  },
+  {
+    "filename": "CLOSP5PLUS_CLAMEO_user_manual__EN_DE_FR_ES_PL_IT_REV02.pdf",
+    "keywords": {
+      "deriv": 1,
+      "roche": 7,
+      "temu": 3,
+      "uber": 1,
+      "zte": 2
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOSP5PLUS/CLOSP5PLUS_CLAMEO_user_manual__EN_DE_FR_ES_PL_IT_REV02.pdf"
+  },
+  {
+    "filename": "CLOTOSB5_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_09-2023.pdf",
+    "keywords": {
+      "Salt": 6,
+      "roche": 9,
+      "temu": 2,
+      "uber": 1,
+      "visa": 2,
+      "zte": 2
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOTOSB5/CLOTOSB5_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_09-2023.pdf"
+  },
+  {
+    "filename": "CLORONH2_CAMEO_user_manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Salt": 3,
+      "deriv": 1,
+      "omise": 1,
+      "roche": 3,
+      "uber": 2,
+      "zte": 2
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLORONH2/CLORONH2_CAMEO_user_manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "CLPFLATPRO12G2_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2021.pdf",
+    "keywords": {
+      "Salt": 4,
+      "roche": 6,
+      "temu": 5,
+      "uber": 1,
+      "visa": 3,
+      "zte": 8
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLPFLATPRO12G2/CLPFLATPRO12G2_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_09-2021.pdf"
+  },
+  {
+    "filename": "CLPSTTWG2_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_11-2022.pdf",
+    "keywords": {
+      "Salt": 4,
+      "roche": 5,
+      "temu": 3,
+      "uber": 1,
+      "visa": 2,
+      "zte": 6
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLPSTTWG2/CLPSTTWG2_Cameo_Users_Manual_EN_DE_FR_ES_PL_IT_11-2022.pdf"
+  },
+  {
+    "filename": "LDCEP10_LD_Systems_Users_Manual_EN_DE_FR_ES_PL_IT_04-24.pdf",
+    "keywords": {
+      "deriv": 1,
+      "koho": 1,
+      "uber": 1,
+      "visa": 1,
+      "zte": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/LDSYSTEMS/LDCEP10/LDCEP10_LD_Systems_Users_Manual_EN_DE_FR_ES_PL_IT_04-24.pdf"
+  }
+]

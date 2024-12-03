@@ -32,7 +32,7 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 	// ---------------------------------------------------------------------------------------------
 
 	// 2) Create a temporary file, referenced by name
-	tmpFile, err := os.CreateTemp("", "*.pdf")
+	tmpFile, err := os.CreateTemp("", "*.pdf")	
 	// A simple error handling
 	if err != nil {
 		// fmt.Printf("Failed to create temp file for %s: %v\n", file.URL, err)

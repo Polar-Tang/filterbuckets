@@ -1,6 +1,7 @@
 package api
 
 import (
+	"crypto/tls"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -30,6 +31,18 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 	start := 0
 	limit := 1000
 
+	transport := &http.Transport{
+		MaxIdleConns:      10,
+		IdleConnTimeout:   90 * time.Second,
+		DisableKeepAlives: false,
+		TLSClientConfig:   &tls.Config{InsecureSkipVerify: false},
+	}
+
+	client := &http.Client{
+		Timeout:   2 * time.Minute,
+		Transport: transport,
+	}
+
 	for {
 		// Build query parameters
 		params := url.Values{}
@@ -42,7 +55,6 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 		fullURL := fmt.Sprintf("%s?%s", apiURL, params.Encode())
 
 		// Create HTTP client with timeout
-		client := &http.Client{Timeout: 30 * time.Second}
 
 		// Create the request
 		req, err := http.NewRequest("GET", fullURL, nil)
@@ -51,13 +63,14 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 		}
 
 		// Add headers (including the authorization token)
-		req.Header.Set("Cookie", "Cookie: "+sessionCookie)
+		req.Header.Set("Authorization", " Bearer "+sessionCookie)
 
 		// Send the request
-		resp, err := client.Do(req)
+		resp, err := doRequestWithRetry(client, req, 3) // 3 retries
 		if err != nil {
-			return nil, fmt.Errorf("failed to send request: %w", err)
+			return nil, fmt.Errorf("failed to send request after retries: %w", err)
 		}
+
 		defer resp.Body.Close()
 
 		// Read the response body
@@ -96,4 +109,16 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 // Helper function to join keywords into a single string
 func joinKeywords(keywords []string) string {
 	return url.QueryEscape(strings.Join(keywords, " "))
+}
+
+func doRequestWithRetry(client *http.Client, req *http.Request, retries int) (*http.Response, error) {
+	for i := 0; i < retries; i++ {
+		resp, err := client.Do(req)
+		if err == nil {
+			return resp, nil
+		}
+		fmt.Printf("Retry %d/%d failed: %v\n", i+1, retries, err)
+		time.Sleep(2 * time.Second) // Wait before retrying
+	}
+	return nil, fmt.Errorf("all retries failed")
 }
