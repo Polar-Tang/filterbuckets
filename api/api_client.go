@@ -31,8 +31,8 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 	start := 0
 	limit := 1000
 
+	// transport for the api
 	transport := &http.Transport{
-		MaxIdleConns:        100,
 		MaxIdleConnsPerHost: 10,
 		IdleConnTimeout:     90 * time.Second,
 		DisableKeepAlives:   false,
@@ -59,19 +59,18 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 
 		// Build the full URL
 		fullURL := fmt.Sprintf("%s?%s", apiURL, params.Encode())
+		// Add headers (including the authorization token)
 
-		// Create HTTP client with timeout
-
-		// Create the request
+		// Create the request to the api
 		req, err := http.NewRequest("GET", fullURL, nil)
 		if err != nil {
 			return nil, fmt.Errorf("failed to create request: %w", err)
 		}
-
 		// Add headers (including the authorization token)
 		req.Header.Set("Authorization", " Bearer "+sessionCookie)
 
-		// Send the request
+
+		// Resend the request
 		resp, err := doRequestWithRetry(client, req, 3) // 3 retries
 		if err != nil {
 			return nil, fmt.Errorf("failed to send request after retries: %w", err)
@@ -108,7 +107,6 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 		// Move to the next page
 		start += limit
 	}
-
 	return allFiles, nil
 }
 

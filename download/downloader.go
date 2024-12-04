@@ -1,15 +1,16 @@
 package download
 
 import (
+	"crypto/tls"
 	"fmt"
 	"io"
 	"net/http"
 	"os"
 	"path/filepath"
-	"strings"
-
 	"pdf_greyhat_go/api"
 	"pdf_greyhat_go/processing"
+	"strings"
+	"time"
 
 	pdfcpuapi "github.com/pdfcpu/pdfcpu/pkg/api" // Alias for pdfcpu API
 )
@@ -17,10 +18,24 @@ import (
 // ProcessFile downloads and analyzes the PDF file for keywords
 func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{} {
 	// fmt.Println("Processing file:", file.URL)
+	// transport for the buckets
+	bucketTransport := &http.Transport{
+		MaxIdleConns:        50,                                    // Adjust as per workload
+		MaxIdleConnsPerHost: 5,                                     // Limit per host
+		IdleConnTimeout:     10 * time.Second,                      // Free idle connections quickly
+		DisableKeepAlives:   true,                                  // Avoid reusing connections
+		TLSClientConfig:     &tls.Config{InsecureSkipVerify: true}, // Skip SSL verification
+	}
+
+	// Create an HTTP client for bucket queries
+	bucketClient := &http.Client{
+		Transport: bucketTransport,
+		Timeout:   15 * time.Second, // Overall timeout for the bucket queries
+	}
 
 	// ---------------------------------------------------------------------------------------------
 	// Step 1: Download the PDF file
-	response, err := http.Get(file.URL) // download the url with a simple get
+	response, err := bucketClient.Get(file.URL) // download the url with a simple get
 	// A simple error handling
 	if err != nil {
 		// fmt.Printf("Failed to download file %s: %v\n", file.URL, err)
