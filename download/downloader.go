@@ -22,7 +22,7 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 	bucketTransport := &http.Transport{
 		MaxIdleConns:        50,                                    // Adjust as per workload
 		MaxIdleConnsPerHost: 5,                                     // Limit per host
-		IdleConnTimeout:     10 * time.Second,                      // Free idle connections quickly
+		IdleConnTimeout:     5 * time.Second,                       // Free idle connections quickly
 		DisableKeepAlives:   true,                                  // Avoid reusing connections
 		TLSClientConfig:     &tls.Config{InsecureSkipVerify: true}, // Skip SSL verification
 	}
@@ -144,7 +144,10 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 	// iterates over the whole file, looking for our pdfKeywords (argument)
 	for _, keyword := range pdfKeywords {
 		// search for the keyword, in a insasitive case way, on the textContent, which is the text extracted from the output
-		count := strings.Count(strings.ToLower(contentpdf), strings.ToLower(keyword)) // strings.Count is a built-in function from string package, used to count the words
+		content := " " + strings.ToLower(contentpdf) + " "
+		searchTerm := " " + strings.ToLower(keyword) + " "
+
+		count := strings.Count(content, searchTerm) // strings.Count is a built-in function from string package, used to count the words
 		// save them in the accumulator
 		if count > 0 { // Only include keywords with matches
 			keywordCounts[keyword] = count

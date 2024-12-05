@@ -69,7 +69,6 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 		// Add headers (including the authorization token)
 		req.Header.Set("Authorization", " Bearer "+sessionCookie)
 
-
 		// Resend the request
 		resp, err := doRequestWithRetry(client, req, 3) // 3 retries
 		if err != nil {
@@ -126,3 +125,28 @@ func doRequestWithRetry(client *http.Client, req *http.Request, retries int) (*h
 	}
 	return nil, fmt.Errorf("all retries failed")
 }
+
+// func saveResultsToFile(results []FileInfo, outputFile string) error {
+// 	// Open the file for appending (or create it if it doesn't exist)
+// 	file, err := os.OpenFile(outputFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+// 	if err != nil {
+// 		return fmt.Errorf("failed to open file: %w", err)
+// 	}
+// 	defer file.Close()
+
+// 	// Write each result as a JSON object, one per line
+// 	for _, result := range results {
+// 		jsonBytes, err := json.Marshal(result)
+// 		if err != nil {
+// 			return fmt.Errorf("failed to marshal result: %w", err)
+// 		}
+
+// 		// Write JSON line to the file
+// 		_, err = file.Write(append(jsonBytes, '\n'))
+// 		if err != nil {
+// 			return fmt.Errorf("failed to write to file: %w", err)
+// 		}
+// 	}
+
+// 	return nil
+// }
