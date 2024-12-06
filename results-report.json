@@ -1,0 +1,58 @@
+[
+  {
+    "filename": "Annual-Report-2016.pdf",
+    "keywords": {
+      "Sustainable": 2
+    },
+    "url": "https://bucket-01.s3.amazonaws.com/Annual-Report-2016.pdf"
+  },
+  {
+    "filename": "2010-Florida Center Annual Report-Wcover.pdf",
+    "keywords": {
+      "Sustainable": 2
+    },
+    "url": "https://fhfstore.blob.core.windows.net/documents/researchers/documents/2010-Florida Center Annual Report-Wcover.pdf"
+  },
+  {
+    "filename": "Annual Report 2006.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://fhfstore.blob.core.windows.net/documents/researchers/documents/Annual Report 2006.pdf"
+  },
+  {
+    "filename": "MGI-Reinventing-construction-A-route-to-higher-productivity-Full-report.pdf",
+    "keywords": {
+      "Sustainable": 2
+    },
+    "url": "https://tud-files.s3.amazonaws.com/MGI-Reinventing-construction-A-route-to-higher-productivity-Full-report.pdf"
+  },
+  {
+    "filename": "TCRP-Report-128-Effects-of-TODon-Housing-Parking-and-Travel_8-08.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://valley-metro-public.nyc3.digitaloceanspaces.com/pages/downloads/about/transit-oriented-development/additional-resources/TCRP-Report-128-Effects-of-TODon-Housing-Parking-and-Travel_8-08.pdf"
+  },
+  {
+    "filename": "TCRP-Report-102_TOD-in-the-US-Experiences-Challenges-and-Prospects_10-04.pdf",
+    "keywords": {
+      "Sustainable": 9
+    },
+    "url": "https://valley-metro-public.nyc3.digitaloceanspaces.com/pages/downloads/about/transit-oriented-development/additional-resources/TCRP-Report-102_TOD-in-the-US-Experiences-Challenges-and-Prospects_10-04.pdf"
+  },
+  {
+    "filename": "enviromental_assessment_report_northwest_extension.pdf",
+    "keywords": {
+      "Sustainable": 4
+    },
+    "url": "https://valley-metro-public.nyc3.digitaloceanspaces.com/pages/downloads/project/northwest-extension-phase-ii/environmental-assessment/enviromental_assessment_report_northwest_extension.pdf"
+  },
+  {
+    "filename": "enviromental_assessment_report_northwest_extension.pdf",
+    "keywords": {
+      "Sustainable": 4
+    },
+    "url": "https://valley-metro-public.nyc3.digitaloceanspaces.com/projects/downloads/northwest-extension-phase-ii/environmental-assessment/enviromental_assessment_report_northwest_extension.pdf"
+  }
+]

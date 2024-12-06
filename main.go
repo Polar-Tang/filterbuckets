@@ -16,7 +16,7 @@ import (
 func main() {
 	// Initialize session and keywords
 	sessionCookie := "01931a3ff4929fa0e8d8c93ba9dac24c"
-	keywords := []string{"terms_and_conditions", "summary", "internal_doc", "confidential_report", "technical_document", "whitepaper", "datasheet", "reference_manual", "audit_report", "compliance", "training_guide", "specifications", "release_notes", "memo", "minutes_of_meeting", "strategy", "roadmap", "HR_policy", "security_policy", "business_confidential", "RFP", "SLA", "NDAs", "risk_assessment", "incident_report", "executive_summary", "deployment_guide", "installation_manual", "evaluation", "financial_statement", "company_profile", "marketing_plan", "case_study", "compliance_report", "quarterly_report"}
+	keywords := []string{"conditions"}
 	extensions := []string{"pdf"}
 	pdfKeywords := []string{
 		"Algemeen Dagblad",
@@ -101,17 +101,24 @@ func main() {
 	for _, keyword := range keywords {
 		outputFile := fmt.Sprintf("results-%s.json", keyword)
 		fmt.Printf("Searching for files with keyword: %s\n", keyword)
-		// Query files THROUGH THE API
-		files, err := api.QueryFiles(sessionCookie, []string{keyword}, extensions)
-		// generic error handling
+		var files []api.FileInfo
+		var err error
+		maxRetries := 3
+		for retries := 0; retries < maxRetries; retries++ {
+			files, err = api.QueryFiles(sessionCookie, []string{keyword}, extensions)
+			if err == nil {
+				break // Exit the retry loop if successful
+			}
+			log.Printf("Retry %d/%d for keyword '%s' failed: %v", retries+1, maxRetries, keyword, err)
+			time.Sleep(2 * time.Second)
+		}
 		if err != nil {
-			log.Printf("Failed to query files: %v", err)
+			log.Printf("All retries failed for keyword '%s'\n", keyword)
 			continue
 		}
 
 		// Create a semaphore for concurrent downloads
 		var wg sync.WaitGroup
-
 		// Initialize results
 		results := make([]map[string]interface{}, 0)
 		// RESULTS:
@@ -119,7 +126,6 @@ func main() {
 				{"Filename": "file1.pdf", "URL": "http://example.com/file1", "Matches": 10},
 			    {"Filename": "file2.pdf", "URL": "http://example.com/file2", "Matches": 5},
 		*/
-
 		mutex := &sync.Mutex{}
 
 		// Set the concurrency limit
@@ -140,8 +146,11 @@ func main() {
 			for range ticker.C {
 				// save the file periodically
 				mutex.Lock()
-				saveResults(results, outputFile)
-				fmt.Printf("Result added: %+v\n", results) // Add this line for debugging
+				err := saveResults(results, outputFile)
+				if err != nil {
+					log.Printf("Error saving periodic results for keyword '%s': %v", keyword, err)
+				}
+				// fmt.Printf("Result added: %+v\n", results) // Add this line for debugging
 				// MUTEX write the file but priventing race conditions
 				mutex.Unlock()
 			}
@@ -179,18 +188,22 @@ func main() {
 			Size     int
 		} */
 		// The results are saved as JSON in results.json, after the whole fucking process ends:
-		saveResults(results, outputFile)
 		wg.Wait() // Wait for all goroutines to complete
+		mutex.Lock()
+		err = saveResults(results, outputFile)
+		if err != nil {
+			log.Printf("Error saving final results for keyword '%s': %v", keyword, err)
+		}
+		mutex.Unlock()
 	}
 }
 
-func saveResults(results []map[string]interface{}, outputFile string) {
+func saveResults(results []map[string]interface{}, outputFile string) error {
 	fmt.Printf("Saving %d results...\n", len(results)) // Debug log
 
 	file, err := os.Create(outputFile) // Create (or overwrite) results.json
 	if err != nil {
-		log.Printf("Failed to create output file: %v", err)
-		return
+		return fmt.Errorf("failed to create output file '%s': %w", outputFile, err)
 	}
 	defer file.Close()
 
@@ -198,8 +211,8 @@ func saveResults(results []map[string]interface{}, outputFile string) {
 	encoder.SetIndent("", "  ") // Add indentation for readability
 
 	if err := encoder.Encode(results); err != nil {
-		log.Printf("Failed to write results: %v", err)
-	} else {
-		fmt.Printf("Results saved to %s\n", outputFile)
+		return fmt.Errorf("failed to write JSON to file '%s': %w", outputFile, err)
 	}
+	fmt.Printf("Results saved to %s\n", outputFile)
+	return nil
 }

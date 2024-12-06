@@ -1,0 +1,604 @@
+[
+  {
+    "filename": "VSI_BASIC_USER.pdf",
+    "keywords": {
+      "Yacht": 1
+    },
+    "url": "https://documentation.nyc3.digitaloceanspaces.com/test-docs/VSI_BASIC_USER.pdf"
+  },
+  {
+    "filename": "GNSS-303L-A-User-Guide.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Manuals/GNSS-303L-A-User-Guide/GNSS-303L-A-User-Guide.pdf"
+  },
+  {
+    "filename": "GPS-301-User-Guide.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Manuals/GPS-301-User-Guide/GPS-301-User-Guide.pdf"
+  },
+  {
+    "filename": "GNSS-303L-User-Guide.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://hexagondownloads.blob.core.windows.net/public/Novatel/assets/Documents/Manuals/GNSS-303L-User-Guide/GNSS-303L-User-Guide.pdf"
+  },
+  {
+    "filename": "SKT17_AHSTANDS_User_Manual_EN_DE_10-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/AHSTANDS/SKT17/SKT17_AHSTANDS_User_Manual_EN_DE_10-2021.pdf"
+  },
+  {
+    "filename": "CLCL200RB_Cameo_User_Manual_EN_DE.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLCL200RB/CLCL200RB_Cameo_User_Manual_EN_DE.pdf"
+  },
+  {
+    "filename": "CLF1T_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF1T/CLF1T_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF1D_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF1D/CLF1D_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF1VMOUNTAP_CLI_User_Manual_EN_DE.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF1VMOUNTAP/CLF1VMOUNTAP_CLI_User_Manual_EN_DE.pdf"
+  },
+  {
+    "filename": "CLF2DPO_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2DPO/CLF2DPO_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLFSSBS_CLI_User_Manual_EN_DE.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLFSSBS/CLFSSBS_CLI_User_Manual_EN_DE.pdf"
+  },
+  {
+    "filename": "CLF2T_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2T/CLF2T_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2D_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2D/CLF2D_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2TIP_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2TIP/CLF2TIP_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2TPO_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2TPO/CLF2TPO_CAMEO_user_manual_EN_DE_FR_ES_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF2FCPO_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF2FCPO/CLF2FCPO_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF1FC_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF1FC/CLF1FC_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLF4FCPOIP_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLF4FCPOIP/CLF4FCPOIP_CAMEO_user_manual_EN_DE_ES_FR_PL_IT_03-2023.pdf"
+  },
+  {
+    "filename": "CLIDMXSTICK_Cameo_User_Manual_EN_DE.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLIDMXSTICK/CLIDMXSTICK_Cameo_User_Manual_EN_DE.pdf"
+  },
+  {
+    "filename": "CLIDMXSTICK_CAMEO_user_manual_EN_DE.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLIDMXSTICKG2/CLIDMXSTICK_CAMEO_user_manual_EN_DE.pdf"
+  },
+  {
+    "filename": "CLOH5_Cameo_Gobo_User_Manual_EN_DE.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOH5/CLOH5_Cameo_Gobo_User_Manual_EN_DE.pdf"
+  },
+  {
+    "filename": "CLMP3WW_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_06_2022.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLMP3WW/CLMP3WW_CAMEO_User_Manual_EN_DE_FR_ES_PL_IT_06_2022.pdf"
+  },
+  {
+    "filename": "CLMFXBAREZ_Cameo_User_Manual_EN_DE_FR_ES_PL_IT_10-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLMFXBAREZ/CLMFXBAREZ_Cameo_User_Manual_EN_DE_FR_ES_PL_IT_10-2021.pdf"
+  },
+  {
+    "filename": "CLOTOSH5_Cameo_Gobo_User_Manual_DE_EN_07-2022.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOTOSH5/CLOTOSH5_Cameo_Gobo_User_Manual_DE_EN_07-2022.pdf"
+  },
+  {
+    "filename": "CLOXP_Cameo_Gobo_User_Manual_EN_DE.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOXP/CLOXP_Cameo_Gobo_User_Manual_EN_DE.pdf"
+  },
+  {
+    "filename": "CLOTOSSP6_CAMEO_Gobo_user_manual_EN_DE.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLOTOSSP6/CLOTOSSP6_CAMEO_Gobo_user_manual_EN_DE.pdf"
+  },
+  {
+    "filename": "CLROOTPARBATTERY_CLI_user_manual_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/CAMEO/CLROOTPARBAT/CLROOTPARBATTERY_CLI_user_manual_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "LDCWMS42BW100V_user_manual_print_EN_DE_FR_ES_PL_IT.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/LDSYSTEMS/LDCWMS42W100V/LDCWMS42BW100V_user_manual_print_EN_DE_FR_ES_PL_IT.pdf"
+  },
+  {
+    "filename": "LDMAUII1W_LD_Systems_User_Manual_EN_DE_FR_ES_PL_IT_REV02.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/LDSYSTEMS/LDMAUII1W/LDMAUII1W_LD_Systems_User_Manual_EN_DE_FR_ES_PL_IT_REV02.pdf"
+  },
+  {
+    "filename": "LDMAUII1_LD_Systems_User_Manual_EN_DE_FR_ES_PL_IT_REV02.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/LDSYSTEMS/LDMAUII1/LDMAUII1_LD_Systems_User_Manual_EN_DE_FR_ES_PL_IT_REV02.pdf"
+  },
+  {
+    "filename": "PCAB112REX_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112REX/PCAB112REX_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112GBK_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112GBK/PCAB112GBK_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112GOV_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112GOV/PCAB112GOV_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112PJA_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112PJA/PCAB112PJA_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112G12AB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112G12AB/PCAB112G12AB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112LEG_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112LEG/PCAB112LEG_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112TXH_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112TXH/PCAB112TXH_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112CRMB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112CRMB/PCAB112CRMB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112MOW_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112MOW/PCAB112MOW_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112RWB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112RWB/PCAB112RWB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112S80_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112S80/PCAB112S80_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112BLU_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112BLU/PCAB112BLU_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112G12A_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112G12A/PCAB112G12A_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212/PCAB212_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112CV75_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112CV75/PCAB112CV75_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112WIZ_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112WIZ/PCAB112WIZ_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112V30_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112V30/PCAB112V30_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112V30B_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB112V30B/PCAB112V30B_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212CV75OB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212CV75OB/PCAB212CV75OB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212G12A_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212G12A/PCAB212G12A_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212CRMOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212CRMOB/PCAB212CRMOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212CRM_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212CRM/PCAB212CRM_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212CV75_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212CV75/PCAB212CV75_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112GOVOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212GOVOB/PCAB112GOVOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212DEL_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212DEL/PCAB212DEL_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212GOV_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212GOV/PCAB212GOV_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112G12AOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212G12AOB/PCAB112G12AOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212LEGOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212LEGOB/PCAB212LEGOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212LEG_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212LEG/PCAB212LEG_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212MOW_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212MOW/PCAB212MOW_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212PJA_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212PJA/PCAB212PJA_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212PJAOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212PJAOB/PCAB212PJAOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212MAVOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212MAVOB/PCAB212MAVOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212MOWOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212MOWOB/PCAB212MOWOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212RWB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212RWB/PCAB212RWB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212S80_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212S80/PCAB212S80_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212REXOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212REXOB/PCAB212REXOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212TXHOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212TXHOB/PCAB212TXHOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212TXH_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212TXH/PCAB212TXH_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212RWBOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212RWBOB/PCAB212RWBOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212S80OB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212S80OB/PCAB212S80OB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB112V30_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212V30/PCAB112V30_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212V30GBKOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212V30GBKOB/PCAB212V30GBKOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212V30GBK_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212V30GBK/PCAB212V30GBK_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212WIZ_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212WIZ/PCAB212WIZ_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212V30OB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212V30OB/PCAB212V30OB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "PCAB212WIZOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://adamhall.s3.amazonaws.com/media/MARKEN/PALMER/PCAB212WIZOB/PCAB212WIZOB_PALMER_User-Manual_EN_DE_FR_ES_09-2021.pdf"
+  },
+  {
+    "filename": "v2014_EX. 2014 - Samsung User manual G97x - Part 2.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://ptabdata.blob.core.windows.net/files/2020/IPR2020-00499/v2014_EX. 2014 - Samsung User manual G97x - Part 2.pdf"
+  },
+  {
+    "filename": "v45_EX. 2014 - Samsung User manual G97x - Part 2.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://ptabdata.blob.core.windows.net/files/2020/IPR2020-00499/v45_EX. 2014 - Samsung User manual G97x - Part 2.pdf"
+  },
+  {
+    "filename": "EX. 2014 - Samsung User manual G97x - Part 2.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://ptabdata.blob.core.windows.net/files/2020/IPR2020-00502/EX. 2014 - Samsung User manual G97x - Part 2.pdf"
+  },
+  {
+    "filename": "v41_EX. 2014 - Samsung User manual G97x - Part 2.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://ptabdata.blob.core.windows.net/files/2020/IPR2020-00505/v41_EX. 2014 - Samsung User manual G97x - Part 2.pdf"
+  },
+  {
+    "filename": "v40_EX. 2014 - Samsung User manual G97x - Part 2.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://ptabdata.blob.core.windows.net/files/2020/IPR2020-00502/v40_EX. 2014 - Samsung User manual G97x - Part 2.pdf"
+  },
+  {
+    "filename": "v39_EX. 2014 - Samsung User manual G97x - Part 2.pdf",
+    "keywords": {
+      "Sustainable": 1
+    },
+    "url": "https://ptabdata.blob.core.windows.net/files/2020/IPR2020-00504/v39_EX. 2014 - Samsung User manual G97x - Part 2.pdf"
+  },
+  {
+    "filename": "AquaThermica-Compact_User-manual.pdf",
+    "keywords": {
+      "OVO": 1
+    },
+    "url": "https://calor-assets.fra1.digitaloceanspaces.com/661528/AquaThermica-Compact_User-manual.pdf"
+  },
+  {
+    "filename": "AquaThermica-Compact_User-manual-1.pdf",
+    "keywords": {
+      "OVO": 1
+    },
+    "url": "https://calor-assets.fra1.digitaloceanspaces.com/664039/AquaThermica-Compact_User-manual-1.pdf"
+  },
+  {
+    "filename": "LG_High_Static_Ducted_Series_User_s_Manual.pdf",
+    "keywords": {
+      "Humo": 1
+    },
+    "url": "https://heatandcool.nyc3.digitaloceanspaces.com/669/LG_High_Static_Ducted_Series_User_s_Manual.pdf"
+  }
+]

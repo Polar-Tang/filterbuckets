@@ -9,6 +9,7 @@ import (
 	"net/url"
 	"strings"
 	"time"
+	"runtime"
 )
 
 type FileInfo struct {
@@ -31,6 +32,9 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 	start := 0
 	limit := 1000
 
+	// set a limit of pagination
+	maxPages := 3 // Limit to 3 pages
+	pageCount := 0
 	// transport for the api
 	transport := &http.Transport{
 		MaxIdleConnsPerHost: 10,
@@ -43,6 +47,10 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 
 	go func() {
 		for {
+	        fmt.Printf("Number of Goroutines: %d\n", runtime.NumGoroutine())
+			var memStats runtime.MemStats
+			runtime.ReadMemStats(&memStats)
+			fmt.Printf("Memory Allocated: %v MB\n", memStats.Alloc/1024/1024)
 			time.Sleep(60 * time.Second) // Run every 60 seconds
 			transport.CloseIdleConnections()
 			fmt.Println("Idle connections closed")
@@ -50,6 +58,11 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 	}()
 
 	for {
+		if pageCount >= maxPages {
+			fmt.Println("Reached maximum page limit")
+			break
+		}
+		pageCount++
 		// Build query parameters
 		params := url.Values{}
 		params.Set("keywords", joinKeywords(keywords))
@@ -60,6 +73,7 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 		// Build the full URL
 		fullURL := fmt.Sprintf("%s?%s", apiURL, params.Encode())
 		// Add headers (including the authorization token)
+		fmt.Println(fullURL)
 
 		// Create the request to the api
 		req, err := http.NewRequest("GET", fullURL, nil)
@@ -107,12 +121,14 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 		start += limit
 	}
 	return allFiles, nil
+	
 }
 
 // Helper function to join keywords into a single string
 func joinKeywords(keywords []string) string {
 	return url.QueryEscape(strings.Join(keywords, " "))
 }
+
 
 func doRequestWithRetry(client *http.Client, req *http.Request, retries int) (*http.Response, error) {
 	for i := 0; i < retries; i++ {
