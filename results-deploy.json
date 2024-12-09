@@ -1,0 +1,62 @@
+[
+  {
+    "filename": "deploy_SSH_74.json",
+    "keywords": {
+      "name": 24
+    },
+    "url": "https://fusepress.fra1.digitaloceanspaces.com/deploy/3/74/SSH/deploy_SSH_74.json"
+  },
+  {
+    "filename": "deploy_SSH_47.json",
+    "keywords": {
+      "token": 120
+    },
+    "url": "https://fusepress.fra1.digitaloceanspaces.com/deploy/3/47/SSH/deploy_SSH_47.json"
+  },
+  {
+    "filename": "deploy_SSH_65.json",
+    "keywords": {
+      "token": 176
+    },
+    "url": "https://fusepress.fra1.digitaloceanspaces.com/deploy/3/65/SSH/deploy_SSH_65.json"
+  },
+  {
+    "filename": "info_banner_banner_deploy.json",
+    "keywords": {
+      "name": 1,
+      "password": 6
+    },
+    "url": "https://storage.googleapis.com/online.wiseup.com/storage/files/info_banner_banner_deploy.json"
+  },
+  {
+    "filename": "deploy-cluster.json",
+    "keywords": {
+      "id": 1,
+      "name": 1
+    },
+    "url": "https://zuse1stan1shared01.blob.core.windows.net/deploy/deploy-cluster.json"
+  },
+  {
+    "filename": "GK-ALG-Deploy.json",
+    "keywords": {
+      "id": 1,
+      "name": 1
+    },
+    "url": "https://kansgeneu002std.blob.core.windows.net/general/GK-ALG-Deploy.json"
+  },
+  {
+    "filename": "how-to-fork-and-deploy-goldrush-templates-to-vercel.json",
+    "keywords": {
+      "key": 2,
+      "name": 1
+    },
+    "url": "https://storage.googleapis.com/covalentnetwork.org/_next/data/-Xk-foHHBnHujjmu2qlGE/docs/unified-api/guides/how-to-fork-and-deploy-goldrush-templates-to-vercel.json"
+  },
+  {
+    "filename": "deploy_diagSettings_keyVault.json",
+    "keywords": {
+      "key": 4
+    },
+    "url": "https://occdeploymentstorage.blob.core.windows.net/files/OCC/s/policy/custom/deploy_diagSettings_keyVault.json"
+  }
+]

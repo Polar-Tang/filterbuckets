@@ -16,88 +16,10 @@ import (
 func main() {
 	// Initialize session and keywords
 	sessionCookie := "01931a3ff4929fa0e8d8c93ba9dac24c"
-	keywords := []string{"terms_and_conditions", "summary", "internal_doc", "confidential_report", "technical_document", "whitepaper", "datasheet", "reference_manual", "audit_report", "compliance", "training_guide", "specifications", "release_notes", "memo", "minutes_of_meeting", "strategy", "roadmap", "HR_policy", "security_policy", "business_confidential", "RFP", "SLA", "NDAs", "risk_assessment", "incident_report", "executive_summary", "deployment_guide", "installation_manual", "evaluation", "financial_statement", "company_profile", "marketing_plan", "case_study", "compliance_report", "quarterly_report"}
-	extensions := []string{"pdf"}
-	pdfKeywords := []string{
-		"Algemeen Dagblad",
-		"Allegro",
-		"Axel Springer",
-		"Azena",
-		"BMW Group",
-		"BMW Group Automotive",
-		"Bpost",
-		"Bühler",
-		"CM.com",
-		"Canada Post",
-		"Capital.com",
-		"Cloudways by DigitalOcean",
-		"Cross Border Fines",
-		"Cyber Security Coalition",
-		"DPG Media",
-		"De Lijn",
-		"De Morgen",
-		"De Volkskrant",
-		"Delen Private Bank",
-		"Digitaal Vlaanderen",
-		"DigitalOcean",
-		"Donorbox",
-		"E-Gor",
-		"EURid",
-		"Fing",
-		"HRS Group",
-		"Henkel",
-		"Here Technologies",
-		"Het Laatste Nieuws",
-		"Het Parool",
-		"Humo",
-		"Kinepolis Group",
-		"Lansweeper",
-		"Libelle",
-		"Mobile Vikings",
-		"Moralis",
-		"Nestlé",
-		"Nexuzhealth",
-		"Nexuzhealth Web PACS",
-		"OVO",
-		"PDQ bug bounty program",
-		"PeopleCert",
-		"Personio",
-		"Port of Antwerp-Bruges",
-		"Purolator",
-		"RGF BE",
-		"RIPE NCC",
-		"Randstad",
-		"Red Bull",
-		"Revolut",
-		"SimScale",
-		"Sixt",
-		"Social Deal",
-		"Soundtrack Your Brand",
-		"Sqills",
-		"Stravito",
-		"Suivo bug bounty",
-		"Sustainable",
-		"Telenet",
-		"Tempo-Team",
-		"Tomorrowland",
-		"Torfs",
-		"Trouw",
-		"TrueLayer",
-		"Twago",
-		"Tweakers",
-		"UZ Leuven",
-		"Ubisoft",
-		"VRT",
-		"VTM GO",
-		"Venly",
-		"Vlerick Business School",
-		"Voi Scooters",
-		"WP Engine",
-		"Yacht",
-		"Yahoo",
-		"e-tracker",
-		"eHealth Hub VZN KUL"}
-
+	keywords := []string{"deploy"}
+	extensions := map[string][]string{
+		"json": {"token", "credentials", "password", "key", "secret", "id", "name"},
+	}
 	for _, keyword := range keywords {
 		outputFile := fmt.Sprintf("results-%s.json", keyword)
 		fmt.Printf("Searching for files with keyword: %s\n", keyword)
@@ -160,7 +82,7 @@ func main() {
 
 				// fmt.Printf("Found file: %s (URL: %s, Size: %d bytes)\n", file.Filename, file.URL, file.Size)
 
-				result := download.ProcessFile(file, pdfKeywords) // redefine result
+				result := download.ProcessFile(file, extensions) // redefine result
 				// redefine the results with the function proces file
 				if result != nil {
 					// append the result (no overwrite)

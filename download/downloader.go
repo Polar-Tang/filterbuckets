@@ -1,6 +1,7 @@
 package download
 
 import (
+	"bufio"
 	"crypto/tls"
 	"fmt"
 	"io"
@@ -16,7 +17,7 @@ import (
 )
 
 // ProcessFile downloads and analyzes the PDF file for keywords
-func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{} {
+func ProcessFile(file api.FileInfo, extensionKeywords map[string][]string) map[string]interface{} {
 	// fmt.Println("Processing file:", file.URL)
 	// transport for the buckets
 	bucketTransport := &http.Transport{
@@ -38,7 +39,7 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 	response, err := bucketClient.Get(file.URL) // download the url with a simple get
 	// A simple error handling
 	if err != nil {
-		// fmt.Printf("Failed to download file %s: %v\n", file.URL, err)
+		fmt.Printf("Failed to download file %s: %v\n", file.URL, err)
 		return nil
 	}
 	// Close the response body
@@ -47,10 +48,10 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 	// ---------------------------------------------------------------------------------------------
 
 	// 2) Create a temporary file, referenced by name
-	tmpFile, err := os.CreateTemp("", "*.pdf")
+	tmpFile, err := os.CreateTemp("", "*"+filepath.Ext(file.Filename))
 	// A simple error handling
 	if err != nil {
-		// fmt.Printf("Failed to create temp file for %s: %v\n", file.URL, err)
+		fmt.Printf("Failed to create temp file for %s: %v\n", file.URL, err)
 		return nil
 	}
 
@@ -59,7 +60,7 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 
 	// ---------------------------------------------------------------------------------------------
 
-	// 3) copy th TMP
+	// 3) copy the download to a TMP
 	// Ignoring the return value with the blank identifier, just copy the TMP using io.Copy
 	_, err = io.Copy(tmpFile, response.Body) // copies the response body to the tmp file
 	if err != nil {
@@ -67,18 +68,105 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 		return nil
 	}
 
-	// res_content, err := readFileContent(tmpFile.Name())
+	// 4) Determine the file extension
 
-	// if err != nil {
-	// 	fmt.Printf("Failed to read extracted content from %s without use pdfcpu: %v\n", tmpFile.Name(), err)
-	// 	return nil
-	// }
-	// fmt.Println("Extracted Content:\n", res_content) // Print the extracted content
-	// ---------------------------------------------------------------------------------------------
+	extension := strings.TrimPrefix(filepath.Ext(tmpFile.Name()), ".")
+	keywords, found := extensionKeywords[extension]
 
-	// Step 4: Extract content from the PDF
+	if !found {
+		fmt.Printf("Skipping unsupported file type: %s\n", extension)
+		return nil
+	}
 
+	if extension == "pdf" {
+		return processPDF(tmpFile.Name(), keywords, file)
+	} else {
+		return processPlainText(tmpFile.Name(), keywords, file)
+	}
+}
+
+// --------------------------------------------------------------------------------------------
+
+func processPlainText(filePath string, keywords []string, file api.FileInfo) map[string]interface{} {
+	fmt.Println("Processing plain text file:", file.Filename)
+	content, err := readFileContent(filePath)
+	if err != nil {
+		fmt.Printf("Failed to read content from %s: %v\n", file.Filename, err)
+		return nil
+	}
+
+	keywordCounts := countKeywords(content, keywords)
+
+	if keywordCounts == nil || len(keywordCounts) == 0 {
+		fmt.Printf("No keywords found in file: %s\n", file.Filename)
+		return nil
+	}
+
+	return map[string]interface{}{
+		"url":      file.URL,
+		"filename": file.Filename,
+		"keywords": keywordCounts,
+	}
+}
+
+// --------------------------------------------------------------------------------------------
+
+func readFileContent(filePath string) (string, error) {
+	file, err := os.Open(filePath)
+	if err != nil {
+		return "", err
+	}
+	defer file.Close()
+
+	var sb strings.Builder
+	scanner := bufio.NewScanner(file)
+
+	// Increase the buffer size to handle large tokens
+	bufferSize := 10 * 1024 * 1024 // 10 MB
+	scanner.Buffer(make([]byte, bufferSize), bufferSize)
+
+	for scanner.Scan() {
+		sb.WriteString(scanner.Text() + "\n")
+	}
+	if err := scanner.Err(); err != nil {
+		content, err := io.ReadAll(file)
+		if err != nil {
+			return "Something went wrong in io reader", err
+		}
+		return string(content), nil
+	}
+	return sb.String(), nil
+}
+
+// ---------------------------------------------------------------------------------------------
+
+func countKeywords(content string, keywords []string) map[string]int {
+	// Accumulator
+	keywordCounts := make(map[string]int)
+	// iterates over the whole file, looking for our pdfKeywords (argument)
+	for _, keyword := range keywords {
+		// search for the keyword, in a insasitive case way, on the textContent, which is the text extracted from the output
+		content := " " + strings.ToLower(content) + " "
+		searchTerm := " " + strings.ToLower(keyword) + " "
+
+		count := strings.Count(content, searchTerm) // strings.Count is a built-in function from string package, used to count the words
+		if count > 0 {
+			keywordCounts[keyword] = count
+		}
+	}
+
+	if len(keywordCounts) == 0 {
+		return nil
+	}
+
+	return keywordCounts
+}
+
+// ---------------------------------------------------------------------------------------------
+
+func processPDF(filePath string, keywords []string, file api.FileInfo) map[string]interface{} {
 	// create the directory
+
 	outputDir, err := os.MkdirTemp("", "pdf_extracted_*")
 
 	if err != nil {
@@ -88,17 +176,16 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 	defer os.RemoveAll(outputDir) // Clean up the extracted text file
 
 	// extract the content from the directory
-
-	err = pdfcpuapi.ExtractContentFile(tmpFile.Name(), outputDir, nil, nil)
+	err = pdfcpuapi.ExtractContentFile(filePath, outputDir, nil, nil)
 	if err != nil {
-		fmt.Printf("PDFCPU extraction failed for file %s: %v\n", tmpFile.Name(), err)
+		fmt.Printf("PDFCPU extraction failed for file %s: %v\n", outputDir, err)
 
 		// Assume failure is due to image content, process with OCR
 		fmt.Println("Falling back to OCR for image-based PDF...")
 		ocrOutput := filepath.Join(outputDir, "ocr_output")
-		err := processing.RunTesseract(tmpFile.Name(), ocrOutput)
+		err := processing.RunTesseract(outputDir, ocrOutput)
 		if err != nil {
-			fmt.Printf("OCR failed for %s: %v\n", tmpFile.Name(), err)
+			fmt.Printf("OCR failed for %s: %v\n", outputDir, err)
 			return nil
 		}
 		fmt.Printf("OCR output saved to: %s.txt\n", ocrOutput)
@@ -123,6 +210,17 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 		fmt.Printf("Failed to read extracted text from directory %s: %v\n", outputDir, err)
 		return nil
 	}
+	keywordCounts := countKeywords(contentpdf, keywords)
+
+	if keywordCounts == nil || len(keywordCounts) == 0 {
+		fmt.Printf("No keywords found in file: %s\n", file.Filename)
+		return nil
+	}
+	return map[string]interface{}{
+		"url":      file.URL,
+		"filename": file.Filename,
+		"keywords": keywordCounts,
+	}
 	//fmt.Println("Combined content from extracted text files:", contentpdf) // debuging
 
 	// Opens the tmp file and reads it line by line using bufio.Scanner.
@@ -137,69 +235,27 @@ func ProcessFile(file api.FileInfo, pdfKeywords []string) map[string]interface{}
 
 	// ---------------------------------------------------------------------------------------------
 
-	// Step 6: Analyze text for keywords
-	// Accumulator
-	keywordCounts := make(map[string]int)
+	// // Step 6: Analyze text for keywords
+	// // Accumulator
+	// keywordCounts := make(map[string]int)
 
-	// iterates over the whole file, looking for our pdfKeywords (argument)
-	for _, keyword := range pdfKeywords {
-		// search for the keyword, in a insasitive case way, on the textContent, which is the text extracted from the output
-		content := " " + strings.ToLower(contentpdf) + " "
-		searchTerm := " " + strings.ToLower(keyword) + " "
+	// // iterates over the whole file, looking for our pdfKeywords (argument)
+	// for _, keyword := range keywords {
+	// 	// search for the keyword, in a insasitive case way, on the textContent, which is the text extracted from the output
+	// 	content := " " + strings.ToLower(contentpdf) + " "
+	// 	searchTerm := " " + strings.ToLower(keyword) + " "
 
-		count := strings.Count(content, searchTerm) // strings.Count is a built-in function from string package, used to count the words
-		// save them in the accumulator
-		if count > 0 { // Only include keywords with matches
-			keywordCounts[keyword] = count
-		}
-	}
+	// 	count := strings.Count(content, searchTerm) // strings.Count is a built-in function from string package, used to count the words
+	// 	// save them in the accumulator
+	// 	if count > 0 { // Only include keywords with matches
+	// 		keywordCounts[keyword] = count
+	// 	}
+	// }
 
-	// ---------------------------------------------------------------------------------------------
-	fmt.Printf("Keyword counts for %s: %+v\n", file.Filename, keywordCounts)
-
-	// Step 7: Return results only if keywords are found
-	anyKeywordFound := false
-	for _, count := range keywordCounts {
-		if count > 0 {
-			anyKeywordFound = true
-			break
-		}
-	}
-
-	if !anyKeywordFound {
-		fmt.Printf("No keywords found in %s\n", file.Filename)
-		return nil // Skip files with no keyword matches
-	}
-
-	// Step 7: Return results, with the keword counts
-	return map[string]interface{}{
-		"url":      file.URL,
-		"filename": file.Filename,
-		"keywords": keywordCounts,
-	}
+	// // ---------------------------------------------------------------------------------------------
 }
 
-// The function to read the file in the step 3
-// func readFileContent(filePath string) (string, error) {
-// 	// Open the file
-// 	file, err := os.Open(filePath)
-// 	if err != nil {
-// 		return "", err
-// 	}
-// 	defer file.Close()
-
-// 	// Use bufio to read the file line by line
-// 	var sb strings.Builder
-// 	scanner := bufio.NewScanner(file)
-// 	for scanner.Scan() {
-// 		sb.WriteString(scanner.Text() + "\n")
-// 	}
-// 	if err := scanner.Err(); err != nil {
-// 		return "", err
-// 	}
-
-// 	return sb.String(), nil
-// }
+// ---------------------------------------------------------------------------------------------
 
 func readExtractedText(dir string) (string, error) {
 	var sb strings.Builder

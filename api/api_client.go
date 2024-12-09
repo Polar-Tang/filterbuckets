@@ -23,9 +23,13 @@ type ApiResponse struct {
 	Files []FileInfo `json:"files"`
 }
 
-func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([]FileInfo, error) {
+func QueryFiles(sessionCookie string, keywords []string, extensions map[string][]string) ([]FileInfo, error) {
 	apiURL := "https://buckets.grayhatwarfare.com/api/v2/files"
 	var allFiles []FileInfo
+
+	// Convert map keys (extensions) to a single string
+	extensionKeys := getMapKeys(extensions)
+	extensionsParam := strings.Join(extensionKeys, ",")
 
 	// Pagination variables (local to the function)
 	start := 0
@@ -53,7 +57,7 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 		// Build query parameters
 		params := url.Values{}
 		params.Set("keywords", joinKeywords(keywords))
-		params.Set("extensions", joinKeywords(extensions))
+		params.Set("extensions", extensionsParam)
 		params.Set("limit", fmt.Sprintf("%d", limit))
 		params.Set("start", fmt.Sprintf("%d", start))
 
@@ -107,6 +111,15 @@ func QueryFiles(sessionCookie string, keywords []string, extensions []string) ([
 		start += limit
 	}
 	return allFiles, nil
+}
+
+// Helper function to get keys of a map
+func getMapKeys(m map[string][]string) []string {
+	keys := make([]string, 0, len(m))
+	for key := range m {
+		keys = append(keys, key)
+	}
+	return keys
 }
 
 // Helper function to join keywords into a single string
