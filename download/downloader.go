@@ -230,38 +230,7 @@ func processPDF(filePath string, keywords []string, file api.FileInfo) map[strin
 		"filename": file.Filename,
 		"keywords": keywordCounts,
 	}
-	//fmt.Println("Combined content from extracted text files:", contentpdf) // debuging
 
-	// Opens the tmp file and reads it line by line using bufio.Scanner.
-
-	// // Set the path to the PDF and read images
-	// client.SetImage(tmpFile.Name())
-	// text, err := client.Text()
-	// if err != nil {
-	// 	fmt.Printf("Failed to extract text from PDF %s: %v\n", file.Filename, err)
-	// 	return nil
-	// }
-
-	// ---------------------------------------------------------------------------------------------
-
-	// // Step 6: Analyze text for keywords
-	// // Accumulator
-	// keywordCounts := make(map[string]int)
-
-	// // iterates over the whole file, looking for our pdfKeywords (argument)
-	// for _, keyword := range keywords {
-	// 	// search for the keyword, in a insasitive case way, on the textContent, which is the text extracted from the output
-	// 	content := " " + strings.ToLower(contentpdf) + " "
-	// 	searchTerm := " " + strings.ToLower(keyword) + " "
-
-	// 	count := strings.Count(content, searchTerm) // strings.Count is a built-in function from string package, used to count the words
-	// 	// save them in the accumulator
-	// 	if count > 0 { // Only include keywords with matches
-	// 		keywordCounts[keyword] = count
-	// 	}
-	// }
-
-	// // ---------------------------------------------------------------------------------------------
 }
 
 // ---------------------------------------------------------------------------------------------
