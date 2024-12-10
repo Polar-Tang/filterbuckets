@@ -10,6 +10,7 @@ import (
 	"path/filepath"
 	"pdf_greyhat_go/api"
 	"pdf_greyhat_go/processing"
+	"regexp"
 	"strings"
 	"time"
 
@@ -144,14 +145,22 @@ func countKeywords(content string, keywords []string) map[string]int {
 	// Accumulator
 	keywordCounts := make(map[string]int)
 	// iterates over the whole file, looking for our pdfKeywords (argument)
+	content = strings.ToLower(content)
+
 	for _, keyword := range keywords {
 		// search for the keyword, in a insasitive case way, on the textContent, which is the text extracted from the output
-		content := " " + strings.ToLower(content) + " "
-		searchTerm := " " + strings.ToLower(keyword) + " "
+		pattern := "(?i)" + keyword // "(?i)" makes it case-insensitive
 
-		count := strings.Count(content, searchTerm) // strings.Count is a built-in function from string package, used to count the words
-		if count > 0 {
-			keywordCounts[keyword] = count
+		re, err := regexp.Compile(pattern)
+		if err != nil {
+			fmt.Printf("Failed to compile regex for keyword '%s': %v\n", keyword, err)
+			continue
+		}
+
+		matches := re.FindAllStringIndex(content, -1)
+		if len(matches) > 0 {
+			// Save the count of matches
+			keywordCounts[keyword] = len(matches)
 		}
 	}
 
