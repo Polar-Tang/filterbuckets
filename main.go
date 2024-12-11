@@ -4,6 +4,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io"
 	"log"
 	"os"
 	"sync"
@@ -16,7 +17,7 @@ import (
 func main() {
 	// Initialize session and keywords
 	sessionCookie := "01931a3ff4929fa0e8d8c93ba9dac24c"
-	keywords := []string{"private", "restricted", "classified", "internal-use", "for_official_use_only", "docs", "document_file", "file", "note", "writeup", "write-up", "file_record", "draft", "text_file", "paper", "form", "worksheet", "sensitive", "secret", "non_public", "classified", "proprietary", "privileged", "summary", "log", "statement", "record", "analysis", "assessment", "review", "findings", "private_file", "classified_doc", "restricted_document", "internal_note", "internal_record", "tech_docs", "technical_manual", "spec_doc", "engineering_doc", "system_guide", "implementation_guide", "guide", "instruction", "user_guide", "reference_manual", "handbook", "how_to", "procedure_guide", "audit_log", "compliance_audit", "inspection_report", "review_summary", "audit_summary", "inspection", "assessment", "evaluation", "check", "compliance_check", "review_process", "learning_material", "training_manual", "educational_guide", "training_resource", "instruction_guide", "requirements", "spec_doc", "system_specs", "tech_requirements", "implementation_details", "changelog", "version_log", "update_notes", "patch_notes", "deployment_notes", "revision_log", "notice", "internal_message", "bulletin", "announcement", "reminder", "brief", "conference", "call_notes", "discussion", "session", "standup", "minutes_of_meeting", "plan", "roadmap", "approach", "tactics", "blueprint", "agenda", "promotion_plan", "campaign_strategy", "marketing_strategy", "advertising_plan", "business_promotion", "case_report", "project_analysis", "success_story", "research_report", "example_study", "regulatory_report", "policy_check", "compliance_summary", "standards_report", "audit_summary", "q1_report", "q2_report", "q3_report", "q4_report", "financial_summary", "quarterly_review", "performance_report"}
+	keywords := []string{"Jane's addiction", "restricted", "classified", "internal-use", "for_official_use_only", "docs", "document_file", "file", "note", "writeup", "write-up", "file_record", "draft", "text_file", "paper", "form", "worksheet", "sensitive", "secret", "non_public", "classified", "proprietary", "privileged", "summary", "log", "statement", "record", "analysis", "assessment", "review", "findings", "private_file", "classified_doc", "restricted_document", "internal_note", "internal_record", "tech_docs", "technical_manual", "spec_doc", "engineering_doc", "system_guide", "implementation_guide", "guide", "instruction", "user_guide", "reference_manual", "handbook", "how_to", "procedure_guide", "audit_log", "compliance_audit", "inspection_report", "review_summary", "audit_summary", "inspection", "assessment", "evaluation", "check", "compliance_check", "review_process", "learning_material", "training_manual", "educational_guide", "training_resource", "instruction_guide", "requirements", "spec_doc", "system_specs", "tech_requirements", "implementation_details", "changelog", "version_log", "update_notes", "patch_notes", "deployment_notes", "revision_log", "notice", "internal_message", "bulletin", "announcement", "reminder", "brief", "conference", "call_notes", "discussion", "session", "standup", "minutes_of_meeting", "plan", "roadmap", "approach", "tactics", "blueprint", "agenda", "promotion_plan", "campaign_strategy", "marketing_strategy", "advertising_plan", "business_promotion", "case_report", "project_analysis", "success_story", "research_report", "example_study", "regulatory_report", "policy_check", "compliance_summary", "standards_report", "audit_summary", "q1_report", "q2_report", "q3_report", "q4_report", "financial_summary", "quarterly_review", "performance_report"}
 	extensions := map[string][]string{
 		"json": {"(?i)(password|passwd|pwd|pass|secret)[^\\n]*[=:][^\\n]*['\"\\s][^'\"\\s]+['\"\\s]",
 			"(?i)(api[_-]?key|apikey|api[_-]?secret|secret[_-]?key|key|access[_-]?key)[^\\n]*[=:][^\\n]*['\"\\s][A-Za-z0-9._\\-]+['\"\\s]",
@@ -401,11 +402,42 @@ func main() {
 			"(?i)(ssh-rsa|ssh-dss|ecdsa-sha2-nistp256|ssh-ed25519) [A-Za-z0-9+/=]+",
 		},
 	}
+
+	createOutputFile := func(keyword string) (string, error) {
+		filename := fmt.Sprintf("results-%s.json", keyword)
+		dir, err := os.Open(".")
+		if err != nil {
+			return "", fmt.Errorf("failed opening the directory: %w", err)
+		}
+		defer dir.Close()
+
+		var acc int
+		names, err := dir.Readdirnames(-1)
+		if err != nil && err != io.EOF { // EOF means end of directory
+			return "", fmt.Errorf("error reading directory: %w", err)
+		}
+
+		for _, name := range names {
+			if name == filename || name == fmt.Sprintf("results-%s-%d.json", keyword, acc) {
+				acc++
+			}
+		}
+
+		if acc > 0 {
+			filename = fmt.Sprintf("results-%s-%d.json", keyword, acc)
+		}
+
+		return filename, nil
+	}
+
 	for _, keyword := range keywords {
-		outputFile := fmt.Sprintf("results-%s.json", keyword)
+		outputFile, err := createOutputFile(keyword)
+		if err != nil {
+			fmt.Printf("Failed to create output file: %v\n", err)
+			continue
+		}
 		fmt.Printf("Searching for files with keyword: %s\n", keyword)
 		var files []api.FileInfo
-		var err error
 		maxRetries := 3
 		for retries := 0; retries < maxRetries; retries++ {
 			files, err = api.QueryFiles(sessionCookie, []string{keyword}, extensions)
