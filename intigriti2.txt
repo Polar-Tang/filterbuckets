@@ -1,80 +1,74 @@
 
-Algemeen Dagblad
-Allegro
-Axel Springer
-Azena
-BMC
-BMW Group
-BMW Group Automotive
-Bpost
-Bühler
-CM.com
-Canada Post
-Capital.com
-Cloudways by DigitalOcean
-Cross Border Fines
-Cyber Security Coalition
-DPG Media
-De Lijn
-De Morgen
-De Volkskrant
-Delen Private Bank
-Digitaal Vlaanderen
-DigitalOcean
-Donorbox
-E-Gor
-EURid
-Fing
-HRS Group
-Henkel
-Here Technologies
-Het Laatste Nieuws
-Het Parool
-Humo
-Kinepolis Group
-Lansweeper
-Libelle
-Mobile Vikings
-Moralis 
-Nestlé
-Nexuzhealth
-Nexuzhealth Web PACS
-OVO
-PDQ bug bounty program
-PeopleCert
-Personio
-Port of Antwerp-Bruges
-Purolator
-RGF BE
-RIPE NCC
-Randstad
-Red Bull
-Revolut
-SimScale
-Sixt
-Social Deal
-Soundtrack Your Brand
-Sqills
-Stravito
-Suivo bug bounty
-Sustainable
-Telenet
-Tempo-Team
-Tomorrowland
-Torfs
-Trouw
-TrueLayer
-Twago
-Tweakers
-UZ Leuven
-Ubisoft 
-VRT
-VTM GO
-Venly
-Vlerick Business School
-Voi Scooters
-WP Engine
-Yacht
-Yahoo 
-e-tracker
-eHealth Hub VZN KUL
+"AlgemeenDagblad",
+"Allegro",
+"AxelSpringer",
+"Azena",
+"BMC",
+"BMWGroup",
+"Bpost",
+"Bühler",
+"CM.com",
+"CanadaPost",
+"Capital.com",
+"DPGMedia",
+"DeLijn",
+"DeMorgen",
+"DeVolkskrant",
+DelenPrivateBank
+DigitaalVlaanderen
+"DigitalOcean",
+"Donorbox",
+"E-Gor",
+"EURid",
+"Fing",
+"HRSGroup",
+"Henkel",
+"HereTechnologies",
+"HetParool",
+"Humo",
+"KinepolisGroup",
+"Lansweeper",
+"Libelle",
+"MobileVikings",
+"Moralis",
+"Nestlé",
+"Nexuzhealth",
+"Nexuzhealth"
+"OVO",
+"PDQ",bugbountyprogram
+"PeopleCert",
+"Personio",
+"PortofAntwerp-Bruges",
+"Purolator",
+"RIPENCC",
+"Randstad",
+"RedBull",
+"Revolut",
+"SimScale",
+"Sixt",
+"SocialDeal",
+"Soundtrack",
+"Sqills",
+"Stravito",
+"Suivo",
+"Sustainable",
+"Telenet",
+"Tempo",
+"Tomorrowland",
+"Torfs",
+"Trouw",
+"TrueLayer",
+"Twago",
+"Tweakers",
+"UZ",Leuven
+"Ubisoft",
+"VRT",
+"VTM",
+"Venly",
+"Vlerick",
+"Voi",
+"WP",
+"Yacht",
+"Yahoo",
+"e-tracker",
+"eHealth",
