@@ -16,26 +16,16 @@ import (
 
 func main() {
 	// Initialize session and keywords
-	sessionCookie := "01931a3ff4929fa0e8d8c93ba9dac24c"
+	sessionCookie := "54e7fe8c2aa1dd504b9be39fa3466f10"
 	keywords := []string{
-		"manifest",
 		"mbank",
 	}
 	extensions := map[string][]string{
-		"json": {".*mbank.*"},
-		"xml":  {".*mbank.*"},
-		"pdf":  {".*mbank.*"},
-		"php":  {".*mbank.*"},
-		"js":   {".*mbank.*"},
-		"py":   {".*mbank.*"},
-		"java": {".*mbank.*"},
-		"go":   {".*mbank.*"},
-		"txt":  {".*mbank.*"},
-		"html": {".*mbank.*"},
+		"go": {".*mbank.*"},
 	}
 
 	createOutputFile := func(keyword string) (string, error) {
-		filename := fmt.Sprintf("results-%son", keyword)
+		filename := fmt.Sprintf("results-%s.json", keyword)
 		dir, err := os.Open(".")
 		if err != nil {
 			return "", fmt.Errorf("failed opening the directory: %w", err)
@@ -49,18 +39,19 @@ func main() {
 		}
 
 		for _, name := range names {
-			if name == filename || name == fmt.Sprintf("results-%s-%don", keyword, acc) {
+			if name == filename || name == fmt.Sprintf("results-%s-%d.json", keyword, acc) {
 				acc++
 			}
 		}
 
 		if acc > 0 {
-			filename = fmt.Sprintf("results-%s-%don", keyword, acc)
+			filename = fmt.Sprintf("results-%s-%d.json", keyword, acc)
 		}
 
 		return filename, nil
 	}
 
+	// ---------------------------------------------------------------
 	for _, keyword := range keywords {
 		outputFile, err := createOutputFile(keyword)
 		if err != nil {
@@ -73,7 +64,7 @@ func main() {
 		for retries := 0; retries < maxRetries; retries++ {
 			files, err = api.QueryFiles(sessionCookie, []string{keyword}, extensions)
 			if err == nil {
-				break // Exit the retry loop if successful
+				break
 			}
 			log.Printf("Retry %d/%d for keyword '%s' failed: %v", retries+1, maxRetries, keyword, err)
 			time.Sleep(2 * time.Second)
@@ -83,82 +74,77 @@ func main() {
 			continue
 		}
 
-		// Create a semaphore for concurrent downloads
 		var wg sync.WaitGroup
-		// Initialize results
 		results := make([]map[string]interface{}, 0)
-		// RESULTS:
-		/*
-		       {"Filename": "file1.pdf", "URL": "http://example.com/file1", "Matches": 10},
-		   {"Filename": "file2.pdf", "URL": "http://example.com/file2", "Matches": 5},
-		*/
-		mutex := &sync.Mutex{}
+		var mutex sync.Mutex
 
-		// Set the concurrency limit
 		concurrencyLimit := 6
-		// use semaphore var to set a maximum number of concurrent goroutines
 		semaphore := make(chan struct{}, concurrencyLimit)
+		errorschan := make(chan error, len(files))
 
-		// Creates a timer that triggers every 60 seconds.
 		ticker := time.NewTicker(60 * time.Second)
 		defer ticker.Stop()
 
-		// ensure to goes periodicly saving it's making to avoid big lost if the process is interrupted
 		go func() {
-			// A channel that emits a signal every time the ticker fires.
 			for range ticker.C {
-				// save the file periodically
 				mutex.Lock()
 				err := saveResults(results, outputFile)
 				if err != nil {
-					log.Printf("Error saving periodic results for keyword '%s': %v", keyword, err)
+					errorschan <- fmt.Errorf("error saving periodic results for keyword '%s': %v", keyword, err)
 				}
-				// fmt.Printf("Result added: %+v\n", results) // Add this line for debugging
-				// MUTEX write the file but priventing race conditions
 				mutex.Unlock()
 			}
 		}()
-
+		done := make(chan struct{})
+		defer close(done)
 		for _, fileInfo := range files {
+			wg.Add(1)
 
 			fmt.Println("Processing file:", fileInfo.Filename)
-			if fileInfo.Size > 50*1024*1024 { // Skip files larger than 50 MB
-				fmt.Printf("Skipping large file: %s\n", fileInfo.Filename)
+			if fileInfo.Size > 50*1024*1024 {
+				errorschan <- fmt.Errorf("skipping large file: %s", fileInfo.Filename)
 				continue
 			}
 
-			// increment the wait counter
-			wg.Add(1)
 			go func(file api.FileInfo) {
-				// DECREMENT the wait routine when it's done
 				defer wg.Done()
-				// send an empty struct into the sempahore channel
-				semaphore <- struct{}{} // Acquire a semaphore slot
-				// semaphoro green!
-				defer func() { <-semaphore }() // Release slot after processing
+				semaphore <- struct{}{}
+				defer func() { <-semaphore }()
 
-				// fmt.Printf("Found file: %s (URL: %s, Size: %d bytes)\n", file.Filename, file.URL, file.Size)
-
-				result := download.ProcessFile(file, extensions) // redefine result
-				// redefine the results with the function proces file
+				result := download.ProcessFile(file, extensions)
 				if result != nil {
-					// append the result (no overwrite)
 					mutex.Lock()
 					results = append(results, result)
-
-					// MUTEX write the file but priventing race conditions
 					mutex.Unlock()
+					if err != nil {
+						errorschan <- fmt.Errorf("failed to open file '%s' for writing: %v", outputFile, err)
+						return
+					}
+				} else {
+					errorschan <- fmt.Errorf("processing failed for file: %s", file.URL)
 				}
 			}(fileInfo)
 		}
-		// The file info is a struct
-		/* type FileInfo struct {
-		        URL      string
-		        Filename string
-		        Size     int
-		} */
-		// The results are saved as JSON in resultson, after the whole fucking process ends:
-		wg.Wait() // Wait for all goroutines to complete
+
+		go func() {
+			for err := range errorschan {
+				fmt.Printf("Error: %v\n", err)
+			}
+			close(errorschan) // Close the error channel after all errors are collected
+		}()
+
+		go func() {
+			for {
+				select {
+				case err := <-errorschan:
+					fmt.Printf("Error: %v\n", err)
+				case <-done:
+					fmt.Println("All files processed")
+					return
+				}
+			}
+		}()
+		wg.Wait()
 		mutex.Lock()
 		err = saveResults(results, outputFile)
 		if err != nil {
@@ -169,20 +155,20 @@ func main() {
 }
 
 func saveResults(results []map[string]interface{}, outputFile string) error {
-	fmt.Printf("Saving %d results...\n", len(results)) // Debug log
+	fmt.Println("Saving results...")
 
-	file, err := os.Create(outputFile) // Create (or overwrite) resultson
+	file, err := os.Create(outputFile)
 	if err != nil {
 		return fmt.Errorf("failed to create output file '%s': %w", outputFile, err)
 	}
 	defer file.Close()
 
 	encoder := json.NewEncoder(file)
-	encoder.SetIndent("", "  ") // Add indentation for readability
-
+	encoder.SetIndent("", "  ")
 	if err := encoder.Encode(results); err != nil {
 		return fmt.Errorf("failed to write JSON to file '%s': %w", outputFile, err)
 	}
+
 	fmt.Printf("Results saved to %s\n", outputFile)
 	return nil
 }
