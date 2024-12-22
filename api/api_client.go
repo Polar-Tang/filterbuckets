@@ -55,7 +55,7 @@ func QueryFiles(sessionCookie string, keywords []string, extensions map[string][
 			var memStats runtime.MemStats
 			runtime.ReadMemStats(&memStats)
 			fmt.Printf("Memory Allocated: %v MB\n", memStats.Alloc/1024/1024)
-			time.Sleep(60 * time.Second) // Run every 60 seconds
+			time.Sleep(300 * time.Second) // Run every 60 seconds
 			transport.CloseIdleConnections()
 			fmt.Println("Idle connections closed")
 		}

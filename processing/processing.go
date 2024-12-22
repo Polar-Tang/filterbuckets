@@ -128,7 +128,7 @@ func ProcessFiles(keywords []string, extensions map[string][]string) {
 			go func(file api.FileInfo) {
 				semaphore <- struct{}{}
 				processingColor("Starting a goroutine...")
-				processingColor("Goroutines waiting: %d\n", len(semaphore))
+
 				defer func() {
 					processingColor("Exiting goroutine...")
 				}()
