@@ -8,11 +8,12 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
-	"pdf_greyhat_go/api"
-	"pdf_greyhat_go/processing"
 	"regexp"
 	"strings"
 	"time"
+
+	"github.com/Polar-Tang/filterbuckets/api"
+	"github.com/Polar-Tang/filterbuckets/ocr"
 
 	pdfcpuapi "github.com/pdfcpu/pdfcpu/pkg/api" // Alias for pdfcpu API
 )
@@ -80,8 +81,10 @@ func ProcessFile(file api.FileInfo, extensionKeywords map[string][]string) map[s
 	}
 
 	if extension == "pdf" {
+		fmt.Println(keywords)
 		return processPDF(tmpFile.Name(), keywords, file)
 	} else {
+		fmt.Println(keywords)
 		return processPlainText(tmpFile.Name(), keywords, file)
 	}
 }
@@ -192,7 +195,7 @@ func processPDF(filePath string, keywords []string, file api.FileInfo) map[strin
 		// Assume failure is due to image content, process with OCR
 		fmt.Println("Falling back to OCR for image-based PDF...")
 		ocrOutput := filepath.Join(outputDir, "ocr_output")
-		err := processing.RunTesseract(outputDir, ocrOutput)
+		err := ocr.RunTesseract(outputDir, ocrOutput)
 		if err != nil {
 			fmt.Printf("OCR failed for %s: %v\n", outputDir, err)
 			return nil

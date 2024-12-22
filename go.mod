@@ -1,6 +1,6 @@
-module pdf_greyhat_go
+module github.com/Polar-Tang/filterbuckets
 
-go 1.23.2
+go 1.23.3
 
 require (
 	github.com/fatih/color v1.18.0
