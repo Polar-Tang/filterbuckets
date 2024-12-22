@@ -185,7 +185,6 @@ func main() {
 			// COLORS
 			processingColor := color.New(color.FgGreen).PrintlnFunc()
 			wg.Add(1)
-			fmt.Println("Processing file:", fileInfo.Filename)
 
 			if fileInfo.Size > 50*1024*1024 {
 				errorschan <- fmt.Errorf("skipping large file: %s", fileInfo.Filename)

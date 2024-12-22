@@ -7,9 +7,9 @@ import (
 	"io"
 	"net/http"
 	"net/url"
+	"runtime"
 	"strings"
 	"time"
-	"runtime"
 )
 
 type FileInfo struct {
@@ -51,7 +51,7 @@ func QueryFiles(sessionCookie string, keywords []string, extensions map[string][
 
 	go func() {
 		for {
-	        fmt.Printf("Number of Goroutines: %d\n", runtime.NumGoroutine())
+			fmt.Printf("Number of Goroutines: %d\n", runtime.NumGoroutine())
 			var memStats runtime.MemStats
 			runtime.ReadMemStats(&memStats)
 			fmt.Printf("Memory Allocated: %v MB\n", memStats.Alloc/1024/1024)
@@ -125,7 +125,7 @@ func QueryFiles(sessionCookie string, keywords []string, extensions map[string][
 		start += limit
 	}
 	return allFiles, nil
-	
+
 }
 
 // Helper function to get keys of a map
@@ -142,7 +142,6 @@ func joinKeywords(keywords []string) string {
 	return url.QueryEscape(strings.Join(keywords, " "))
 }
 
-
 func doRequestWithRetry(client *http.Client, req *http.Request, retries int) (*http.Response, error) {
 	for i := 0; i < retries; i++ {
 		resp, err := client.Do(req)
@@ -154,28 +153,3 @@ func doRequestWithRetry(client *http.Client, req *http.Request, retries int) (*h
 	}
 	return nil, fmt.Errorf("all retries failed")
 }
-
-// func saveResultsToFile(results []FileInfo, outputFile string) error {
-// 	// Open the file for appending (or create it if it doesn't exist)
-// 	file, err := os.OpenFile(outputFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-// 	if err != nil {
-// 		return fmt.Errorf("failed to open file: %w", err)
-// 	}
-// 	defer file.Close()
-
-// 	// Write each result as a JSON object, one per line
-// 	for _, result := range results {
-// 		jsonBytes, err := json.Marshal(result)
-// 		if err != nil {
-// 			return fmt.Errorf("failed to marshal result: %w", err)
-// 		}
-
-// 		// Write JSON line to the file
-// 		_, err = file.Write(append(jsonBytes, '\n'))
-// 		if err != nil {
-// 			return fmt.Errorf("failed to write to file: %w", err)
-// 		}
-// 	}
-
-// 	return nil
-// }

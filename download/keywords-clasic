@@ -1,23 +1,67 @@
-go func(file api.FileInfo) {
-				semaphore <- struct{}{}
-				processingColor("Starting a goroutine...")
-
-				defer func() {
-					<-semaphore
-					processingColor("Exiting goroutine...")
-				}()
-				defer wg.Done()
-
-				result := download.ProcessFile(file, extensions)
-				if result != nil {
-					processingColor("Locking mutex...\n")
-					mutex.Lock()
-					results = append(results, result)
-					mutex.Unlock()
-					processingColor("Unocking mutex...\n")
-
-				} else {
-					errorschan <- fmt.Errorf("processing failed for file: %s", file.URL)
-				}
-			}(fileInfo)
-		}
+"app",
+		"main",
+		"index",
+		"script",
+		"core",
+		"init",
+		"bundle",
+		"config",
+		"setup",
+		"service",
+		"utils",
+		"utility",
+		"functions",
+		"helper",
+		"helpers",
+		"base",
+		"vendor",
+		"custom",
+		"common",
+		"global",
+		"lib",
+		"library",
+		"data",
+		"api",
+		"client",
+		"server",
+		"auth",
+		"login",
+		"dashboard",
+		"home",
+		"router",
+		"routes",
+		"navigation",
+		"validate",
+		"validation",
+		"form",
+		"forms",
+		"ajax",
+		"request",
+		"handler",
+		"event",
+		"events",
+		"dom",
+		"loader",
+		"lazyload",
+		"analytics",
+		"tracking",
+		"error",
+		"errors",
+		"debug",
+		"log",
+		"logs",
+		"monitor",
+		"polyfill",
+		"worker",
+		"webpack.config",
+		"rollup.config",
+		"gulpfile",
+		"build",
+		"deploy",
+		"test",
+		"tests",
+		"spec",
+		"mock",
+		"mocks",
+		"report",
+		"reports",
