@@ -1,0 +1,23 @@
+go func(file api.FileInfo) {
+				semaphore <- struct{}{}
+				processingColor("Starting a goroutine...")
+
+				defer func() {
+					<-semaphore
+					processingColor("Exiting goroutine...")
+				}()
+				defer wg.Done()
+
+				result := download.ProcessFile(file, extensions)
+				if result != nil {
+					processingColor("Locking mutex...\n")
+					mutex.Lock()
+					results = append(results, result)
+					mutex.Unlock()
+					processingColor("Unocking mutex...\n")
+
+				} else {
+					errorschan <- fmt.Errorf("processing failed for file: %s", file.URL)
+				}
+			}(fileInfo)
+		}

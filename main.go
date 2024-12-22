@@ -12,6 +12,8 @@ import (
 
 	"pdf_greyhat_go/api"
 	"pdf_greyhat_go/download"
+
+	"github.com/fatih/color"
 )
 
 func main() {
@@ -98,6 +100,7 @@ func main() {
 	}
 
 	createOutputFile := func(keyword string) (string, error) {
+
 		filename := fmt.Sprintf("results-%s.json", keyword)
 		dir, err := os.Open(".")
 		if err != nil {
@@ -123,15 +126,17 @@ func main() {
 
 		return filename, nil
 	}
-
 	// ---------------------------------------------------------------
+
 	for _, keyword := range keywords {
+
 		outputFile, err := createOutputFile(keyword)
 		if err != nil {
 			fmt.Printf("Failed to create output file: %v\n", err)
 			continue
 		}
 		fmt.Printf("Searching for files with keyword: %s\n", keyword)
+
 		var files []api.FileInfo
 		maxRetries := 3
 		for retries := 0; retries < maxRetries; retries++ {
@@ -148,65 +153,74 @@ func main() {
 		}
 
 		var wg sync.WaitGroup
-		results := make([]map[string]interface{}, 0)
-		var mutex sync.Mutex
-
 		concurrencyLimit := 6
 		semaphore := make(chan struct{}, concurrencyLimit)
 		errorschan := make(chan error, len(files))
+		results := make([]map[string]interface{}, 0)
+		var mutex sync.Mutex
 
-		ticker := time.NewTicker(60 * time.Second)
+		ticker := time.NewTicker(300 * time.Second)
 		defer ticker.Stop()
 
+		tickerColor := color.New(color.FgBlue).PrintlnFunc()
+		// 🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵
 		go func() {
+			tickerColor("Starting a goroutine...")
+			defer tickerColor("Exiting goroutine...")
 			for range ticker.C {
+				tickerColor("Locking mutex...\n")
 				mutex.Lock()
 				err := saveResults(results, outputFile)
 				if err != nil {
 					errorschan <- fmt.Errorf("error saving periodic results for keyword '%s': %v", keyword, err)
 				}
+				tickerColor("Unocking mutex...\n")
 				mutex.Unlock()
 			}
 		}()
+
 		done := make(chan struct{})
 		defer close(done)
 		for _, fileInfo := range files {
+			// COLORS
+			processingColor := color.New(color.FgGreen).PrintlnFunc()
 			wg.Add(1)
-
 			fmt.Println("Processing file:", fileInfo.Filename)
+
 			if fileInfo.Size > 50*1024*1024 {
 				errorschan <- fmt.Errorf("skipping large file: %s", fileInfo.Filename)
 				continue
 			}
 
+			// 💚💚💚💚💚💚💚💚💚💚💚
 			go func(file api.FileInfo) {
-				defer wg.Done()
 				semaphore <- struct{}{}
-				defer func() { <-semaphore }()
+				processingColor("Starting a goroutine...")
+				defer func() {
+					<-semaphore
+					processingColor("Exiting goroutine...")
+				}()
+				defer wg.Done()
 
 				result := download.ProcessFile(file, extensions)
 				if result != nil {
+					processingColor("Locking mutex...\n")
 					mutex.Lock()
 					results = append(results, result)
+					processingColor("Unocking mutex...\n")
 					mutex.Unlock()
-					if err != nil {
-						errorschan <- fmt.Errorf("failed to open file '%s' for writing: %v", outputFile, err)
-						return
-					}
 				} else {
 					errorschan <- fmt.Errorf("processing failed for file: %s", file.URL)
 				}
 			}(fileInfo)
 		}
 
-		go func() {
-			for err := range errorschan {
-				fmt.Printf("Error: %v\n", err)
-			}
-			close(errorschan) // Close the error channel after all errors are collected
-		}()
+		selectingColor := color.New(color.FgYellow).PrintlnFunc()
 
+		// 💛💛💛💛💛💛💛💛💛💛💛
 		go func() {
+			selectingColor("Starting a goroutine...")
+			defer selectingColor("Exiting goroutine...")
 			for {
 				select {
 				case err, ok := <-errorschan:
@@ -218,7 +232,7 @@ func main() {
 					if !ok {
 						break
 					}
-					fmt.Println("All files processed")
+					selectingColor("All files processed")
 					return
 				}
 			}
