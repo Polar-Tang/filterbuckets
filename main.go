@@ -152,11 +152,11 @@ func main() {
 			continue
 		}
 
-		var wg sync.WaitGroup
 		concurrencyLimit := 6
 		semaphore := make(chan struct{}, concurrencyLimit)
 		errorschan := make(chan error, len(files))
 		results := make([]map[string]interface{}, 0)
+		var wg sync.WaitGroup
 		var mutex sync.Mutex
 
 		ticker := time.NewTicker(300 * time.Second)
@@ -198,12 +198,12 @@ func main() {
 				processingColor("Starting a goroutine...")
 				processingColor("Goroutines waiting: %d\n", len(semaphore))
 				defer func() {
-					<-semaphore
 					processingColor("Exiting goroutine...")
 				}()
 				defer wg.Done()
 
 				result := download.ProcessFile(file, extensions)
+				<-semaphore
 				if result != nil {
 					processingColor("Locking mutex...\n")
 					mutex.Lock()
