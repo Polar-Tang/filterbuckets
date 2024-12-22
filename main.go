@@ -165,6 +165,7 @@ func main() {
 		tickerColor := color.New(color.FgBlue).PrintlnFunc()
 		// 🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵
 		go func() {
+
 			tickerColor("Starting a goroutine...")
 			defer tickerColor("Exiting goroutine...")
 			for range ticker.C {
@@ -195,6 +196,7 @@ func main() {
 			go func(file api.FileInfo) {
 				semaphore <- struct{}{}
 				processingColor("Starting a goroutine...")
+				processingColor("Goroutines waiting: %d\n", len(semaphore))
 				defer func() {
 					<-semaphore
 					processingColor("Exiting goroutine...")
