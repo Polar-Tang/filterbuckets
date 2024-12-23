@@ -52,7 +52,7 @@ func ProcessFiles(keywords []string, extensions map[string][]string) {
 	for _, keyword := range keywords {
 		cleankeyword := strings.TrimSpace(keyword)
 		cleankeyword = strings.Trim(cleankeyword, `"`)
-		cleankeyword = strings.Trim(cleankeyword, `"`)
+		cleankeyword = strings.TrimLeft(cleankeyword, `"`)
 		cleankeyword = strings.Trim(cleankeyword, `,`)
 
 		outputFile, err := createOutputFile(cleankeyword)
