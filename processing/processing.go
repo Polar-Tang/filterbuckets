@@ -20,7 +20,6 @@ import (
 
 func ProcessFiles(keywords []string, extensions map[string][]string) {
 	sessionCookie := "54e7fe8c2aa1dd504b9be39fa3466f10"
-	fmt.Println(extensions)
 	createOutputFile := func(keyword string) (string, error) {
 
 		filename := fmt.Sprintf("results-%s.json", keyword)
