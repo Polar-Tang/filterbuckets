@@ -76,8 +76,6 @@ func QueryFiles(sessionCookie string, keywords []string, extensions map[string][
 
 		// Build the full URL
 		fullURL := fmt.Sprintf("%s?%s", apiURL, params.Encode())
-		// Add headers (including the authorization token)
-		fmt.Println(fullURL)
 
 		// Create the request to the api
 		req, err := http.NewRequest("GET", fullURL, nil)

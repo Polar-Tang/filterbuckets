@@ -81,10 +81,8 @@ func ProcessFile(file api.FileInfo, extensionKeywords map[string][]string) map[s
 	}
 
 	if extension == "pdf" {
-		fmt.Println(keywords)
 		return processPDF(tmpFile.Name(), keywords, file)
 	} else {
-		fmt.Println(keywords)
 		return processPlainText(tmpFile.Name(), keywords, file)
 	}
 }

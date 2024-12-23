@@ -19,7 +19,6 @@ import (
 )
 
 func ProcessFiles(keywords []string, extensions map[string][]string) {
-	// Initialize session and keywords
 	sessionCookie := "54e7fe8c2aa1dd504b9be39fa3466f10"
 	fmt.Println(extensions)
 	createOutputFile := func(keyword string) (string, error) {
@@ -144,8 +143,6 @@ func ProcessFiles(keywords []string, extensions map[string][]string) {
 					results = append(results, result)
 					processingColor("Unocking mutex...\n")
 					mutex.Unlock()
-				} else {
-					errorschan <- fmt.Errorf("processing failed for file: %s", file.URL)
 				}
 			}(fileInfo)
 		}
