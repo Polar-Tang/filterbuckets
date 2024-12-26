@@ -25,7 +25,7 @@ type ApiResponse struct {
 }
 
 func QueryFiles(sessionCookie string, keywords []string, extensions map[string][]string) ([]FileInfo, error) {
-	apiURL := "https://buckets.grayhatwarfare.com/api/v2/files"
+	apiURL := "https://buckets.grayhatwarfare.com/api/v2/files?btchangqing.oss-cn-shenzhen.aliyuncs.com"
 	var allFiles []FileInfo
 
 	// Convert map keys (extensions) to a single string

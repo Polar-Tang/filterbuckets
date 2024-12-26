@@ -35,12 +35,12 @@ func main() {
 
 // parseFlags parses and validates command-line arguments
 func parseFlags() ToolConfig {
-	keywordsFile := flag.String("kw", "", "Path to the file containing keywords.")
+	keywordsFile := flag.String("w", "", "Path to the file containing keywords.")
 	extensionsFile := flag.String("x", "", "Path to the file containing extensions.")
 	flag.Parse()
 
-	if *keywordsFile == "" || *extensionsFile == "" {
-		fmt.Println("Error: Both --keywords and --extensions flags are required.")
+	if *extensionsFile == "" {
+		fmt.Println("Error: --extensions flag is required.")
 		flag.Usage()
 		os.Exit(1)
 	}

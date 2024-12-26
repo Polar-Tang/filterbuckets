@@ -20,6 +20,7 @@ import (
 
 // ProcessFile downloads and analyzes the PDF file for keywords
 func ProcessFile(file api.FileInfo, extensionKeywords map[string][]string) map[string]interface{} {
+
 	// fmt.Println("Processing file:", file.URL)
 	// transport for the buckets
 	bucketTransport := &http.Transport{
@@ -85,12 +86,13 @@ func ProcessFile(file api.FileInfo, extensionKeywords map[string][]string) map[s
 	} else {
 		return processPlainText(tmpFile.Name(), keywords, file)
 	}
+
 }
 
 // --------------------------------------------------------------------------------------------
 
 func processPlainText(filePath string, keywords []string, file api.FileInfo) map[string]interface{} {
-	fmt.Println("Processing plain text file:", file.Filename)
+	fmt.Println("Processing plain from the URL:", file.FullPath)
 	content, err := readFileContent(filePath)
 	if err != nil {
 		fmt.Printf("Failed to read content from %s: %v\n", file.Filename, err)
@@ -176,6 +178,7 @@ func countKeywords(content string, keywords []string) map[string]int {
 
 func processPDF(filePath string, keywords []string, file api.FileInfo) map[string]interface{} {
 	// create the directory
+	fmt.Println("Processing plain from the URL:", file.FullPath)
 
 	outputDir, err := os.MkdirTemp("", "pdf_extracted_*")
 
