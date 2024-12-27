@@ -14,11 +14,13 @@ import (
 type ToolConfig struct {
 	KeywordsFile   string
 	ExtensionsFile string
+	BucketFile     string
 }
 
 // Main entry point
 func main() {
 	config := parseFlags()
+	bucketFile := config.BucketFile
 	keywords := readLinesFromFile(config.KeywordsFile)
 	extensions, err := readExtensionsMap(config.ExtensionsFile)
 	if err != nil {
@@ -30,13 +32,15 @@ func main() {
 	fmt.Printf("Loaded %d extensions.\n", len(extensions))
 
 	// Placeholder: Call your processing function here
-	processing.ProcessFiles(keywords, extensions)
+	processing.ProcessFiles(keywords, extensions, bucketFile)
 }
 
 // parseFlags parses and validates command-line arguments
 func parseFlags() ToolConfig {
 	keywordsFile := flag.String("w", "", "Path to the file containing keywords.")
 	extensionsFile := flag.String("x", "", "Path to the file containing extensions.")
+	bucketFile := flag.String("b", "", "Bucket name.")
+
 	flag.Parse()
 
 	if *extensionsFile == "" {
@@ -48,10 +52,12 @@ func parseFlags() ToolConfig {
 	return ToolConfig{
 		KeywordsFile:   *keywordsFile,
 		ExtensionsFile: *extensionsFile,
+		BucketFile:     *bucketFile,
 	}
 }
 
 func readExtensionsMap(filePath string) (map[string][]string, error) {
+
 	file, err := os.Open(filePath)
 	if err != nil {
 		return nil, fmt.Errorf("error opening file %s: %w", filePath, err)
@@ -70,6 +76,9 @@ func readExtensionsMap(filePath string) (map[string][]string, error) {
 
 // readLinesFromFile reads lines from a given file and returns them as a slice of strings
 func readLinesFromFile(filePath string) []string {
+	if filePath == "" {
+		return nil
+	}
 	file, err := os.Open(filePath)
 	if err != nil {
 		fmt.Printf("Error opening file %s: %v\n", filePath, err)

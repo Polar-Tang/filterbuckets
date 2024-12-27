@@ -24,15 +24,15 @@ type ApiResponse struct {
 	Files []FileInfo `json:"files"`
 }
 
-func QueryFiles(sessionCookie string, keywords []string, extensions map[string][]string) ([]FileInfo, error) {
-	apiURL := "https://buckets.grayhatwarfare.com/api/v2/files?btchangqing.oss-cn-shenzhen.aliyuncs.com"
+func QueryFiles(sessionCookie string, keywords []string, extensions map[string][]string, bucketFile string) ([]FileInfo, error) {
+	apiURL := "https://buckets.grayhatwarfare.com/api/v2/files"
 	var allFiles []FileInfo
+	fmt.Printf("Querying files to %s\n", apiURL)
 
-	// Convert map keys (extensions) to a single string
+	// bucketName := "btchangqing.oss-cn-shenzhen.aliyuncs.com"
 	extensionKeys := getMapKeys(extensions)
 	extensionsParam := strings.Join(extensionKeys, ",")
 
-	// Pagination variables (local to the function)
 	start := 0
 	limit := 1000
 
@@ -69,13 +69,20 @@ func QueryFiles(sessionCookie string, keywords []string, extensions map[string][
 		pageCount++
 		// Build query parameters
 		params := url.Values{}
-		params.Set("keywords", joinKeywords(keywords))
+		if len(keywords) > 0 {
+			params.Set("keywords", joinKeywords(keywords))
+		}
 		params.Set("extensions", extensionsParam)
 		params.Set("limit", fmt.Sprintf("%d", limit))
+		if len(bucketFile) > 0 {
+			params.Set("bucket", bucketFile)
+		}
+
 		params.Set("start", fmt.Sprintf("%d", start))
 
 		// Build the full URL
 		fullURL := fmt.Sprintf("%s?%s", apiURL, params.Encode())
+		fmt.Printf("Requesting: %s\n", fullURL)
 
 		// Create the request to the api
 		req, err := http.NewRequest("GET", fullURL, nil)
