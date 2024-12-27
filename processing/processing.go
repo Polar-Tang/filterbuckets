@@ -33,7 +33,7 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 	results := make([]map[string]interface{}, 0)
 	fileNameChan := make(chan string)
 
-	ticker := time.NewTicker(5 * time.Second)
+	ticker := time.NewTicker(500 * time.Second)
 	defer ticker.Stop()
 	tickerColor := color.New(color.FgBlue).PrintlnFunc()
 
@@ -56,6 +56,20 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 
 	if len(keywords) == 0 {
 		fmt.Println("Processing files without keywords...")
+		rand.Seed(time.Now().UnixNano())
+
+		// Generate a random number between 100 and 999
+		randomNumber := rand.Intn(900) + 100
+		fileJSONName = fmt.Sprintf("results-%d.json", randomNumber)
+		fmt.Print("The proccess last less than 300 seconds. Saving current results...")
+		mutex.Lock()
+
+		err = SaveResults(results, fileJSONName)
+		if err != nil {
+			log.Printf("Error saving final results for keyword '%s': %v", fileJSONName, err)
+		}
+		mutex.Unlock()
+
 		files, err = api.QueryFiles(sessionCookie, []string{}, extensions, bucketFile)
 		fmt.Println(bucketFile)
 		ProcessFileForKeyword("", extensions, sessionCookie, results)
