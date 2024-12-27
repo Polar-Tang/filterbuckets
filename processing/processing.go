@@ -4,8 +4,8 @@ package processing
 import (
 	"encoding/json"
 	"fmt"
-	"io"
 	"log"
+	"math/rand"
 	"os"
 	"strings"
 	"sync"
@@ -18,10 +18,11 @@ import (
 )
 
 var (
-	wg    sync.WaitGroup
-	mutex sync.Mutex
-	err   error
-	files []api.FileInfo
+	wg           sync.WaitGroup
+	mutex        sync.Mutex
+	err          error
+	files        []api.FileInfo
+	fileJSONName string
 )
 
 // keywords []string, extensions map[string][]string
@@ -30,16 +31,18 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 
 	sessionCookie := "54e7fe8c2aa1dd504b9be39fa3466f10"
 	results := make([]map[string]interface{}, 0)
+	fileNameChan := make(chan string)
 
-	ticker := time.NewTicker(300 * time.Second)
+	ticker := time.NewTicker(5 * time.Second)
 	defer ticker.Stop()
 	tickerColor := color.New(color.FgBlue).PrintlnFunc()
 
 	go func() {
 		for range ticker.C {
 			tickerColor("Periodic save: Saving current results...")
+			fileJSONName = <-fileNameChan
 			mutex.Lock()
-			err := SaveResults(results, "generic_results.json")
+			err := SaveResults(results, fileJSONName)
 			mutex.Unlock()
 			if err != nil {
 				log.Printf("Error during periodic save: %v", err)
@@ -58,40 +61,50 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 		ProcessFileForKeyword("", extensions, sessionCookie, results)
 	} else {
 		for _, keyword := range keywords {
+			cleanKeyword := strings.TrimSpace(strings.Trim(strings.TrimRight(keyword, `",`), `"`))
 
-			cleankeyword := strings.TrimSpace(keyword)
-			cleankeyword = strings.Trim(cleankeyword, `"`)
-			cleankeyword = strings.TrimRight(cleankeyword, `",`)
+			go func(keyword string) {
+				if keyword == "" {
+					return
+				} else {
+					fileName := fmt.Sprintf("results-%s.json", keyword)
 
-			outputFile := createOutputFile(cleankeyword)
+					var acc int
+
+					for {
+						if _, err := os.Stat(fileName); err == nil {
+							acc++
+							fileName = fmt.Sprintf("results-%s-%d.json", cleanKeyword, acc)
+						} else if os.IsNotExist(err) {
+							fmt.Printf("File does not exist: %s\n", fileName)
+							break
+						}
+					}
+					fileNameChan <- fileName
+				}
+			}(cleanKeyword)
 			if err != nil {
 				fmt.Printf("Failed to create output file: %v\n", err)
 				continue
 			}
-			fmt.Printf("Searching for files with keyword: %s\n", cleankeyword)
+			fmt.Printf("Searching for files with keyword: %s\n", cleanKeyword)
 
 			// -------------------------------------------------------------
 
 			maxRetries := 3
 			for retries := 0; retries < maxRetries; retries++ {
-				files, err = api.QueryFiles(sessionCookie, []string{cleankeyword}, extensions, bucketFile)
+				files, err = api.QueryFiles(sessionCookie, []string{cleanKeyword}, extensions, bucketFile)
 				if err == nil {
 					break
 				}
-				log.Printf("Retry %d/%d for keyword '%s' failed: %v", retries+1, maxRetries, cleankeyword, err)
+				log.Printf("Retry %d/%d for keyword '%s' failed: %v", retries+1, maxRetries, cleanKeyword, err)
 				time.Sleep(2 * time.Second)
 			}
 			if err != nil {
-				log.Printf("All retries failed for keyword '%s'\n", cleankeyword)
+				log.Printf("All retries failed for keyword '%s'\n", cleanKeyword)
 				return
 			}
-			ProcessFileForKeyword(keyword, extensions, sessionCookie, results)
-			mutex.Lock()
-			err = SaveResults(results, outputFile)
-			if err != nil {
-				log.Printf("Error saving final results for keyword '%s': %v", keyword, err)
-			}
-			mutex.Unlock()
+			ProcessFileForKeyword(cleanKeyword, extensions, sessionCookie, results)
 		}
 		// -------------------------------------------------------------
 
@@ -102,7 +115,7 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 }
 
 func SaveResults(results []map[string]interface{}, outputFile string) error {
-	fmt.Println("Saving results...")
+	fmt.Printf("Saving results on %s...", outputFile)
 
 	file, err := os.Create(outputFile)
 	if err != nil {
@@ -124,7 +137,6 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 	errorschan := make(chan error, len(files))
 	concurrencyLimit := 6
 	semaphore := make(chan struct{}, concurrencyLimit)
-	outputFile := createOutputFile(keyword)
 
 	done := make(chan struct{})
 	defer close(done)
@@ -183,46 +195,28 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 				}
 				selectingColor("All files processed")
 				return
+
 			}
 		}
 	}()
-	fmt.Printf("Saving results for keyword: %s\n", keyword)
+
+	// hacinedo un número random a los boludos
+
+	rand.Seed(time.Now().UnixNano())
+
+	// Generate a random number between 100 and 999
+	randomNumber := rand.Intn(900) + 100
+
 	mutex.Lock()
-	err := SaveResults(results, outputFile)
-	mutex.Unlock()
-	if err != nil {
-		log.Printf("Error saving results for keyword '%s': %v", keyword, err)
+	if fileJSONName == "" {
+		fileJSONName = fmt.Sprintf("results-%s-%d.json", keyword, randomNumber)
+		fmt.Print("The proccess last less than 300 seconds. Saving current results...")
+		err = SaveResults(results, fileJSONName)
 	}
+	if err != nil {
+		log.Printf("Error saving final results for keyword '%s': %v", keyword, err)
+	}
+	mutex.Unlock()
 }
 
 // ---------------------------------------------------------------
-func createOutputFile(keyword string) string {
-	if keyword == "" {
-		genericFilename := "results.json"
-		return genericFilename
-	}
-	filename := fmt.Sprintf("results-%s.json", keyword)
-	dir, err := os.Open(".")
-	if err != nil {
-		return ""
-	}
-	defer dir.Close()
-	fmt.Printf("Checking for existing file: %s", filename)
-	var acc int
-	names, err := dir.Readdirnames(-1)
-	if err != nil && err != io.EOF {
-		return ""
-	}
-
-	for _, name := range names {
-		if name == filename || name == fmt.Sprintf("results-%s-%d.json", keyword, acc) {
-			acc++
-		}
-	}
-
-	if acc > 0 {
-		filename = fmt.Sprintf("results-%s-%d.json", keyword, acc)
-	}
-
-	return filename
-}
