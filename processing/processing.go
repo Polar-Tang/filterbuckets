@@ -51,23 +51,7 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 			}
 		}
 	}()
-
 	if len(keywords) == 0 {
-		// fmt.Println("Processing files without keywords...")
-		rand.Seed(time.Now().UnixNano())
-
-		// Generate a random number between 100 and 999
-		randomNumber := rand.Intn(900) + 100
-		fileJSONName = fmt.Sprintf("results-%d.json", randomNumber)
-		// fmt.Print("The proccess last less than 300 seconds. Saving current results...")
-		mutex.Lock()
-
-		err = SaveResults(results, fileJSONName)
-		if err != nil {
-			log.Printf("Error saving final results for keyword '%s': %v", fileJSONName, err)
-		}
-		mutex.Unlock()
-
 		files, err = api.QueryFiles(sessionCookie, []string{}, extensions, bucketFile)
 		if err != nil {
 			fmt.Printf("Error: %v\n", err)
@@ -75,6 +59,7 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 		}
 
 		ProcessFileForKeyword("", extensions, sessionCookie, results, concurrencyLimit)
+
 	} else {
 		for _, keyword := range keywords {
 			cleanKeyword := strings.TrimSpace(keyword)
@@ -146,8 +131,6 @@ func readSessionCookie(filePath string) (string, error) {
 }
 
 func SaveResults(results []map[string]interface{}, outputFile string) error {
-	// fmt.Printf("Saving results on %s...", outputFile)
-	fmt.Print("The filepath", outputFile)
 
 	file, err := os.Create(outputFile)
 	if err != nil {
@@ -205,6 +188,22 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 		}(fileInfo)
 	}
 	wg.Wait()
+	rand.Seed(time.Now().UnixNano())
+
+	randomNumber := rand.Intn(900) + 100
+
+	fileJSONName = fmt.Sprintf("results-%s-%d.json", keyword, randomNumber)
+	fmt.Print("The proccess last less than 300 seconds. Saving current results...")
+	mutex.Lock()
+	err = SaveResults(results, fileJSONName)
+	mutex.Unlock()
+	if err != nil {
+		log.Printf("Error saving results for keyword '%s': %v", keyword, err)
+	}
+	fmt.Println("Results saved to", fileJSONName)
+	if err != nil {
+		log.Printf("Error saving final results for keyword '%s': %v", keyword, err)
+	}
 
 	// selectingColor := color.New(color.FgYellow).PrintlnFunc()
 	go func() {
@@ -228,20 +227,6 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 		}
 	}()
 
-	rand.Seed(time.Now().UnixNano())
-
-	randomNumber := rand.Intn(900) + 100
-
-	mutex.Lock()
-	if fileJSONName == "" {
-		fileJSONName = fmt.Sprintf("results-%s-%d.json", keyword, randomNumber)
-		fmt.Print("The proccess last less than 300 seconds. Saving current results...")
-		err = SaveResults(results, fileJSONName)
-	}
-	if err != nil {
-		log.Printf("Error saving final results for keyword '%s': %v", keyword, err)
-	}
-	mutex.Unlock()
 }
 
 // ---------------------------------------------------------------
