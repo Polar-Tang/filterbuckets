@@ -129,7 +129,12 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 		}
 
 		wg.Wait()
-
+		mutex.Lock()
+		err = SaveResults(results, fileJSONName)
+		mutex.Unlock()
+		if err != nil {
+			log.Printf("Error saving final results for keyword '%s': %v", fileJSONName, err)
+		}
 	}
 
 }
