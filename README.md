@@ -11,7 +11,7 @@
 
 ---
 
-#### **3. Install Dependencies:**
+#### **3. Set your api key:**
    Set the greyhat api that you will find in https://grayhatwarfare.com/account/settings:
    ```bash
    echo "API_KEY" > ./sessionCookie
@@ -19,11 +19,11 @@
 
 ---
 
-#### **4. Install Tesseract OCR (System-wide):**
+#### **4. Install the tool:**
 
    - **Linux:** 
      ```bash
-     sudo apt-get install tesseract-ocr libtesseract-dev
+     sudo apt-get install tesseract-ocr libtesseract-dev 
      ```
    - **Mac:** 
      ```bash
