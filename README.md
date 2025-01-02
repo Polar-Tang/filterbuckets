@@ -21,17 +21,12 @@
 
 #### **4. Install the tool:**
 
-   - **Linux:** 
-     ```bash
-     sudo apt-get install tesseract-ocr libtesseract-dev 
-     ```
-   - **Mac:** 
-     ```bash
-     brew install tesseract
-     ```
-   - **Windows:** 
-     Download the installer from [Tesseract GitHub](https://github.com/tesseract-ocr/tesseract/releases/download/5.5.0/tesseract-ocr-w64-setup-5.5.0.20241111.exe) and follow the setup instructions.
-
+   ```sh
+   go install github.com/Polar-Tang/filterbuckets@v0.2.0
+   echo 'alias filterbuckets="~/go/bin/filterbuckets"' >> ~/.profile
+   source ~/.profile
+   ```
+ 
 ---
 
 #### **5. Run the Program:**
