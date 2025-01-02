@@ -27,7 +27,7 @@ type ApiResponse struct {
 func QueryFiles(sessionCookie string, keywords []string, extensions map[string][]string, bucketFile string) ([]FileInfo, error) {
 	apiURL := "https://buckets.grayhatwarfare.com/api/v2/files"
 	var allFiles []FileInfo
-	fmt.Printf("Querying files to %s\n", apiURL)
+	fmt.Print("Fetching greyhat api...\n")
 
 	// bucketName := "btchangqing.oss-cn-shenzhen.aliyuncs.com"
 	extensionKeys := getMapKeys(extensions)
@@ -51,19 +51,19 @@ func QueryFiles(sessionCookie string, keywords []string, extensions map[string][
 
 	go func() {
 		for {
-			fmt.Printf("Number of Goroutines: %d\n", runtime.NumGoroutine())
+			// fmt.Printf("Number of Goroutines: %d\n", runtime.NumGoroutine())
 			var memStats runtime.MemStats
 			runtime.ReadMemStats(&memStats)
-			fmt.Printf("Memory Allocated: %v MB\n", memStats.Alloc/1024/1024)
-			time.Sleep(300 * time.Second) // Run every 60 seconds
+			// fmt.Printf("Memory Allocated: %v MB\n", memStats.Alloc/1024/1024)
+			time.Sleep(300 * time.Second)
 			transport.CloseIdleConnections()
-			fmt.Println("Idle connections closed")
+			// fmt.Println("Idle connections closed")
 		}
 	}()
 
 	for {
 		if pageCount >= maxPages {
-			fmt.Println("Reached maximum page limit")
+			// fmt.Println("Reached maximum page limit")
 			break
 		}
 		pageCount++
@@ -82,7 +82,7 @@ func QueryFiles(sessionCookie string, keywords []string, extensions map[string][
 
 		// Build the full URL
 		fullURL := fmt.Sprintf("%s?%s", apiURL, params.Encode())
-		fmt.Printf("Requesting: %s\n", fullURL)
+		// fmt.Printf("Requesting: %s\n", fullURL)
 
 		// Create the request to the api
 		req, err := http.NewRequest("GET", fullURL, nil)

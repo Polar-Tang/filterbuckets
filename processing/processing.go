@@ -1,7 +1,7 @@
 package processing
 
-// IMPORTS
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -25,43 +25,43 @@ var (
 	fileJSONName string
 )
 
-// keywords []string, extensions map[string][]string
+func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile string, concurrencyLimit int) {
 
-func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile string) {
+	sessionCookieFile := "./sessionCookie"
 
-	sessionCookie := "54e7fe8c2aa1dd504b9be39fa3466f10"
+	sessionCookie, err := readSessionCookie(sessionCookieFile)
+	if err != nil {
+		fmt.Printf("Error: %v\n", err)
+		return
+	}
 	results := make([]map[string]interface{}, 0)
 	fileNameChan := make(chan string)
 
 	ticker := time.NewTicker(500 * time.Second)
 	defer ticker.Stop()
-	tickerColor := color.New(color.FgBlue).PrintlnFunc()
+	// tickerColor := color.New(color.FgBlue).PrintlnFunc()
 
 	go func() {
 		for range ticker.C {
-			tickerColor("Periodic save: Saving current results...")
+			// tickerColor("Periodic save: Saving current results...")
 			fileJSONName = <-fileNameChan
 			mutex.Lock()
 			err := SaveResults(results, fileJSONName)
 			mutex.Unlock()
 			if err != nil {
 				log.Printf("Error during periodic save: %v", err)
-			} else {
-				tickerColor("Periodic save complete.")
 			}
 		}
 	}()
 
-	// ---------------------------------------------------------------
-
 	if len(keywords) == 0 {
-		fmt.Println("Processing files without keywords...")
+		// fmt.Println("Processing files without keywords...")
 		rand.Seed(time.Now().UnixNano())
 
 		// Generate a random number between 100 and 999
 		randomNumber := rand.Intn(900) + 100
 		fileJSONName = fmt.Sprintf("results-%d.json", randomNumber)
-		fmt.Print("The proccess last less than 300 seconds. Saving current results...")
+		// fmt.Print("The proccess last less than 300 seconds. Saving current results...")
 		mutex.Lock()
 
 		err = SaveResults(results, fileJSONName)
@@ -71,11 +71,19 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 		mutex.Unlock()
 
 		files, err = api.QueryFiles(sessionCookie, []string{}, extensions, bucketFile)
-		fmt.Println(bucketFile)
-		ProcessFileForKeyword("", extensions, sessionCookie, results)
+		if err != nil {
+			fmt.Printf("Error: %v\n", err)
+			return
+		}
+
+		ProcessFileForKeyword("", extensions, sessionCookie, results, concurrencyLimit)
 	} else {
 		for _, keyword := range keywords {
-			cleanKeyword := strings.TrimSpace(strings.Trim(strings.TrimRight(keyword, `",`), `"`))
+			cleanKeyword := strings.TrimSpace(keyword)
+			cleanKeyword = strings.Trim(cleanKeyword, `"`)
+			cleanKeyword = strings.TrimRight(cleanKeyword, `",`)
+
+			fmt.Println("Processing files with keyword:", cleanKeyword)
 
 			go func(keyword string) {
 				if keyword == "" {
@@ -90,7 +98,7 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 							acc++
 							fileName = fmt.Sprintf("results-%s-%d.json", cleanKeyword, acc)
 						} else if os.IsNotExist(err) {
-							fmt.Printf("File does not exist: %s\n", fileName)
+							fmt.Printf("Creating: %s\n", fileName)
 							break
 						}
 					}
@@ -101,9 +109,7 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 				fmt.Printf("Failed to create output file: %v\n", err)
 				continue
 			}
-			fmt.Printf("Searching for files with keyword: %s\n", cleanKeyword)
-
-			// -------------------------------------------------------------
+			// fmt.Printf("Searching for files with keyword: %s\n", cleanKeyword)
 
 			maxRetries := 3
 			for retries := 0; retries < maxRetries; retries++ {
@@ -118,9 +124,9 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 				log.Printf("All retries failed for keyword '%s'\n", cleanKeyword)
 				return
 			}
-			ProcessFileForKeyword(cleanKeyword, extensions, sessionCookie, results)
+
+			ProcessFileForKeyword(cleanKeyword, extensions, sessionCookie, results, concurrencyLimit)
 		}
-		// -------------------------------------------------------------
 
 		wg.Wait()
 
@@ -128,8 +134,29 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 
 }
 
+func readSessionCookie(filePath string) (string, error) {
+	file, err := os.Open(filePath)
+	if err != nil {
+		return "", fmt.Errorf("failed to open session cookie file: %w", err)
+	}
+	defer file.Close()
+
+	var sb strings.Builder
+	scanner := bufio.NewScanner(file)
+
+	for scanner.Scan() {
+		sb.WriteString(scanner.Text()) // Read each line
+	}
+
+	if err := scanner.Err(); err != nil {
+		return "", fmt.Errorf("error reading session cookie file: %w", err)
+	}
+
+	return strings.TrimSpace(sb.String()), nil // Ensure no leading/trailing spaces
+}
+
 func SaveResults(results []map[string]interface{}, outputFile string) error {
-	fmt.Printf("Saving results on %s...", outputFile)
+	// fmt.Printf("Saving results on %s...", outputFile)
 
 	file, err := os.Create(outputFile)
 	if err != nil {
@@ -143,13 +170,12 @@ func SaveResults(results []map[string]interface{}, outputFile string) error {
 		return fmt.Errorf("failed to write JSON to file '%s': %w", outputFile, err)
 	}
 
-	fmt.Printf("Results saved to %s\n", outputFile)
+	// fmt.Printf("Results saved to %s\n", outputFile)
 	return nil
 }
 
-func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessionCookie string, results []map[string]interface{}) {
+func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessionCookie string, results []map[string]interface{}, concurrencyLimit int) {
 	errorschan := make(chan error, len(files))
-	concurrencyLimit := 6
 	semaphore := make(chan struct{}, concurrencyLimit)
 
 	done := make(chan struct{})
@@ -164,38 +190,35 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 			continue
 		}
 
-		// 💚💚💚💚💚💚💚💚💚💚💚
 		processingColor := color.New(color.FgGreen).PrintlnFunc()
 		go func(file api.FileInfo) {
 			semaphore <- struct{}{}
-			processingColor("Starting a goroutine...")
+			// processingColor("Starting a goroutine...")
 
-			defer func() {
-				processingColor("Exiting goroutine...")
-			}()
+			// defer func() {
+			// 	processingColor("Exiting goroutine...")
+			// }()
 			defer wg.Done()
 
 			start := time.Now()
 			result := download.ProcessFile(file, extensions)
-			processingColor("File processed in: ", time.Since(start))
+			processingColor("∟ File processed in →", time.Since(start), "\n")
 			<-semaphore
 			if result != nil {
-				processingColor("Locking mutex...\n")
+				// processingColor("Locking mutex...\n")
 				mutex.Lock()
 				results = append(results, result)
-				processingColor("Unocking mutex...\n")
+				// processingColor("Unocking mutex...\n")
 				mutex.Unlock()
 			}
 		}(fileInfo)
 	}
 	wg.Wait()
-	// TICKER
 
-	// 💛💛💛💛💛💛💛💛💛💛💛
-	selectingColor := color.New(color.FgYellow).PrintlnFunc()
+	// selectingColor := color.New(color.FgYellow).PrintlnFunc()
 	go func() {
-		selectingColor("Starting a goroutine...")
-		defer selectingColor("Exiting goroutine...")
+		// selectingColor("Starting a goroutine...")
+		// defer selectingColor("Exiting goroutine...")
 		for {
 			select {
 			case err, ok := <-errorschan:
@@ -207,18 +230,15 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 				if !ok {
 					break
 				}
-				selectingColor("All files processed")
+				// selectingColor("All files processed")
 				return
 
 			}
 		}
 	}()
 
-	// hacinedo un número random a los boludos
-
 	rand.Seed(time.Now().UnixNano())
 
-	// Generate a random number between 100 and 999
 	randomNumber := rand.Intn(900) + 100
 
 	mutex.Lock()

@@ -12,9 +12,9 @@
 ---
 
 #### **3. Install Dependencies:**
-   We may need external libraries for HTTP, PDF handling, and OCR. Use the following:
+   Set the greyhat api that you will find in https://grayhatwarfare.com/account/settings:
    ```bash
-   go mod tidy
+   echo "API_KEY" > ./sessionCookie
    ```
 
 ---

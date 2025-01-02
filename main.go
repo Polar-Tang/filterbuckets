@@ -12,9 +12,10 @@ import (
 
 // ToolConfig holds configuration for the tool
 type ToolConfig struct {
-	KeywordsFile   string
-	ExtensionsFile string
-	BucketFile     string
+	KeywordsFile     string
+	ExtensionsFile   string
+	BucketFile       string
+	ConcurrencyLimit int
 }
 
 // Main entry point
@@ -23,16 +24,17 @@ func main() {
 	bucketFile := config.BucketFile
 	keywords := readLinesFromFile(config.KeywordsFile)
 	extensions, err := readExtensionsMap(config.ExtensionsFile)
+	concurrencyLimit := config.ConcurrencyLimit
 	if err != nil {
 		fmt.Printf("Error reading extensions file: %v\n", err)
 		os.Exit(1)
 	}
 
-	fmt.Printf("Loaded %d keywords.\n", len(keywords))
-	fmt.Printf("Loaded %d extensions.\n", len(extensions))
+	// fmt.Printf("Loaded %d keywords.\n", len(keywords))
+	// fmt.Printf("Loaded %d extensions.\n", len(extensions))
 
 	// Placeholder: Call your processing function here
-	processing.ProcessFiles(keywords, extensions, bucketFile)
+	processing.ProcessFiles(keywords, extensions, bucketFile, concurrencyLimit)
 }
 
 // parseFlags parses and validates command-line arguments
@@ -40,6 +42,7 @@ func parseFlags() ToolConfig {
 	keywordsFile := flag.String("w", "", "Path to the file containing keywords.")
 	extensionsFile := flag.String("x", "", "Path to the file containing extensions.")
 	bucketFile := flag.String("b", "", "Bucket name.")
+	concurrencyLimit := flag.Int("c", 3, "Concurrency limit for processing (default: 3).")
 
 	flag.Parse()
 
@@ -50,9 +53,10 @@ func parseFlags() ToolConfig {
 	}
 
 	return ToolConfig{
-		KeywordsFile:   *keywordsFile,
-		ExtensionsFile: *extensionsFile,
-		BucketFile:     *bucketFile,
+		KeywordsFile:     *keywordsFile,
+		ExtensionsFile:   *extensionsFile,
+		BucketFile:       *bucketFile,
+		ConcurrencyLimit: *concurrencyLimit,
 	}
 }
 

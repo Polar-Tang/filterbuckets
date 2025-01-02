@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/Polar-Tang/filterbuckets/api"
-	"github.com/Polar-Tang/filterbuckets/ocr"
+	"github.com/fatih/color"
 
 	pdfcpuapi "github.com/pdfcpu/pdfcpu/pkg/api" // Alias for pdfcpu API
 )
@@ -92,7 +92,7 @@ func ProcessFile(file api.FileInfo, extensionKeywords map[string][]string) map[s
 // --------------------------------------------------------------------------------------------
 
 func processPlainText(filePath string, keywords []string, file api.FileInfo) map[string]interface{} {
-	fmt.Println("Processing plain from the URL:", file.FullPath)
+	fmt.Println("Processing ", file.FullPath)
 	content, err := readFileContent(filePath)
 	if err != nil {
 		fmt.Printf("Failed to read content from %s: %v\n", file.Filename, err)
@@ -101,9 +101,14 @@ func processPlainText(filePath string, keywords []string, file api.FileInfo) map
 
 	keywordCounts := countKeywords(content, keywords)
 
+	processingColor := color.New(color.FgRed).PrintlnFunc()
+	processingColorGreen := color.New(color.FgGreen).PrintlnFunc()
+
 	if keywordCounts == nil || len(keywordCounts) == 0 {
-		fmt.Printf("No keywords found in file: %s\n", file.Filename)
+		processingColor("∟ No keywords found")
 		return nil
+	} else {
+		processingColorGreen("∟ Keywords found")
 	}
 
 	return map[string]interface{}{
@@ -178,7 +183,7 @@ func countKeywords(content string, keywords []string) map[string]int {
 
 func processPDF(filePath string, keywords []string, file api.FileInfo) map[string]interface{} {
 	// create the directory
-	fmt.Println("Processing plain from the URL:", file.FullPath)
+	fmt.Println("Processing: ", file.FullPath)
 
 	outputDir, err := os.MkdirTemp("", "pdf_extracted_*")
 
@@ -195,13 +200,13 @@ func processPDF(filePath string, keywords []string, file api.FileInfo) map[strin
 
 		// Assume failure is due to image content, process with OCR
 		fmt.Println("Falling back to OCR for image-based PDF...")
-		ocrOutput := filepath.Join(outputDir, "ocr_output")
-		err := ocr.RunTesseract(outputDir, ocrOutput)
-		if err != nil {
-			fmt.Printf("OCR failed for %s: %v\n", outputDir, err)
-			return nil
-		}
-		fmt.Printf("OCR output saved to: %s.txt\n", ocrOutput)
+		// ocrOutput := filepath.Join(outputDir, "ocr_output")
+		// err := ocr.RunTesseract(outputDir, ocrOutput)
+		// if err != nil {
+		// 	fmt.Printf("OCR failed for %s: %v\n", outputDir, err)
+		// 	return nil
+		// }
+		// fmt.Printf("OCR output saved to: %s.txt\n", ocrOutput)
 		return nil
 	}
 
@@ -212,7 +217,7 @@ func processPDF(filePath string, keywords []string, file api.FileInfo) map[strin
 		fmt.Printf("Failed to list directory %s: %v\n", outputDir, err)
 		return nil
 	}
-	fmt.Println("Files in output directory:")
+	// fmt.Println("Files in output directory:")
 	for _, entry := range entries {
 		fmt.Println("-", entry.Name())
 	}
@@ -225,9 +230,14 @@ func processPDF(filePath string, keywords []string, file api.FileInfo) map[strin
 	}
 	keywordCounts := countKeywords(contentpdf, keywords)
 
+	processingColor := color.New(color.FgRed).PrintlnFunc()
+	processingColorGreen := color.New(color.FgGreen).PrintlnFunc()
+
 	if keywordCounts == nil || len(keywordCounts) == 0 {
-		fmt.Printf("No keywords found in file: %s\n", file.Filename)
+		processingColor("∟ No keywords found")
 		return nil
+	} else {
+		processingColorGreen("∟ Keywords found")
 	}
 	return map[string]interface{}{
 		"url":      file.URL,
