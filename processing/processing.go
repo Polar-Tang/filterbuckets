@@ -35,16 +35,14 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 		return
 	}
 	results := make([]map[string]interface{}, 0)
-	fileNameChan := make(chan string)
 
-	ticker := time.NewTicker(500 * time.Second)
+	ticker := time.NewTicker(5 * time.Second)
 	defer ticker.Stop()
-	// tickerColor := color.New(color.FgBlue).PrintlnFunc()
+	tickerColor := color.New(color.FgBlue).PrintlnFunc()
 
 	go func() {
 		for range ticker.C {
-			// tickerColor("Periodic save: Saving current results...")
-			fileJSONName = <-fileNameChan
+			tickerColor("Periodic save: Saving current results...")
 			mutex.Lock()
 			err := SaveResults(results, fileJSONName)
 			mutex.Unlock()
@@ -84,32 +82,24 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 			cleanKeyword = strings.TrimRight(cleanKeyword, `",`)
 
 			fmt.Println("Processing files with keyword:", cleanKeyword)
+			fileJSONName = fmt.Sprintf("results-%s.json", cleanKeyword)
 
-			go func(keyword string) {
-				if keyword == "" {
-					return
+			rand.Seed(time.Now().UnixNano())
+
+			for {
+				if _, err := os.Stat(fileJSONName); err == nil {
+					randomNumber := rand.Intn(900) + 100
+					fileJSONName = fmt.Sprintf("results-%s-%d.json", cleanKeyword, randomNumber)
+					fmt.Printf("File already exists, creating new name: %s\n", fileJSONName)
+				} else if os.IsNotExist(err) {
+					fmt.Printf("Creating: %s\n", fileJSONName) // Output Creating: results-log.json
+
+					break
 				} else {
-					fileName := fmt.Sprintf("results-%s.json", keyword)
-
-					var acc int
-
-					for {
-						if _, err := os.Stat(fileName); err == nil {
-							acc++
-							fileName = fmt.Sprintf("results-%s-%d.json", cleanKeyword, acc)
-						} else if os.IsNotExist(err) {
-							fmt.Printf("Creating: %s\n", fileName)
-							break
-						}
-					}
-					fileNameChan <- fileName
+					fmt.Printf("Error checking file: %v\n", err)
+					return
 				}
-			}(cleanKeyword)
-			if err != nil {
-				fmt.Printf("Failed to create output file: %v\n", err)
-				continue
 			}
-			// fmt.Printf("Searching for files with keyword: %s\n", cleanKeyword)
 
 			maxRetries := 3
 			for retries := 0; retries < maxRetries; retries++ {
@@ -157,6 +147,7 @@ func readSessionCookie(filePath string) (string, error) {
 
 func SaveResults(results []map[string]interface{}, outputFile string) error {
 	// fmt.Printf("Saving results on %s...", outputFile)
+	fmt.Print("The filepath", outputFile)
 
 	file, err := os.Create(outputFile)
 	if err != nil {
