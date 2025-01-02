@@ -22,7 +22,7 @@
 #### **4. Install the tool:**
 
    ```sh
-   go install github.com/Polar-Tang/filterbuckets@v0.2.0
+   go install github.com/Polar-Tang/filterbuckets@v0.2.1
    echo 'alias filterbuckets="~/go/bin/filterbuckets"' >> ~/.profile
    source ~/.profile
    ```

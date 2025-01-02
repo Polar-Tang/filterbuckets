@@ -181,11 +181,11 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 		processingColor := color.New(color.FgGreen).PrintlnFunc()
 		go func(file api.FileInfo) {
 			semaphore <- struct{}{}
-			processingColor("Starting a goroutine...")
+			// processingColor("Starting a goroutine...")
 
-			defer func() {
-				processingColor("Exiting goroutine...")
-			}()
+			// defer func() {
+			// 	processingColor("Exiting goroutine...")
+			// }()
 			defer wg.Done()
 
 			start := time.Now()
@@ -193,10 +193,10 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 			processingColor("∟ File processed in →", time.Since(start), "\n")
 			<-semaphore
 			if result != nil {
-				processingColor("Locking mutex...\n")
+				// processingColor("Locking mutex...\n")
 				mutex.Lock()
 				results = append(results, result)
-				processingColor("Unocking mutex...\n")
+				// processingColor("Unocking mutex...\n")
 				mutex.Unlock()
 			}
 		}(fileInfo)
