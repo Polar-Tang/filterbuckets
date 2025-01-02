@@ -1,6 +1,6 @@
 #### **1. Install Go:**
    - **Download:** Go to [golang.org/dl](https://golang.org/dl/) and download the installer for your OS.
-   - **Install:** Follow the instructions for your operating system.
+   - **Install:** Follow the instructions for your operating system in [go docs install](https://go.dev/doc/install).
 
 #### **2. Verify Installation:**
    Open your terminal and run:
