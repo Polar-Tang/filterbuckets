@@ -47,7 +47,7 @@ func ProcessFile(file api.FileInfo, extensionKeywords map[string][]string) map[s
 	}
 	// Close the response body
 	defer response.Body.Close()
-
+	fmt.Printf("Processing url %s", file.URL)
 	// ---------------------------------------------------------------------------------------------
 
 	// 2) Create a temporary file, referenced by name
@@ -99,17 +99,18 @@ func processPlainText(filePath string, keywords []string, file api.FileInfo) map
 		return nil
 	}
 
-	keywordCounts := countKeywords(content, keywords)
-
 	processingColor := color.New(color.FgRed).PrintlnFunc()
 	processingColorGreen := color.New(color.FgGreen).PrintlnFunc()
 
-	if keywordCounts == nil || len(keywordCounts) == 0 {
+	keywordCounts := countKeywords(content, keywords)
+
+	if keywordCounts != nil {
+		processingColorGreen("∟ Keywords found")
+	} else {
 		processingColor("∟ No keywords found")
 		return nil
-	} else {
-		processingColorGreen("∟ Keywords found")
 	}
+	fmt.Print(keywordCounts)
 
 	return map[string]interface{}{
 		"url":      file.URL,
@@ -233,12 +234,13 @@ func processPDF(filePath string, keywords []string, file api.FileInfo) map[strin
 	processingColor := color.New(color.FgRed).PrintlnFunc()
 	processingColorGreen := color.New(color.FgGreen).PrintlnFunc()
 
-	if keywordCounts == nil || len(keywordCounts) == 0 {
+	if keywordCounts != nil {
+		processingColorGreen("∟ Keywords found")
+	} else {
 		processingColor("∟ No keywords found")
 		return nil
-	} else {
-		processingColorGreen("∟ Keywords found")
 	}
+	fmt.Print(keywordCounts)
 	return map[string]interface{}{
 		"url":      file.URL,
 		"filename": file.Filename,

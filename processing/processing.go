@@ -36,7 +36,7 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 	}
 	results := make([]map[string]interface{}, 0)
 
-	ticker := time.NewTicker(5 * time.Second)
+	ticker := time.NewTicker(5 * time.Minute)
 	defer ticker.Stop()
 	tickerColor := color.New(color.FgBlue).PrintlnFunc()
 
@@ -69,16 +69,15 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 			fmt.Println("Processing files with keyword:", cleanKeyword)
 			fileJSONName = fmt.Sprintf("results-%s.json", cleanKeyword)
 
-			rand.Seed(time.Now().UnixNano())
-
+			var acc int
 			for {
 				if _, err := os.Stat(fileJSONName); err == nil {
-					randomNumber := rand.Intn(900) + 100
-					fileJSONName = fmt.Sprintf("results-%s-%d.json", cleanKeyword, randomNumber)
+					acc++
+					fileJSONName = fmt.Sprintf("results-%s-%d.json", cleanKeyword, acc)
 					fmt.Printf("File already exists, creating new name: %s\n", fileJSONName)
+					break
 				} else if os.IsNotExist(err) {
-					fmt.Printf("Creating: %s\n", fileJSONName) // Output Creating: results-log.json
-
+					fmt.Printf("Creating: %s\n", fileJSONName)
 					break
 				} else {
 					fmt.Printf("Error checking file: %v\n", err)
@@ -120,14 +119,14 @@ func readSessionCookie(filePath string) (string, error) {
 	scanner := bufio.NewScanner(file)
 
 	for scanner.Scan() {
-		sb.WriteString(scanner.Text()) // Read each line
+		sb.WriteString(scanner.Text())
 	}
 
 	if err := scanner.Err(); err != nil {
 		return "", fmt.Errorf("error reading session cookie file: %w", err)
 	}
 
-	return strings.TrimSpace(sb.String()), nil // Ensure no leading/trailing spaces
+	return strings.TrimSpace(sb.String()), nil
 }
 
 func SaveResults(results []map[string]interface{}, outputFile string) error {
@@ -144,7 +143,7 @@ func SaveResults(results []map[string]interface{}, outputFile string) error {
 		return fmt.Errorf("failed to write JSON to file '%s': %w", outputFile, err)
 	}
 
-	// fmt.Printf("Results saved to %s\n", outputFile)
+	fmt.Printf("Results saved to %s\n", outputFile)
 	return nil
 }
 
@@ -167,11 +166,11 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 		processingColor := color.New(color.FgGreen).PrintlnFunc()
 		go func(file api.FileInfo) {
 			semaphore <- struct{}{}
-			// processingColor("Starting a goroutine...")
+			processingColor("Starting a goroutine...")
 
-			// defer func() {
-			// 	processingColor("Exiting goroutine...")
-			// }()
+			defer func() {
+				processingColor("Exiting goroutine...")
+			}()
 			defer wg.Done()
 
 			start := time.Now()
@@ -179,10 +178,10 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 			processingColor("∟ File processed in →", time.Since(start), "\n")
 			<-semaphore
 			if result != nil {
-				// processingColor("Locking mutex...\n")
+				processingColor("Locking mutex...\n")
 				mutex.Lock()
 				results = append(results, result)
-				// processingColor("Unocking mutex...\n")
+				processingColor("Unocking mutex...\n")
 				mutex.Unlock()
 			}
 		}(fileInfo)
@@ -205,10 +204,10 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 		log.Printf("Error saving final results for keyword '%s': %v", keyword, err)
 	}
 
-	// selectingColor := color.New(color.FgYellow).PrintlnFunc()
+	selectingColor := color.New(color.FgYellow).PrintlnFunc()
 	go func() {
-		// selectingColor("Starting a goroutine...")
-		// defer selectingColor("Exiting goroutine...")
+		selectingColor("Starting a goroutine...")
+		defer selectingColor("Exiting goroutine...")
 		for {
 			select {
 			case err, ok := <-errorschan:
@@ -220,7 +219,7 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 				if !ok {
 					break
 				}
-				// selectingColor("All files processed")
+				selectingColor("All files processed")
 				return
 
 			}
@@ -228,5 +227,3 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 	}()
 
 }
-
-// ---------------------------------------------------------------
