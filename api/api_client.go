@@ -51,13 +51,13 @@ func QueryFiles(sessionCookie string, keywords []string, extensions map[string][
 
 	go func() {
 		for {
-			fmt.Printf("Number of Goroutines: %d\n", runtime.NumGoroutine())
+			// fmt.Printf("Number of Goroutines: %d\n", runtime.NumGoroutine())
 			var memStats runtime.MemStats
 			runtime.ReadMemStats(&memStats)
 			// fmt.Printf("Memory Allocated: %v MB\n", memStats.Alloc/1024/1024)
 			time.Sleep(300 * time.Second)
 			transport.CloseIdleConnections()
-			fmt.Println("Idle connections closed")
+			// fmt.Println("Idle connections closed")
 		}
 	}()
 

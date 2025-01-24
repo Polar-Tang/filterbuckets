@@ -130,7 +130,7 @@ func readSessionCookie(filePath string) (string, error) {
 }
 
 func SaveResults(results []map[string]interface{}, outputFile string) error {
-
+	fmt.Println("These are the results", results)
 	file, err := os.Create(outputFile)
 	if err != nil {
 		return fmt.Errorf("failed to create output file '%s': %w", outputFile, err)
@@ -143,7 +143,7 @@ func SaveResults(results []map[string]interface{}, outputFile string) error {
 		return fmt.Errorf("failed to write JSON to file '%s': %w", outputFile, err)
 	}
 
-	fmt.Printf("Results saved to %s\n", outputFile)
+	// fmt.Printf("Results saved to %s\n", outputFile)
 	return nil
 }
 
@@ -166,11 +166,11 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 		processingColor := color.New(color.FgGreen).PrintlnFunc()
 		go func(file api.FileInfo) {
 			semaphore <- struct{}{}
-			processingColor("Starting a goroutine...")
+			// processingColor("Starting a goroutine...")
 
-			defer func() {
-				processingColor("Exiting goroutine...")
-			}()
+			// defer func() {
+			// 	processingColor("Exiting goroutine...")
+			// }()
 			defer wg.Done()
 
 			start := time.Now()
