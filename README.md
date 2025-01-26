@@ -5,9 +5,18 @@ Filterbuckets utilizes greyhat api to download public buckets and compile regex 
 ### Installation
 
    ```sh
-   go install github.com/Polar-Tang/filterbuckets@v0.2.2
-   echo 'alias filterbuckets="~/go/bin/filterbuckets"' >> ~/.profile
+   go install github.com/Polar-Tang/filterbuckets@latest
+   # For Linux/WSL
+   echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.profile
+   # next, reload your shell configuration
    source ~/.profile
+   ```
+
+   ```
+   # For Mac OS
+   echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.zshrc
+   # next, reload your shell configuration
+   source ~/.zshrc
    ```
  
  #### Set your api key:
