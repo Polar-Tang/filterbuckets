@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"math/rand"
 	"os"
 	"strings"
 	"sync"
@@ -87,6 +86,7 @@ func ProcessFiles(keywords []string, extensions map[string][]string, bucketFile 
 
 			maxRetries := 3
 			for retries := 0; retries < maxRetries; retries++ {
+				fmt.Print("Retry ", retries)
 				files, err = api.QueryFiles(sessionCookie, []string{cleanKeyword}, extensions, bucketFile)
 				if err == nil {
 					break
@@ -178,21 +178,14 @@ func ProcessFileForKeyword(keyword string, extensions map[string][]string, sessi
 			processingColor("∟ File processed in →", time.Since(start), "\n")
 			<-semaphore
 			if result != nil {
-				processingColor("Locking mutex...\n")
 				mutex.Lock()
 				results = append(results, result)
-				processingColor("Unocking mutex...\n")
 				mutex.Unlock()
 			}
 		}(fileInfo)
 	}
 	wg.Wait()
-	rand.Seed(time.Now().UnixNano())
 
-	randomNumber := rand.Intn(900) + 100
-
-	fileJSONName = fmt.Sprintf("results-%s-%d.json", keyword, randomNumber)
-	fmt.Print("The proccess last less than 300 seconds. Saving current results...")
 	mutex.Lock()
 	err = SaveResults(results, fileJSONName)
 	mutex.Unlock()

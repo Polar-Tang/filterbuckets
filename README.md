@@ -10,13 +10,17 @@ Filterbuckets utilizes greyhat api to download public buckets and compile regex 
    source ~/.profile
    ```
  
+ #### Set your api key:
+   Set the greyhat api that you will find in https://grayhatwarfare.com/account/settings:
+   ```bash
+   echo "API_KEY" > ./sessionCookie
+   ```
+
 ---
 
 ### Usage
-Four flags, x flag is the only that is always required, this should be the filename where the extension is the key and the value it's an array with the regex to search inside every file.
-
-```
 Usage of /home/pull/go/bin/filterbuckets:
+```
   -b string
         Bucket name.
   -c int
@@ -25,20 +29,11 @@ Usage of /home/pull/go/bin/filterbuckets:
         Path to the file containing keywords.
   -x string
         Path to the file containing extensions.
-
 ```
 
-#### Set your api key:
-   Set the greyhat api that you will find in https://grayhatwarfare.com/account/settings:
-   ```bash
-   echo "API_KEY" > ./sessionCookie
-   ```
+Example:
+```
+filterbuckets -x testing.json -w intigriti2.txt -c 1 -b platform-dev.storage.googleapis.com
+```
 
----
-### Motivation
-If you found your self using greyhat without any tool probably you'd get frustrate, there are unlimited files with random data, i personally were doing a tedious routine, such as:
-- enter the link,
-- see data, 
-- leave, 
-- repeate  
-Filterbuckets do everything at once, 
+For further information you could see the [tutorial of the tool](https://www.youtube.com/watch?v=dTYtrbLA61s&t=102s)
